@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.26.28](https://github.com/Kong/public-ui-components/compare/@kong-ui-public/dashboard-renderer@0.26.24...@kong-ui-public/dashboard-renderer@0.26.28) (2024-10-26)
+
+**Note:** Version bump only for package @kong-ui-public/dashboard-renderer
+
+
+
+
+
+## [0.26.27](https://github.com/Kong/public-ui-components/compare/@kong-ui-public/dashboard-renderer@0.26.24...@kong-ui-public/dashboard-renderer@0.26.27) (2024-10-26)
+
+**Note:** Version bump only for package @kong-ui-public/dashboard-renderer
+
+
+
+
+
+## [0.26.26](https://github.com/Kong/public-ui-components/compare/@kong-ui-public/dashboard-renderer@0.26.24...@kong-ui-public/dashboard-renderer@0.26.26) (2024-10-26)
+
+**Note:** Version bump only for package @kong-ui-public/dashboard-renderer
+
+
+
+
+
+## [0.26.25](https://github.com/Kong/public-ui-components/compare/@kong-ui-public/dashboard-renderer@0.26.24...@kong-ui-public/dashboard-renderer@0.26.25) (2024-10-26)
+
+**Note:** Version bump only for package @kong-ui-public/dashboard-renderer
+
+
+
+
+
 ## [0.26.24](https://github.com/Kong/public-ui-components/compare/@kong-ui-public/dashboard-renderer@0.26.23...@kong-ui-public/dashboard-renderer@0.26.24) (2024-10-24)
 
 
