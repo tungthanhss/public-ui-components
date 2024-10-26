@@ -1,0 +1,98 @@
+{
+  "consumers": {
+    "list": {
+      "table_headers": {
+        "username": "Username",
+        "custom_id": "Custom ID",
+        "tags": "Tags",
+        "id": "ID"
+      },
+      "empty_state": {
+        "title": "Cấu hình Consumer Mới",
+        "description": "Consumer là những Consumer cuối của dịch vụ.",
+        "title_for_consumer_group": "Cấu hình Consumer Mới"
+      },
+      "toolbar_actions": {
+        "new_consumer": "Consumer Mới"
+      }
+    },
+    "title": "Consumer",
+    "search": {
+      "placeholder": {
+        "konnect": "Lọc theo tên",
+        "kongManager": "Lọc theo tên Consumer hoặc ID chính xác"
+      }
+    },
+    "actions": {
+      "add_consumer": "Thêm Consumer",
+      "create": "Consumer Mới",
+      "copy_id": "Sao chép ID",
+      "copy_json": "Sao chép JSON",
+      "edit": "Chỉnh sửa",
+      "delete": "Xóa",
+      "remove": "Xóa bỏ",
+      "view": "Xem Chi Tiết"
+    },
+    "delete": {
+      "title": "Xóa Consumer",
+      "description": "Xóa Consumer này cũng sẽ loại bỏ họ khỏi bất kỳ nhóm Consumer liên kết nào. Hành động này không thể hoàn tác."
+    },
+    "consumer_groups": {
+      "add": {
+        "title": "Thêm Consumer",
+        "ctaText": "Thêm Consumer vào nhóm này",
+        "consumers_label": "Consumer",
+        "consumer_placeholder": "Thêm Consumer",
+        "footer": "Tìm kiếm theo tên hoặc ID chính xác để tìm Consumer không có trong danh sách"
+      },
+      "remove": {
+        "title": "Xóa Consumer",
+        "confirmation": "Bạn có chắc muốn loại bỏ Consumer {consumer} khỏi nhóm Consumer {consumerGroup}?",
+        "confirmationNoCG": "Bạn có chắc muốn loại bỏ Consumer {consumer} khỏi nhóm Consumer này?",
+        "description": "VViệc loại bỏ một người tiêu dùng khỏi nhóm có thể ảnh hưởng đến chính sách giới hạn tỷ lệ áp dụng cho người tiêu dùng đó. "
+      }
+    },
+    "errors": {
+      "general": "Không thể truy xuất Consumer",
+      "delete": "Không thể xóa Consumer vào lúc này.",
+      "copy": "Không thể sao chép vào clipboard",
+      "add": "Một số Consumer không thể được thêm vào vào lúc này.",
+      "already_added": "Consumer này đã được thêm vào nhóm Consumer"
+    },
+    "copy": {
+      "success": "Đã sao chép {val} vào clipboard",
+      "success_brief": "Đã sao chép thành công vào clipboard"
+    },
+    "form": {
+      "title": "Xác định Consumer",
+      "info": {
+        "title": "Thông Tin Chung",
+        "description": "Thông tin chung sẽ giúp xác định và quản lý Consumer đã thêm."
+      },
+      "consumer_identification": {
+        "title": "Xác định Consumer",
+        "description": "Một Consumer có thể có cả tên Consumer duy nhất và ID tùy chỉnh duy nhất hoặc chỉ một trong hai."
+      }
+    },
+    "fields": {
+      "username": {
+        "label": "Tên Consumer",
+        "placeholder": "Nhập tên Consumer duy nhất",
+        "tooltip": "Tên Consumer duy nhất của Consumer. Bạn phải gửi trường này hoặc {custom_id} với yêu cầu.",
+        "custom_id": "custom_id"
+      },
+      "custom_id": {
+        "label": "ID Tùy Chỉnh",
+        "placeholder": "Nhập ID tùy chỉnh duy nhất",
+        "tooltip": "Trường để lưu trữ một ID duy nhất hiện có cho Consumer - hữu ích để ánh xạ API Gateway với Consumer trong cơ sở dữ liệu hiện có của bạn. Bạn phải gửi trường này hoặc {username} với yêu cầu.",
+        "username": "username"
+      },
+      "tags": {
+        "label": "Thẻ",
+        "placeholder": "Nhập danh sách các thẻ cách nhau bằng dấu phẩy",
+        "help": "ví dụ: tag1, tag2, tag3",
+        "tooltip": "Một tập hợp chuỗi tùy chọn liên kết với Consumer để nhóm và lọc."
+      }
+    }
+  }
+}

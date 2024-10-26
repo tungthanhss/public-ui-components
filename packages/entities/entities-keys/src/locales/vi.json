@@ -1,0 +1,115 @@
+{
+  "keys": {
+    "title": "Khóa",
+    "list": {
+      "toolbar_actions": {
+        "new_key": "Tạo Khóa Mới"
+      },
+      "table_headers": {
+        "name": "Name",
+        "key_id": "Key ID",
+        "id": "ID",
+        "tags": "Tags"
+      },
+      "empty_state": {
+        "title": "Cấu Hình Khóa Mới",
+        "description": "Một đối tượng Khóa chứa một đại diện của các khóa bất đối xứng ở các định dạng khác nhau."
+      }
+    },
+    "actions": {
+      "create": "Tạo Khóa Mới",
+      "copy_id": "Sao Chép ID",
+      "copy_json": "Sao Chép JSON",
+      "edit": "Chỉnh Sửa",
+      "delete": "Xóa",
+      "clear": "Xóa",
+      "view": "Xem Chi Tiết",
+      "loading": "Đang tải..."
+    },
+    "search": {
+      "placeholder": "Lọc theo tên hoặc ID chính xác",
+      "no_results": "Không tìm thấy kết quả"
+    },
+    "delete": {
+      "title": "Xóa Khóa",
+      "description": "Hành động này không thể hoàn tác, vì vậy hãy chắc chắn kiểm tra việc sử dụng khóa trước khi xóa."
+    },
+    "errors": {
+      "general": "Không thể lấy khóa",
+      "delete": "Khóa không thể bị xóa vào thời điểm này.",
+      "copy": "Không thể sao chép vào clipboard",
+      "key_sets": {
+        "fetch": "Không thể lấy các bộ khóa có sẵn",
+        "invalid": "Vui lòng chọn ID bộ khóa hợp lệ"
+      }
+    },
+    "copy": {
+      "success": "Đã sao chép {val} vào clipboard",
+      "success_brief": "Sao chép thành công vào clipboard"
+    },
+    "form": {
+      "sections": {
+        "general": {
+          "title": "Thông Tin Chung",
+          "description": "Thông tin chung sẽ giúp xác định và quản lý khóa này."
+        },
+        "keys": {
+          "title": "Khóa Bất Đối Xứng",
+          "description": "Chọn định dạng ưa thích cho khóa bất đối xứng này. Hiện tại chỉ hỗ trợ định dạng PEM và JWK."
+        }
+      },
+      "fields": {
+        "id": {
+          "label": "ID Khóa",
+          "placeholder": "Nhập ID khóa",
+          "tooltip": "Một định danh cho khóa",
+          "help": "Nếu sử dụng JWK, cần phải khớp với trường jwk.kid"
+        },
+        "name": {
+          "label": "Tên",
+          "placeholder": "Nhập tên duy nhất cho khóa này",
+          "tooltip": "Tên để liên kết với khóa đã cho"
+        },
+        "tags": {
+          "label": "Thẻ",
+          "placeholder": "Nhập danh sách thẻ cách nhau bằng dấu phẩy",
+          "help": "Ví dụ: thẻ1, thẻ2, thẻ3",
+          "tooltip": "Một tập hợp tùy chọn các chuỗi để nhóm và lọc, cách nhau bằng dấu phẩy."
+        },
+        "key_set": {
+          "label": "Bộ Khóa",
+          "placeholder": "Chọn một bộ khóa để thêm vào",
+          "footer": "Tìm kiếm theo ID chính xác để tìm các bộ khóa không có trong danh sách"
+        },
+        "key_format": {
+          "label": "Định Dạng Khóa",
+          "options": {
+            "jwk": "JWK",
+            "pem": "PEM"
+          }
+        },
+        "jwk": {
+          "label": "JWK",
+          "placeholder": "Nhập một JWK",
+          "tooltip": "Một khóa web JSON được biểu diễn dưới dạng chuỗi"
+        },
+        "kid": {
+          "label": "ID Khóa",
+          "tooltip": "Một định danh duy nhất cho khóa."
+        },
+        "set": {
+          "label": "Bộ Khóa",
+          "tooltip": "ID (UUID) của bộ khóa mà khóa này sẽ được liên kết."
+        },
+        "private_key": {
+          "label": "Khóa Riêng",
+          "placeholder": "Nhập khóa riêng"
+        },
+        "public_key": {
+          "label": "Khóa Công Khai",
+          "placeholder": "Nhập khóa công khai"
+        }
+      }
+    }
+  }
+}

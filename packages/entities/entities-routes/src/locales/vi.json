@@ -1,0 +1,259 @@
+{
+  "actions": {
+    "create": "Tạo Route Mới",
+    "copy_id": "Sao chép ID",
+    "copy_json": "Sao chép JSON",
+    "edit": "Chỉnh sửa",
+    "delete": "Xóa",
+    "clear": "Xóa",
+    "view": "Xem Chi Tiết",
+    "loading": "Đang tải..."
+  },
+  "search": {
+    "placeholder": {
+      "konnect": "Lọc theo tên",
+      "kongManager": "Lọc theo tên hoặc ID chính xác"
+    },
+    "no_results": "Không tìm thấy kết quả"
+  },
+  "routes": {
+    "title": "Routes",
+    "list": {
+      "toolbar_actions": {
+        "new_route": "Route Mới"
+      },
+      "table_headers": {
+        "name": "Name",
+        "protocols": "Protocols",
+        "hosts": "Hosts",
+        "methods": "Methods",
+        "paths": "Paths",
+        "expression": "Expression",
+        "id": "ID",
+        "tags": "Tags",
+        "created_at": "Created At",
+        "updated_at": "Last Modified"
+      },
+      "empty_state": {
+        "title": "Cấu Hình Route Mới",
+        "description": "Các Route chuyển tiếp yêu cầu đến một dịch vụ liên kết."
+      }
+    }
+  },
+  "delete": {
+    "title": "Xóa Route",
+    "description": "Việc xóa Route này cũng sẽ xóa bất kỳ plugin liên kết nào. Hành động này không thể được hoàn tác."
+  },
+  "errors": {
+    "general": "Không thể lấy Routes",
+    "delete": "Route không thể bị xóa vào thời điểm này.",
+    "copy": "Không thể sao chép vào clipboard",
+    "services": {
+      "fetch": "Không thể lấy các dịch vụ có sẵn"
+    }
+  },
+  "copy": {
+    "success": "Đã sao chép {val} vào clipboard",
+    "success_brief": "Sao chép vào clipboard thành công"
+  },
+  "form": {
+    "protocols": {
+      "grpc": "GRPC",
+      "grpcs": "GRPCS",
+      "grpc,grpcs": "GRPC, GRPCS",
+      "http": "HTTP",
+      "https": "HTTPS",
+      "http,https": "HTTP, HTTPS",
+      "tls": "TLS",
+      "tcp": "TCP",
+      "udp": "UDP",
+      "tls,udp": "TLS, UDP",
+      "tcp,udp": "TCP, UDP",
+      "tcp,tls": "TCP, TLS",
+      "tcp,tls,udp": "TCP, TLS, UDP",
+      "ws": "WS",
+      "wss": "WSS",
+      "ws,wss": "WS, WSS",
+      "tls_passthrough": "TLS_PASSTHROUGH"
+    },
+    "sections": {
+      "general": {
+        "title": "Thông Tin Chung",
+        "description": "Thông tin chung sẽ giúp bạn xác định và quản lý Route này"
+      },
+      "config": {
+        "title": "Cấu Hình Route",
+        "description": "Cấu hình Route xác định cách mà Route này sẽ xử lý các yêu cầu đến"
+      },
+      "routingRules": {
+        "title": "Quy Tắc Định Tuyến"
+      },
+      "routingExpression": {
+        "title": "Expression Định Tuyến"
+      }
+    },
+    "fields": {
+      "service_id": {
+        "label": "Dịch Vụ",
+        "placeholder": "Chọn một dịch vụ"
+      },
+      "name": {
+        "label": "Tên",
+        "placeholder": "Nhập một tên duy nhất",
+        "tooltip": "Tên của Route. Tên Route phải duy nhất và phân biệt chữ hoa chữ thường. Ví dụ, có thể có hai Route khác nhau có tên là 'test' và 'Test'."
+      },
+      "service": {
+        "label": "Dịch Vụ Cổng",
+        "tooltip": "Dịch vụ mà Route này liên kết tới. Đây là nơi Route chuyển tiếp lưu lượng."
+      },
+      "tags": {
+        "label": "Thẻ",
+        "tooltip": "Một tập hợp tùy chọn các chuỗi liên kết với Route để nhóm và lọc.",
+        "placeholder": "Nhập danh sách các thẻ cách nhau bởi dấu phẩy",
+        "help": "Ví dụ: tag1, tag2, tag3"
+      },
+      "protocols": {
+        "label": "Giao Thức",
+        "tooltip": "Các Route có thuộc tính giao thức để hạn chế giao thức của khách hàng mà chúng nên lắng nghe.",
+        "tooltipConfig": "Một mảng các giao thức mà Route này nên cho phép. Xem phần {code1} để biết danh sách các giao thức chấp nhận. Khi chỉ đặt là {code2}, các yêu cầu HTTP sẽ trả về lỗi nâng cấp. Khi chỉ đặt là {code3}, điều này về cơ bản giống như {code4} vì cả hai yêu cầu HTTP và HTTPS đều được cho phép. Mặc định: {code5}.",
+        "code1": "Đối Tượng Route",
+        "code2": "https",
+        "code3": "http",
+        "code4": "['http', 'https']",
+        "code5": "['http', 'https']"
+      },
+      "path_handling": {
+        "label": "Xử Lý path",
+        "tooltip": "Điều này xử lý service.path, route.path và request path như các phần của một URL.",
+        "tooltipConfig": "Kiểm soát cách mà Service path, Route path và path yêu cầu được kết hợp khi gửi yêu cầu tới phía trên. Xem trên để biết mô tả chi tiết về từng hành vi."
+      },
+      "https_redirect_status_code": {
+        "label": "Mã Trạng Thái Chuyển Hướng HTTPS",
+        "tooltip": "Mã trạng thái mà API Gateway  phản hồi khi tất cả các thuộc tính của Route khớp với nhau ngoại trừ giao thức tức là nếu giao thức của yêu cầu là {code1} thay vì {code2}. Tiêu đề {code3} được chèn bởi API Gateway nếu trường được đặt là 301, 302, 307 hoặc 308. Lưu ý: Cấu hình này chỉ áp dụng nếu Route được cấu hình chỉ chấp nhận giao thức {code4}.",
+        "code1": "HTTP",
+        "code2": "HTTPS",
+        "code3": "Location",
+        "code4": "https"
+      },
+      "regex_priority": {
+        "label": "Ưu Tiên Regex",
+        "tooltip": "Một số được sử dụng để chọn Route nào giải quyết một yêu cầu nhất định khi có nhiều Route khớp nó sử dụng regex đồng thời. Khi hai Route khớp với path và có cùng {code1}, Route cũ hơn (ưu tiên thấp hơn {code2}) sẽ được sử dụng. Lưu ý rằng ưu tiên cho các Route không phải regex là khác nhau (các Route không phải regex dài hơn sẽ được khớp trước các Route ngắn hơn).",
+        "code1": "regex_priority",
+        "code2": "created_at"
+      },
+      "strip_path": {
+        "label": "Cắt path",
+        "tooltip": "Khi khớp một Route thông qua một trong các {code1}, cắt bỏ tiền tố khớp từ URL yêu cầu lên trên.",
+        "code1": "path"
+      },
+      "preserve_host": {
+        "label": "Giữ Nguyên Host",
+        "tooltip": "Khi khớp một Route thông qua một trong các {code1} tên miền, sử dụng tiêu đề {code2} yêu cầu trong tiêu đề yêu cầu lên trên. Nếu đặt là {code3}, tiêu đề {code4} của bên trên sẽ là tiêu đề {code5} của Dịch vụ.",
+        "code1": "hosts",
+        "code2": "Host",
+        "code3": "false",
+        "code4": "Host",
+        "code5": "host"
+      },
+      "paths": {
+        "label": "path",
+        "placeholder": "Nhập một path",
+        "tooltip": "Một danh sách các path khớp với Route này."
+      },
+      "snis": {
+        "label": "SNIs",
+        "placeholder": "Nhập một SNI",
+        "tooltip": "Một danh sách các SNIs (Chỉ Dẫn Tên Máy Chủ từ TLS ClientHello) khớp với Route này."
+      },
+      "hosts": {
+        "label": "Hosts",
+        "placeholder": "Nhập một host",
+        "tooltip": "Một danh sách các tên miền khớp với Route này.",
+        "tooltipConfig": "Một danh sách các tên miền khớp với Route này. Lưu ý rằng giá trị hosts phân biệt chữ hoa chữ thường."
+      },
+      "methods": {
+        "label": "Phương Thức",
+        "tooltip": "Một danh sách các phương thức HTTP khớp với Route này.",
+        "custom": {
+          "label": "Tùy Chỉnh",
+          "placeholder": "Nhập một phương thức tùy chỉnh",
+          "tooltip": "Các phương thức tùy chỉnh có thể được sử dụng với các lựa chọn mặc định. Cần ký tự hoa."
+        }
+      },
+      "headers": {
+        "label": "Tiêu Đề",
+        "tooltip": "Giá trị tiêu đề có thể được tách bằng dấu phẩy (value1, value2, value3).",
+        "name": {
+          "placeholder": "Nhập tên tiêu đề"
+        },
+        "values": {
+          "placeholder": "Nhập giá trị tiêu đề"
+        },
+        "tooltipConfig": "Một hoặc nhiều danh sách giá trị được chỉ mục theo tên tiêu đề sẽ gây ra Route này khớp nếu có trong yêu cầu. Tiêu đề {code1} không thể được sử dụng với thuộc tính này: hosts nên được chỉ định bằng thuộc tính {code2}. Khi {code3} chỉ chứa một giá trị và giá trị đó bắt đầu bằng tiền tố đặc biệt {code4}, giá trị sẽ được hiểu là Expression chính quy.",
+        "code1": "Host",
+        "code2": "hosts",
+        "code3": "headers",
+        "code4": "*"
+      },
+      "sources": {
+        "label": "Nguồn",
+        "tooltip": "Một danh sách các địa chỉ IP nguồn của các kết nối đến khớp với Route này khi sử dụng định tuyến luồng.",
+        "ip": {
+          "placeholder": "Nhập một địa chỉ IP nguồn"
+        },
+        "port": {
+          "placeholder": "Nhập một cổng nguồn"
+        }
+      },
+      "destinations": {
+        "label": "Điểm Đến",
+        "tooltip": "Một danh sách các địa chỉ IP điểm đến của các kết nối đến khớp với Route này khi sử dụng định tuyến luồng.",
+        "ip": {
+          "placeholder": "Nhập một địa chỉ IP điểm đến"
+        },
+        "port": {
+          "placeholder": "Nhập một cổng điểm đến"
+        }
+      },
+      "response_buffering": {
+        "label": "Bộ Nhớ Phản Hồi",
+        "tooltip": "Có nên bật bộ nhớ phản hồi nội dung hay không. Với HTTP 1.1, có thể có lý do hợp lý để tắt điều này trên các dịch vụ gửi dữ liệu với mã hóa chuyển giao phân đoạn."
+      },
+      "request_buffering": {
+        "label": "Bộ đệm yêu cầu",
+        "tooltip": "Có nên kích hoạt bộ đệm thân yêu cầu hay không. Với HTTP 1.1, có thể hợp lý để tắt tính năng này trên các dịch vụ nhận dữ liệu với mã hóa truyền tải từng phần."
+      },
+      "Expression": {
+        "label": "Biểu thức",
+        "tooltip": "Expression path."
+      },
+      "priority": {
+        "label": "Độ ưu tiên",
+        "tooltip": "Một số được sử dụng để chọn path nào sẽ giải quyết một yêu cầu nhất định khi nhiều path cùng khớp với biểu thức."
+      }
+    },
+    "flavors": {
+      "traditional": "Cổ điển",
+      "Expressions": "Biểu thức"
+    },
+    "viewAdvancedFields": "Xem các trường nâng cao",
+    "addNewRule": "Thêm quy tắc mới",
+    "warning": {
+      "rulesMessage": "Đối với {protocol}, ít nhất một trong số {routingRules} phải được thiết lập.",
+      "singleRule": "{routingRules}",
+      "multipleRules": "{routingRules} hoặc {lastRoutingRule}",
+      "cannotChangeFlavor": {
+        "create": "Định dạng của path không thể thay đổi sau khi đã được tạo.",
+        "edit": "path này đã được cấu hình ở định dạng {format}, và không thể thay đổi sau khi đã được tạo. Bạn có thể chuyển sang tab {format} để chỉnh sửa, hoặc tạo một path mới với định dạng khác."
+      }
+    },
+    "Expressions_editor": {
+      "loading": "Đang tải trình chỉnh sửa biểu thức…",
+      "error": "Đã xảy ra lỗi trong quá trình tải trình chỉnh sửa biểu thức. Vui lòng xem bảng điều khiển để biết thêm chi tiết."
+    },
+    "Expression_playground": {
+      "test_link": "Kiểm tra với Playground Router",
+      "supported_protocols_hint": "Hiện tại chỉ hỗ trợ các giao thức sau: {protocols}"
+    }
+  }
+}

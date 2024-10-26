@@ -1,0 +1,92 @@
+{
+  "consumer_groups": {
+    "list": {
+      "table_headers": {
+        "name": "Tên",
+        "consumers_count": "Consumer",
+        "tags": "Thẻ",
+        "id": "ID"
+      },
+      "empty_state": {
+        "title": "Cấu hình Nhóm Consumer Mới",
+        "description": "Sử dụng nhóm Consumer để quản lý cấu hình giới hạn tốc độ tùy chỉnh cho các nhóm Consumer cụ thể.",
+        "title_for_consumer": "Thêm vào Nhóm Consumer"
+      },
+      "toolbar_actions": {
+        "new_consumer_group": "Nhóm Consumer Mới"
+      }
+    },
+    "title": "Nhóm Consumer",
+    "search": {
+      "placeholder": "Lọc theo tên hoặc ID chính xác"
+    },
+    "actions": {
+      "add_to_group": "Thêm vào Nhóm Consumer",
+      "create": "Nhóm Consumer Mới",
+      "copy_id": "Sao chép ID",
+      "copy_json": "Sao chép JSON",
+      "edit": "Chỉnh sửa",
+      "delete": "Xóa",
+      "exit": "Thoát",
+      "view": "Xem Chi Tiết"
+    },
+    "delete": {
+      "title": "Xóa Nhóm Consumer",
+      "description": "Xóa nhóm này sẽ loại bỏ nhóm khỏi tất cả các plugin và cấu hình giới hạn tốc độ của nhóm. Hành động này không thể hoàn tác."
+    },
+    "consumers": {
+      "add": {
+        "title": "Thêm Vào Nhóm Consumer",
+        "ctaText": "Thêm Consumer này vào nhóm Consumer",
+        "consumer_groups_label": "Nhóm Consumer",
+        "consumer_group_placeholder": "Thêm vào nhóm Consumer",
+        "footer": "Tìm kiếm theo tên hoặc ID chính xác để tìm các nhóm Consumer không có trong danh sách"
+      },
+      "exit": {
+        "title": "Thoát khỏi Nhóm Consumer",
+        "confirmation": "Bạn có chắc muốn loại bỏ Consumer {consumer} khỏi nhóm Consumer {consumerGroup}?",
+        "confirmationNoUsername": "Bạn có chắc muốn Consumer này thoát khỏi nhóm Consumer {consumerGroup}?",
+        "description": "Thoát khỏi nhóm có thể thay đổi chính sách giới hạn tốc độ áp dụng cho Consumer này."
+      }
+    },
+    "errors": {
+      "general": "Không thể truy xuất Nhóm Consumer",
+      "delete": "Không thể xóa nhóm Consumer vào lúc này.",
+      "copy": "Không thể sao chép vào clipboard",
+      "add": "Không thể thêm Consumer vào một số nhóm vào lúc này.",
+      "already_added": "Consumer đã nằm trong nhóm Consumer này",
+      "add_consumer": "Đã xảy ra lỗi không mong muốn khi thêm Consumer. Vui lòng thử lại.",
+      "remove_consumer": "Đã xảy ra lỗi không mong muốn khi loại bỏ Consumer. Vui lòng thử lại."
+    },
+    "copy": {
+      "success": "Đã sao chép {val} vào clipboard",
+      "success_brief": "Đã sao chép thành công vào clipboard"
+    },
+    "form": {
+      "general_info": {
+        "title": "Thông Tin Chung",
+        "description": "Thông tin chung sẽ giúp xác định và quản lý nhóm Consumer này."
+      },
+      "consumers": {
+        "title": "Consumer",
+        "description": "Thêm hoặc loại bỏ Consumer khỏi nhóm này"
+      },
+      "fields": {
+        "name": {
+          "label": "Tên",
+          "placeholder": "Nhập tên duy nhất cho nhóm Consumer này"
+        },
+        "tags": {
+          "label": "Thẻ",
+          "placeholder": "Nhập danh sách các thẻ cách nhau bằng dấu phẩy",
+          "help": "ví dụ: tag1, tag2, tag3",
+          "tooltip": "Một tập hợp chuỗi tùy chọn để nhóm và lọc, cách nhau bằng dấu phẩy."
+        },
+        "consumers": {
+          "label": "Consumer",
+          "placeholder": "Chọn một hoặc nhiều Consumer"
+        }
+      }
+    }
+  }
+}

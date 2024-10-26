@@ -1,0 +1,183 @@
+{
+  "certificates": {
+    "title": "Certificate",
+    "list": {
+      "toolbar_actions": {
+        "new_certificate": "Certificate mới"
+      },
+      "table_headers": {
+        "subject": "Subject",
+        "expiry": "Expiry",
+        "san": "SAN",
+        "cert": "Cert",
+        "tags": "Tags",
+        "issuer": "Issuer",
+        "snis": "SNIs"
+      },
+      "empty_state": {
+        "title": "Cấu hình một Certificate mới",
+        "description": "Certificate xử lý kết thúc SSL/TLS cho các yêu cầu mã hóa."
+      }
+    },
+    "form": {
+      "sections": {
+        "ssl": {
+          "title": "Cặp khóa SSL",
+          "description": "Chuỗi Certificate công khai và khóa riêng của cặp khóa SSL được mã hóa PEM và bản thay thế."
+        },
+        "general": {
+          "title": "Thông tin chung",
+          "description": "Thông tin chung sẽ giúp nhận dạng và quản lý khóa này."
+        }
+      },
+      "fields": {
+        "cert": {
+          "label": "Certificate",
+          "tooltip": "Chuỗi Certificate công khai của cặp khóa SSL được mã hóa PEM. Trường này {emphasis}, có nghĩa là nó có thể được lưu trữ an toàn dưới dạng bí mật trong kho. Các tham chiếu phải tuân theo một định dạng cụ thể.",
+          "emphasis": "có thể tham chiếu"
+        },
+        "key": {
+          "label": "Khóa",
+          "tooltip": "Khóa riêng của cặp khóa SSL được mã hóa PEM. Trường này {emphasis}, có nghĩa là nó có thể được lưu trữ an toàn dưới dạng bí mật trong kho. Các tham chiếu phải tuân theo một định dạng cụ thể.",
+          "emphasis": "có thể tham chiếu"
+        },
+        "cert_alt": {
+          "label": "Certificate thay thế",
+          "tooltip": "Chuỗi Certificate công khai của cặp khóa SSL thay thế được mã hóa PEM. Chỉ nên thiết lập nếu bạn có cả hai loại Certificate RSA và ECDSA và muốn API Gatewayưu tiên phục vụ sử dụng Certificate ECDSA khi khách hàng quảng cáo hỗ trợ cho nó. Trường này {emphasis}, có nghĩa là nó có thể được lưu trữ an toàn dưới dạng bí mật trong kho. Các tham chiếu phải tuân theo một định dạng cụ thể.",
+          "emphasis": "có thể tham chiếu"
+        },
+        "key_alt": {
+          "label": "Khóa thay thế",
+          "tooltip": "Khóa riêng của cặp khóa SSL thay thế được mã hóa PEM. Chỉ nên thiết lập nếu bạn có cả hai loại Certificate RSA và ECDSA và muốn API Gatewayưu tiên phục vụ sử dụng Certificate ECDSA khi khách hàng quảng cáo hỗ trợ cho nó. Trường này {emphasis}, có nghĩa là nó có thể được lưu trữ an toàn dưới dạng bí mật trong kho. Các tham chiếu phải tuân theo một định dạng cụ thể.",
+          "emphasis": "có thể tham chiếu"
+        },
+        "snis": {
+          "label": "SNIs",
+          "placeholder": "Nhập một SNI",
+          "add": "Thêm một SNI",
+          "tooltip": "Không hoặc nhiều tên máy chủ để liên kết với Certificate này dưới dạng SNIs",
+          "editingTip": "Để quản lý SNIs cho Certificate này, nhấp vào {link}.",
+          "editingTipLink": "tại đây"
+        },
+        "tags": {
+          "label": "Thẻ",
+          "placeholder": "Nhập danh sách các thẻ, cách nhau bằng dấu phẩy",
+          "help": "ví dụ: tag1, tag2, tag3",
+          "tooltip": "Một tập hợp tùy chọn các chuỗi để nhóm và lọc, cách nhau bằng dấu phẩy."
+        }
+      }
+    },
+    "actions": {
+      "create": "Certificate mới",
+      "copy_id": "Sao chép ID",
+      "copy_json": "Sao chép JSON",
+      "edit": "Chỉnh sửa",
+      "addSni": "Thêm vào SNI mới",
+      "delete": "Xóa",
+      "clear": "Xóa",
+      "view": "Xem chi tiết"
+    },
+    "search": {
+      "placeholder": "Lọc theo ID chính xác"
+    },
+    "delete": {
+      "title": "Xóa một Certificate",
+      "description": "Certificate gốc của tổ chức của bạn {bolded-text}.",
+      "boldedText": "sẽ không bị ảnh hưởng",
+      "description2": "Hành động này không thể hoàn tác, vì vậy hãy chắc chắn kiểm tra việc sử dụng Certificate trước khi xóa."
+    },
+    "errors": {
+      "general": "Không thể lấy Certificate",
+      "delete": "Certificate không thể bị xóa vào thời điểm này",
+      "copy": "Không thể sao chép vào clipboard"
+    },
+    "copy": {
+      "success": "Đã sao chép {val} vào clipboard",
+      "success_brief": "Đã sao chép thành công vào clipboard"
+    }
+  },
+  "ca-certificates": {
+    "title": "Certificate CA",
+    "list": {
+      "toolbar_actions": {
+        "new_ca_certificate": "Certificate CA mới"
+      },
+      "table_headers": {
+        "issuer": "Issuer",
+        "expiry": "Expiry",
+        "tags": "Tags"
+      },
+      "empty_state": {
+        "title": "Cấu hình một Certificate CA mới",
+        "description": "Certificate CA xác thực các Certificate của máy khách hoặc máy chủ."
+      }
+    },
+    "form": {
+      "sections": {
+        "cert": {
+          "title": "Certificate công khai",
+          "description": "Certificate công khai của CA được mã hóa PEM và mã băm SHA256 của nó."
+        },
+        "general": {
+          "title": "Thông tin chung",
+          "description": "Thông tin chung sẽ giúp nhận dạng và quản lý khóa này."
+        }
+      },
+      "fields": {
+        "cert": {
+          "label": "Certificate",
+          "tooltip": "Certificate công khai của CA được mã hóa PEM."
+        },
+        "cert_digest": {
+          "label": "Mã băm Certificate",
+          "tooltip": "Mã băm SHA256 của Certificate công khai"
+        },
+        "tags": {
+          "label": "Thẻ",
+          "placeholder": "Nhập danh sách các thẻ, cách nhau bằng dấu phẩy",
+          "help": "ví dụ: tag1, tag2, tag3",
+          "tooltip": "Một tập hợp tùy chọn các chuỗi để nhóm và lọc, cách nhau bằng dấu phẩy."
+        }
+      }
+    },
+    "actions": {
+      "create": "Certificate CA mới",
+      "copy_id": "Sao chép ID",
+      "copy_json": "Sao chép JSON",
+      "edit": "Chỉnh sửa",
+      "delete": "Xóa",
+      "clear": "Làm trống",
+      "view": "Xem chi tiết"
+    },
+    "search": {
+      "placeholder": "Lọc theo ID chính xác"
+    },
+    "delete": {
+      "title": "Xóa một Certificate CA",
+      "description": "Certificate gốc của tổ chức của bạn {bolded-text}.",
+      "boldedText": "sẽ không bị ảnh hưởng",
+      "description2": "Hành động này không thể hoàn tác, vì vậy hãy chắc chắn kiểm tra việc sử dụng Certificate trước khi xóa."
+    },
+    "errors": {
+      "general": "Không thể lấy Certificate CA",
+      "delete": "Certificate CA không thể bị xóa vào thời điểm này",
+      "copy": "Không thể sao chép vào clipboard"
+    },
+    "copy": {
+      "success": "Đã sao chép {val} vào clipboard",
+      "success_brief": "Đã sao chép thành công vào clipboard"
+    }
+  },
+  "general": {
+    "key-usages": {
+      "KEY_USAGE_TYPE_KEY_CERT_SIGN": "keyCertSign",
+      "KEY_USAGE_TYPE_CRL_SIGN": "cRLSign",
+      "KEY_USAGE_TYPE_ENCIPHER_ONLY": "encipherOnly",
+      "KEY_USAGE_TYPE_DIGITAL_SIGNATURE": "digitalSignature",
+      "KEY_USAGE_TYPE_KEY_ENCIPHERMENT": "keyEncipherment",
+      "KEY_USAGE_TYPE_DATA_ENCIPHERMENT": "dataEncipherment",
+      "KEY_USAGE_TYPE_KEY_AGREEMENT": "keyAgreement",
+      "KEY_USAGE_TYPE_CONTENT_COMMITMENT": "nonRepudiation"
+    }
+  }
+}

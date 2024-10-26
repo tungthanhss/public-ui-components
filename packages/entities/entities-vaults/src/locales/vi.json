@@ -1,0 +1,337 @@
+{
+  "actions": {
+    "create": "Tạo Vault Mới",
+    "copy_id": "Sao chép ID",
+    "copy_json": "Sao chép JSON",
+    "edit": "Chỉnh sửa",
+    "delete": "Xóa",
+    "view": "Xem Chi Tiết"
+  },
+  "delete": {
+    "title": "Xóa một Vault",
+    "title_for_secret": "Xóa một Bí Mật",
+    "description": "Hành động này không thể đảo ngược."
+  },
+  "errors": {
+    "general": "Không thể truy xuất Vaults",
+    "delete": "Vault không thể bị xóa vào lúc này.",
+    "copy": "Sao chép vào clipboard thất bại"
+  },
+  "search": {
+    "placeholder_for_vaults": {
+      "konnect": "Lọc theo tiền tố hoặc ID chính xác"
+    },
+    "placeholder_for_secrets": {
+      "konnect": "Lọc theo khóa chính xác"
+    }
+  },
+  "vaults": {
+    "title": "Vaults",
+    "list": {
+      "toolbar_actions": {
+        "new_vault": "Vault Mới"
+      },
+      "table_headers": {
+        "prefix": "Tiền Tố",
+        "name": "Loại Vault",
+        "description": "Mô Tả",
+        "tags": "Thẻ",
+        "id": "ID"
+      },
+      "empty_state": {
+        "title": "Cấu hình một Vault Mới",
+        "description": "Cải thiện bảo mật cho triển khai API Gateway của bạn với bí mật tập trung."
+      }
+    }
+  },
+  "secrets": {
+    "title": "Bí Mật",
+    "list": {
+      "toolbar_actions": {
+        "new_secret": "Lưu Bí Mật Mới"
+      },
+      "table_headers": {
+        "key": "Khóa Bí Mật",
+        "updated_at": "Cập Nhật Lần Cuối"
+      },
+      "empty_state": {
+        "title": "Không Có Bí Mật Nào Được Lưu",
+        "description": "Cải thiện bảo mật cho triển khai API Gateway của bạn với bí mật tập trung."
+      }
+    },
+    "form": {
+      "info": {
+        "title": "Bí Mật",
+        "description": "Nhập khóa bí mật và giá trị bí mật để lưu trong vault của Konnect"
+      },
+      "fields": {
+        "key": {
+          "label": "Khóa",
+          "placeholder": "Nhập khóa"
+        },
+        "value": {
+          "label": "Giá Trị",
+          "placeholder": "Nhập giá trị ở đây, có thể là giá trị đơn giản hoặc đa dòng"
+        }
+      },
+      "hint": "Khi đã lưu, giá trị bí mật sẽ không được hiển thị"
+    }
+  },
+  "copy": {
+    "success": "Đã sao chép {val} vào clipboard",
+    "success_brief": "Sao chép vào clipboard thành công"
+  },
+  "labels": {
+    "vault_type": "Loại Vault"
+  },
+  "form": {
+    "sections": {
+      "general": {
+        "title": "Thông tin chung",
+        "description": "Thông tin chung giúp xác định và quản lý session bản Vault này."
+      },
+      "config": {
+        "title": "Cấu hình Vault",
+        "description": "Chọn loại Vault và cấu hình các thuộc tính cụ thể cho mỗi loại Vault."
+      }
+    },
+    "fields": {
+      "prefix": {
+        "label": "Tiền tố",
+        "placeholder": "Nhập một tiền tố duy nhất cho vault này",
+        "help": "ví dụ: my-vault",
+        "tooltip": "Tiền tố được sử dụng để tải cấu hình và triển khai Vault đúng khi tham chiếu đến các bí mật với các thực thể khác."
+      },
+      "description": {
+        "label": "Mô tả",
+        "placeholder": "Nhập một số mô tả cho vault này"
+      },
+      "tags": {
+        "label": "Thẻ",
+        "placeholder": "Nhập danh sách các thẻ được phân tách bằng dấu phẩy",
+        "help": "ví dụ: tag1, tag2, tag3"
+      }
+    },
+    "config": {
+      "konnect": {
+        "label": "Konnect",
+        "description": "Truy cập các bí mật được lưu trữ trực tiếp trong nền tảng thống nhất của Konnect để dễ dàng tham chiếu trong cấu hình API Gateway."
+      },
+      "env": {
+        "label": "Biến Môi Trường",
+        "description": "Truy cập các bí mật được lưu trữ qua các biến để có thể sử dụng trong API Gateway tại thời gian chạy.",
+        "fields": {
+          "prefix": {
+            "label": "Tiền tố Biến Môi Trường",
+            "placeholder": "Nhập tiền tố vault biến môi trường của bạn",
+            "tooltip": "Data plane sẽ truy cập tất cả các biến môi trường bắt đầu với tiền tố này."
+          }
+        }
+      },
+      "aws": {
+        "label": "AWS Secrets Manager",
+        "description": "Truy cập các bí mật được lưu trữ trong AWS Secrets Manager cho cấu hình API Gateway.",
+        "fields": {
+          "region": {
+            "label": "Khu vực",
+            "placeholder": "Chọn một khu vực AWS",
+            "tooltip": "Khu vực AWS nơi vault của bạn được đặt",
+            "locations": {
+              "us-east-1": {
+                "location": "N. Virginia"
+              },
+              "us-east-2": {
+                "location": "Ohio"
+              },
+              "us-west-1": {
+                "location": "N. California"
+              },
+              "us-west-2": {
+                "location": "Oregon"
+              },
+              "af-south-1": {
+                "location": "Cape Town"
+              },
+              "ap-east-1": {
+                "location": "Hồng Kông"
+              },
+              "ap-southeast-3": {
+                "location": "Jakarta"
+              },
+              "ap-south-1": {
+                "location": "Mumbai"
+              },
+              "ap-northeast-1": {
+                "location": "Tokyo"
+              },
+              "ap-northeast-2": {
+                "location": "Seoul"
+              },
+              "ap-northeast-3": {
+                "location": "Osaka"
+              },
+              "ap-southeast-1": {
+                "location": "Singapore"
+              },
+              "ap-southeast-2": {
+                "location": "Sydney"
+              },
+              "ca-central-1": {
+                "location": "Canada"
+              },
+              "eu-central-1": {
+                "location": "Frankfurt"
+              },
+              "eu-west-1": {
+                "location": "Ireland"
+              },
+              "eu-west-2": {
+                "location": "London"
+              },
+              "eu-west-3": {
+                "location": "Paris"
+              },
+              "eu-south-1": {
+                "location": "Milan"
+              },
+              "eu-north-1": {
+                "location": "Stockholm"
+              },
+              "me-south-1": {
+                "location": "Bahrain"
+              },
+              "sa-east-1": {
+                "location": "São Paulo"
+              },
+              "us-gov-east-1": {
+                "location": "US East"
+              },
+              "us-gov-west-1": {
+                "location": "US West"
+              }
+            }
+          },
+          "endpoint_url": {
+            "label": "URL Điểm cuối",
+            "tooltip": "URL điểm cuối của dịch vụ AWS SecretsManager. Nếu không chỉ định, giá trị được sử dụng bởi vault sẽ là URL dịch vụ AWS SecretsManager chính thức là `https://secretsmanager.<region>.amazonaws.com`. Bạn có thể chỉ định một URL hoàn chỉnh (bao gồm cả giao thức \"http/https\") để ghi đè điểm cuối mà vault sẽ kết nối đến."
+          },
+          "assume_role_arn": {
+            "label": "ARN Vai trò Giả định",
+            "tooltip": "ARN của vai trò IAM AWS mà sẽ được giả định. Thông thường, điều này được sử dụng cho việc hoạt động giữa nhiều vai trò hoặc qua các tài khoản. Nếu bạn không sử dụng vai trò giả định, bạn không nên chỉ định giá trị này."
+          },
+          "role_session_name": {
+            "label": "Tên session Vai trò",
+            "tooltip": "Tên session vai trò được sử dụng cho việc giả định vai trò."
+          },
+          "sts_endpoint_url": {
+            "label": "URL Điểm cuối STS",
+            "tooltip": "URL điểm cuối STS tùy chỉnh được sử dụng cho việc giả định vai trò trong AWS Vault. Lưu ý rằng giá trị này sẽ ghi đè URL điểm cuối STS mặc định (nên là `https://sts.amazonaws.com`, hoặc `https://sts.<region>.amazonaws.com` nếu bạn đã đặt `AWS_STS_REGIONAL_ENDPOINTS` thành `regional`). Nếu bạn không sử dụng điểm cuối VPC riêng tư cho dịch vụ STS, bạn không nên chỉ định giá trị này."
+          }
+        }
+      },
+      "gcp": {
+        "label": "Quản lý Bí mật Google",
+        "description": "Truy cập các bí mật được lưu trữ trong Quản lý Bí mật Google cho cấu hình API Gateway.",
+        "fields": {
+          "project_id": {
+            "label": "ID Dự án",
+            "placeholder": "Nhập ID Dự án Google Cloud của bạn",
+            "tooltip": {
+              "text": "Truy cập vào Bảng điều khiển API Google của bạn và chọn {italic-text} trong danh sách dự án để xem ID dự án của bạn",
+              "italicText": "Quản lý tất cả các dự án"
+            }
+          }
+        }
+      },
+      "hcv": {
+        "label": "HashiCorp Vault",
+        "description": "Truy cập các bí mật được lưu trữ trong HashiCorp Vault cho cấu hình API Gateway.",
+        "fields": {
+          "protocol": {
+            "label": "Protocol"
+          },
+          "host": {
+            "label": "Host"
+          },
+          "port": {
+            "label": "Port"
+          },
+          "mount": {
+            "label": "Mount"
+          },
+          "kv": {
+            "label": "Kv"
+          },
+          "namespace": {
+            "label": "Namespace"
+          },
+          "auth_method": {
+            "label": "Authentication Method"
+          },
+          "token": {
+            "label": "Token"
+          },
+          "kube_role": {
+            "label": "Vai trò Kubernetes"
+          },
+          "kube_auth_path": {
+            "label": "Đường dẫn Xác thực Kubernetes"
+          },
+          "kube_api_token_file": {
+            "label": "Tệp Mã token API Kubernetes"
+          },
+          "approle_auth_path": {
+            "label": "Đường dẫn Xác thực App Role"
+          },
+          "approle_role_id": {
+            "label": "ID Vai trò App Role"
+          },
+          "approle_secret_id": {
+            "label": "ID Bí mật App Role"
+          },
+          "approle_secret_id_file": {
+            "label": "Tệp ID Bí mật App Role"
+          },
+          "approle_response_wrapping": {
+            "label": "Gói phản hồi App Role"
+          }
+        }
+      },
+      "azure": {
+        "label": "Azure Vault",
+        "description": "Truy cập các bí mật được lưu trữ trong Azure Key Vault cho cấu hình API Gateway .",
+        "fields": {
+          "location": {
+            "label": "Vị trí"
+          },
+          "vault_uri": {
+            "label": "URI Kho lưu trữ"
+          },
+          "credential_prefix": {
+            "label": "Tiền tố Thông tin xác thực"
+          },
+          "type": {
+            "label": "Loại",
+            "placeholder": "Chọn một loại"
+          },
+          "client_id": {
+            "label": "ID Khách hàng"
+          },
+          "tenant_id": {
+            "label": "ID Tên miền"
+          }
+        }
+      },
+      "advancedFields": {
+        "title": "Xem Các Trường Nâng cao",
+        "ttl": "Thời gian sống",
+        "ttlTooltip": "Thời gian sống (tính bằng giây) của một bí mật từ một kho lưu trữ khi được lưu vào bộ nhớ cache bởi tham chiếu này",
+        "negTtl": "Thời gian sống Âm",
+        "negTtlTooltip": "Thời gian sống (tính bằng giây) của một lần không tìm thấy kho lưu trữ (không có bí mật)",
+        "resurrectTtl": "Thời gian sống Tái sinh",
+        "resurrectTtlTooltip": "Thời gian (tính bằng giây) mà các bí mật cũ từ kho lưu trữ được tái sinh khi chúng không thể được làm mới"
+      }
+    },
+    "unavailable": "Nhà cung cấp kho lưu trữ này có sẵn trên Enterprise."
+  }
+}

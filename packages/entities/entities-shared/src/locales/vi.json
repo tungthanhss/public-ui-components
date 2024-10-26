@@ -1,0 +1,109 @@
+{
+  "global": {
+    "actions": {
+      "copyId": "Sao chép ID",
+      "copied_id": "Đã sao chép \"{id}\" vào clipboard",
+      "copyToClipboard": "Đã sao chép thành công!",
+      "copyToClipboardFailed": "Không thể sao chép vào clipboard"
+    }
+  },
+  "deleteModal": {
+    "message": "Bạn có chắc chắn muốn xóa {entityType} này không?",
+    "messageWithName": "Bạn có chắc chắn muốn xóa {entityType} {entityName} này không?"
+  },
+  "baseForm": {
+    "actions": {
+      "viewConfiguration": "Xem cấu hình",
+      "save": "Lưu",
+      "cancel": "Hủy",
+      "back": "Quay lại"
+    },
+    "configuration": {
+      "title": "Cấu hình",
+      "message": "Xuất cấu hình cho các đối tượng cốt lõi của API Gateway, như dịch vụ, đường dẫn, và plugin, dưới định dạng YAML hoặc JSON. Điều này cho phép nhập khẩu dễ dàng vào các công cụ APIOps như decK với YAML, hoặc Insomnia và cURL với JSON.",
+      "yaml": "YAML",
+      "json": "JSON",
+      "terraform": "Terraform"
+    },
+    "errors": {
+      "edit": "Không thể chỉnh sửa đối tượng này vào lúc này."
+    }
+  },
+  "baseTable": {
+    "emptyState": {
+      "noSearchResultsTitle": "Không tìm thấy kết quả",
+      "noSearchResultsMessage": "Vui lòng điều chỉnh tiêu chí và thử lại.",
+      "noSearchResultsCtaText": "Xóa"
+    }
+  },
+  "baseConfigCard": {
+    "title": "Cấu hình",
+    "actions": {
+      "copy": "Sao chép JSON"
+    },
+    "sections": {
+      "advanced": "Nâng cao",
+      "plugin": "Cấu hình riêng cho Plugin"
+    },
+    "commonFields": {
+      "id_label": "ID",
+      "name_label": "Tên",
+      "enabled_label": "Đã kích hoạt",
+      "enabled_tooltip": "Đã kích hoạt là FTW",
+      "updated_at_label": "Cập nhật lần cuối",
+      "created_at_label": "Đã tạo",
+      "tags_label": "Thẻ",
+      "link": "Liên kết"
+    },
+    "statusBadge": {
+      "enabledLabel": "Đã kích hoạt",
+      "disabledLabel": "Chưa kích hoạt"
+    },
+    "copy": {
+      "tooltip": "Sao chép {label}",
+      "success": "Đã sao chép!"
+    },
+    "errors": {
+      "load": "Không thể tải dữ liệu cấu hình của đối tượng vào lúc này.",
+      "copy": "Không thể sao chép vào clipboard"
+    },
+    "general": {
+      "entryTitle": "Mục {index}",
+      "structuredFormat": "Có cấu trúc"
+    }
+  },
+  "filter": {
+    "filterButtonText": "Lọc",
+    "fieldLabel": "Lọc theo:",
+    "inputPlaceholder": "Nhập giá trị",
+    "selectPlaceholder": "Chọn một mục",
+    "applyButtonText": "Áp dụng",
+    "clearButtonText": "Xóa",
+    "clearAllButtonText": "Xóa tất cả bộ lọc"
+  },
+  "debouncedFilter": {
+    "errors": {
+      "fetch": "Không thể lấy các mục có sẵn",
+      "invalid": "Vui lòng chọn giá trị hợp lệ"
+    }
+  },
+  "errors": {
+    "unexpected": "Đã xảy ra lỗi không mong muốn",
+    "dataKeyUndefined": "Khóa dữ liệu \"{dataKey}\" không tồn tại trong phản hồi."
+  },
+  "validationErrors": {
+    "utf8Name": "Tên có thể là bất kỳ chuỗi nào chứa ký tự, chữ cái, số, hoặc các ký tự sau: ., -, _, hoặc ~. Không sử dụng khoảng trắng."
+  },
+  "toggleModal": {
+    "enable": {
+      "title": "Kích hoạt {entityType}",
+      "message": "Bạn có chắc chắn muốn kích hoạt {entityType} {entityName} này không?",
+      "confirmText": "Có, kích hoạt"
+    },
+    "disable": {
+      "title": "Vô hiệu hóa {entityType}",
+      "message": "Bạn có chắc chắn muốn vô hiệu hóa {entityType} {entityName} này không?",
+      "confirmText": "Có, vô hiệu hóa"
+    }
+  }
+}

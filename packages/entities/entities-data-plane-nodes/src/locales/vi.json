@@ -1,0 +1,53 @@
+{
+  "modal": {
+    "action_button": {
+      "confirm": "Xác nhận",
+      "submitting": "Đang gửi...",
+      "ok": "OK"
+    },
+    "change_log_level": {
+      "title": "Thay Đổi Mức Độ Ghi Log ({summary})",
+      "summary_with_name": "Nút {name}",
+      "summary_with_number": "{number} Nút"
+    },
+    "dp_list": {
+      "header": {
+        "host": "Host",
+        "action": "Action",
+        "status": "Status"
+      },
+      "status": {
+        "failed": "Thất bại",
+        "loading": "Đang tải",
+        "pending": "Đang chờ xử lý",
+        "succeed": "Thành công",
+        "not_supported": "Không được hỗ trợ"
+      }
+    },
+    "log_level_disk_space_warning": "Nếu để lâu, có thể dẫn đến tiêu tốn dung lượng ổ đĩa nhiều hơn.",
+    "log_level_explanation": {
+      "debug": "Cung cấp thông tin gỡ lỗi về vòng lặp chạy của plugin và từng plugin hoặc các thành phần khác.",
+      "info": "Cung cấp các thông báo ghi lại hoạt động bình thường của hệ thống.",
+      "notice": "Cung cấp các thông báo ghi lại hoạt động bình thường của hệ thống, nhưng cũng cảnh báo các điều kiện cần theo dõi. API Gateway không tạo sự khác biệt lớn giữa info và notice.",
+      "warn": "Được sử dụng để ghi lại bất kỳ hành vi bất thường nào không dẫn đến việc mất giao dịch nhưng cần điều tra thêm.",
+      "error": "Được sử dụng để ghi lại các lỗi dẫn đến việc yêu cầu bị từ chối.",
+      "crit": "Được sử dụng khi API Gateway hoạt động trong điều kiện khẩn cấp và không hoạt động đúng cách, ảnh hưởng đến nhiều khách hàng."
+    },
+    "revert_to_default_after": {
+      "label": "Trở về mặc định sau",
+      "hours": "giờ",
+      "minutes": "phút",
+      "seconds": "giây"
+    },
+    "select_log_level_title": "Chọn Mức Độ Ghi Log"
+  },
+  "log_level": {
+    "debug": "Gỡ lỗi",
+    "info": "Thông tin",
+    "notice": "Thông báo",
+    "warn": "Cảnh báo",
+    "error": "Lỗi",
+    "crit": "Khẩn cấp",
+    "not_applicable": "Không áp dụng"
+  }
+}

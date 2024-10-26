@@ -1,0 +1,144 @@
+{
+  "credentials": {
+    "title": "Thông tin xác thực của người dùng",
+    "list": {
+      "toolbar_actions": {
+        "acls": {
+          "new": "Tạo ACL Credential mới"
+        },
+        "basic-auth": {
+          "new": "Tạo Basic Auth Credential mới"
+        },
+        "key-auth": {
+          "new": "Tạo Key Auth Credential mới"
+        },
+        "key-auth-enc": {
+          "new": "Tạo Key Auth Encrypted Credential mới"
+        },
+        "oauth2": {
+          "new": "Tạo OAuth 2.0 Credential mới"
+        },
+        "hmac-auth": {
+          "new": "Tạo HMAC Credential mới"
+        },
+        "jwt": {
+          "new": "Tạo JWT Credential mới"
+        }
+      },
+      "table_headers": {
+        "acls": {
+          "group": "Nhóm",
+          "created_at": "Tạo lúc",
+          "tags": "Thẻ"
+        },
+        "basic-auth": {
+          "password": "Thông tin xác thực",
+          "username": "Tên người dùng",
+          "created_at": "Tạo lúc",
+          "tags": "Thẻ"
+        },
+        "key-auth": {
+          "key": "Khóa",
+          "created_at": "Tạo lúc",
+          "tags": "Thẻ"
+        },
+        "key-auth-enc": {
+          "key": "Khóa",
+          "created_at": "Tạo lúc",
+          "tags": "Thẻ"
+        },
+        "oauth2": {
+          "name": "Tên",
+          "client_id": "ID khách hàng",
+          "client_secret": "Khóa bí mật khách hàng",
+          "created_at": "Tạo lúc",
+          "tags": "Thẻ"
+        },
+        "hmac-auth": {
+          "username": "Tên người dùng",
+          "secret": "Khóa bí mật",
+          "created_at": "Tạo lúc",
+          "tags": "Thẻ"
+        },
+        "jwt": {
+          "key": "Khóa",
+          "algorithm": "Thuật toán",
+          "created_at": "Tạo lúc",
+          "tags": "Thẻ"
+        }
+      },
+      "empty_state": {
+        "acls": {
+          "title": "Cấu hình ACL Credential mới",
+          "cta": "Tạo ACL Credential mới"
+        },
+        "basic-auth": {
+          "title": "Cấu hình Basic Auth Credential mới",
+          "cta": "Tạo Basic Auth Credential mới"
+        },
+        "key-auth": {
+          "title": "Cấu hình Key Auth Credential mới",
+          "cta": "Tạo Key Auth Credential mới"
+        },
+        "key-auth-enc": {
+          "title": "Cấu hình Key Auth Encrypted Credential mới",
+          "cta": "Tạo Key Auth Encrypted Credential mới"
+        },
+        "oauth2": {
+          "title": "Cấu hình OAuth 2.0 Credential mới",
+          "cta": "Tạo OAuth 2.0 Credential mới"
+        },
+        "hmac-auth": {
+          "title": "Cấu hình HMAC Credential mới",
+          "cta": "Tạo HMAC Credential mới"
+        },
+        "jwt": {
+          "title": "Cấu hình JWT Credential mới",
+          "cta": "Tạo JWT Credential mới"
+        }
+      }
+    },
+    "actions": {
+      "copy_id": "Sao chép ID",
+      "copy_credential": "Sao chép Thông tin xác thực",
+      "copy_key": "Sao chép Khóa",
+      "copy_secret": "Sao chép Bí mật",
+      "copy_json": "Sao chép JSON",
+      "edit": "Chỉnh sửa",
+      "delete": "Xóa"
+    },
+    "delete": {
+      "acls": {
+        "title": "Xóa ACL Credential"
+      },
+      "basic-auth": {
+        "title": "Xóa Basic Auth Credential"
+      },
+      "key-auth": {
+        "title": "Xóa Key Auth Credential"
+      },
+      "key-auth-enc": {
+        "title": "Xóa Key Auth Encrypted Credential"
+      },
+      "oauth2": {
+        "title": "Xóa OAuth 2.0 Credential"
+      },
+      "hmac-auth": {
+        "title": "Xóa HMAC Credential"
+      },
+      "jwt": {
+        "title": "Xóa JWT Credential"
+      },
+      "description": "Hành động này không thể hoàn tác."
+    },
+    "error": {
+      "general": "Không thể truy xuất thông tin xác thực",
+      "delete": "Không thể xóa thông tin xác thực vào lúc này.",
+      "copy": "Không thể sao chép vào clipboard"
+    },
+    "copy": {
+      "success": "Đã sao chép {val} vào clipboard",
+      "success_brief": "Đã sao chép thành công vào clipboard"
+    }
+  }
+}

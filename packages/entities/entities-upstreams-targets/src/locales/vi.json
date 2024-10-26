@@ -1,0 +1,358 @@
+{
+  "upstreams": {
+    "list": {
+      "table_headers": {
+        "id": "ID",
+        "name": "Name",
+        "slots": "Slots",
+        "tags": "Tags"
+      },
+      "empty_state": {
+        "title": "Cấu hình một Upstream mới",
+        "description": "Upstreams được sử dụng để cân bằng tải cho các yêu cầu đến."
+      },
+      "toolbar_actions": {
+        "new_upstream": "Upstream mới"
+      }
+    },
+    "title": "Upstreams",
+    "search": {
+      "placeholder": "Lọc theo tên hoặc ID chính xác"
+    },
+    "actions": {
+      "create": "Upstream mới",
+      "copy_id": "Sao chép ID",
+      "copy_json": "Sao chép JSON",
+      "edit": "Chỉnh sửa",
+      "delete": "Xóa",
+      "view": "Xem chi tiết"
+    },
+    "delete": {
+      "title": "Xóa một Upstream",
+      "description": "Hành động này không thể hoàn tác, vì vậy hãy chắc chắn kiểm tra việc sử dụng upstream trước khi xóa."
+    },
+    "errors": {
+      "general": "Không thể lấy Upstreams",
+      "delete": "Upstream không thể bị xóa tại thời điểm này.",
+      "copy": "Không thể sao chép vào clipboard"
+    },
+    "copy": {
+      "success": "Đã sao chép {val} vào clipboard",
+      "success_brief": "Đã sao chép vào clipboard thành công"
+    },
+    "form": {
+      "errors": {
+        "name_required": "Tên là bắt buộc",
+        "should_be_integer": "Trường này nên chứa một số nguyên",
+        "in_range": "Chấp nhận một số nguyên trong khoảng 10 - 65536"
+      },
+      "general_info": {
+        "title": "Thông tin chung",
+        "help": "Thông tin chung sẽ giúp xác định và quản lý Upstream này."
+      },
+      "load_balancing": {
+        "title": "Cân bằng tải",
+        "help": "Kiểm tra tình trạng hoạt động chủ động sẽ thực hiện kiểm tra các mục tiêu để đảm bảo chúng đang hoạt động bình thường. Hiện tại chỉ hỗ trợ các mục tiêu HTTP/HTTPS."
+      },
+      "health_check": {
+        "title": "Kiểm tra tình trạng hoạt động & Ngắt mạch",
+        "help": "Kiểm tra tình trạng hoạt động chủ động sẽ thực hiện kiểm tra các mục tiêu để đảm bảo chúng đang hoạt động bình thường. Hiện tại chỉ hỗ trợ các mục tiêu HTTP/HTTPS."
+      },
+      "active_health_check": {
+        "title": "Kiểm tra tình trạng hoạt động chủ động",
+        "help": "Kiểm tra tình trạng hoạt động chủ động sẽ thực hiện kiểm tra các mục tiêu để đảm bảo chúng đang hoạt động bình thường. Hiện tại chỉ hỗ trợ các mục tiêu HTTP/HTTPS."
+      },
+      "passive_health_check": {
+        "title": "Kiểm tra tình trạng hoạt động thụ động",
+        "help": "Kiểm tra tình trạng hoạt động thụ động, còn được gọi là ngắt mạch, là các kiểm tra được thực hiện dựa trên các yêu cầu được chuyển tiếp bởi API Gateway (HTTP/HTTPS/TCP), mà không tạo thêm lưu lượng."
+      },
+      "buttons": {
+        "view_documentation": "Xem tài liệu"
+      },
+      "algorithms": {
+        "round_robin_label": "Round Robin",
+        "least_connections_label": "Kết nối ít nhất",
+        "consistent_hashing_label": "Băm nhất quán",
+        "latency_label": "Độ trễ"
+      },
+      "hash_labels": {
+        "none": "Không có",
+        "consumer": "Consumer",
+        "ip": "IP",
+        "header": "Header",
+        "cookie": "Cookie",
+        "path": "Đường dẫn",
+        "query_argument": "Tham số truy vấn",
+        "uri_capture": "Bắt URI"
+      },
+      "hash_tooltips": {
+        "hash_on_header": {
+          "text": "Tên header để lấy giá trị làm đầu vào băm. Chỉ cần thiết khi {hash_on} được đặt thành {header}",
+          "hash_on": "hash_on",
+          "header": "header"
+        },
+        "hash_on_uri_capture": {
+          "text": "Tên của đoạn URI bắt để lấy giá trị làm đầu vào băm. Chỉ cần thiết khi {hash_on} được đặt thành {uri_capture}",
+          "hash_on": "hash_on",
+          "uri_capture": "uri_capture"
+        },
+        "hash_on_query_arg": {
+          "text": "Tên của tham số chuỗi truy vấn để lấy giá trị làm đầu vào băm. Chỉ cần thiết khi {hash_on} được đặt thành {query_arg}",
+          "hash_on": "hash_on",
+          "query_arg": "query_arg"
+        },
+        "hash_on_cookie": {
+          "text": "Tên cookie để lấy giá trị làm đầu vào băm. Chỉ cần thiết khi {hash_on} hoặc {hash_fallback} được đặt thành {cookie}. Nếu cookie đã chỉ định không có trong yêu cầu, API Gateway sẽ tạo một giá trị và đặt cookie trong phản hồi.",
+          "hash_on": "hash_on",
+          "hash_fallback": "hash_fallback",
+          "cookie": "cookie"
+        },
+        "hash_on_cookie_path": {
+          "text": "Đường dẫn cookie để thiết lập trong tiêu đề phản hồi. Chỉ cần thiết khi {hash_on} hoặc {hash_fallback} được đặt thành {cookie}.",
+          "hash_on": "hash_on",
+          "hash_fallback": "hash_fallback",
+          "cookie": "cookie"
+        },
+        "slots": {
+          "text": "Số lượng slots trong thuật toán cân bằng tải. Nếu {algorithm} được đặt thành {round_robin}, cài đặt này xác định số lượng slots tối đa. Nếu {algorithm} được đặt thành {consistent_hashing}, cài đặt này xác định số lượng slots thực tế trong thuật toán. Chấp nhận một số nguyên trong khoảng {min}-{max}",
+          "algorithm": "algorithm",
+          "round_robin": "round-robin",
+          "consistent_hashing": "consistent-hashing"
+        },
+        "tags": "Một tập hợp các chuỗi tùy chọn liên quan đến Upstream để nhóm và lọc.",
+        "hash_fallback": {
+          "text": "Cái gì sẽ được sử dụng làm đầu vào băm nếu {hash_on} chính không trả về một băm (ví dụ: header bị thiếu hoặc không xác định được Consumer). Không có sẵn nếu {hash_on} được đặt thành {cookie}",
+          "hash_on": "hash_on",
+          "cookie": "cookie"
+        },
+        "hash_fallback_header": {
+          "text": "Tên header để lấy giá trị làm đầu vào băm. Chỉ cần thiết khi {hash_fallback} được đặt thành {header}",
+          "hash_fallback": "hash_fallback",
+          "header": "header"
+        },
+        "hash_fallback_query_arg": {
+          "text": "Tên của tham số chuỗi truy vấn để lấy giá trị làm đầu vào băm. Chỉ cần thiết khi {hash_fallback} được đặt thành {query_arg}",
+          "hash_fallback": "hash_fallback",
+          "query_arg": "query_arg"
+        },
+        "hash_fallback_uri_capture": {
+          "text": "Tên của đoạn URI bắt để lấy giá trị làm đầu vào băm. Chỉ cần thiết khi {hash_fallback} được đặt thành {uri_capture}",
+          "hash_fallback": "hash_fallback",
+          "uri_capture": "uri_capture"
+        },
+        "host_header": {
+          "text": "Tên miền sẽ được sử dụng làm tiêu đề {host} khi chuyển tiếp các yêu cầu qua API Gateway.",
+          "host": "Host"
+        },
+        "client_certificate": "Nếu được thiết lập, Certificate sẽ được sử dụng làm Certificate khách hàng trong quá trình bắt tay TLS đến máy chủ upstream."
+      },
+      "healthcheck_type_labels": {
+        "http": "HTTP",
+        "https": "HTTPS",
+        "tcp": "TCP",
+        "grsp": "gRPC",
+        "grsps": "gRPCs"
+      },
+      "healthy": {
+        "label": "Hoạt động tốt",
+        "help": "Các ngưỡng đếm để xác định xem các mục tiêu có hoạt động tốt hay không."
+      },
+      "unhealthy": {
+        "label": "Không hoạt động tốt",
+        "help": "Các ngưỡng đếm để xác định xem các mục tiêu có không hoạt động tốt hay không."
+      },
+      "passive_healthy": {
+        "label": "Hoạt động tốt",
+        "help": "Các ngưỡng đếm để xác định xem các mục tiêu có hoạt động tốt hay không."
+      },
+      "passive_unhealthy": {
+        "label": "Không hoạt động tốt",
+        "help": "Các ngưỡng đếm để xác định xem các mục tiêu có không hoạt động tốt hay không."
+      },
+      "fields": {
+        "name": {
+          "label": "Tên",
+          "placeholder": "Nhập hoặc chọn một máy chủ",
+          "tooltip": "Đây là tên máy chủ, phải bằng với {host} của một dịch vụ.",
+          "host": "máy chủ"
+        },
+        "host_header": {
+          "label": "Tiêu đề Máy chủ"
+        },
+        "client_certificate": {
+          "label": "Certificate Khách hàng",
+          "placeholder": "Chọn hoặc nhập ID Certificate",
+          "tooltip": "Nếu được thiết lập, Certificate sẽ được sử dụng làm Certificate khách hàng trong khi bắt tay TLS với máy chủ phía trên."
+        },
+        "tags": {
+          "label": "Thẻ",
+          "placeholder": "Nhập danh sách các thẻ cách nhau bởi dấu phẩy",
+          "help": "Ví dụ: thẻ1, thẻ2, thẻ3",
+          "tooltip": "Một tập hợp tùy chọn các chuỗi liên kết với Upstream để nhóm và lọc."
+        },
+        "algorithm": {
+          "label": "Thuật toán",
+          "tooltip": "Thuật toán cân bằng tải nào sẽ được sử dụng."
+        },
+        "slots": {
+          "label": "Slots",
+          "help": "Chấp nhận một số nguyên trong khoảng từ 10 đến 65536"
+        },
+        "hash_on": {
+          "label": "Băm trên",
+          "help": "Sử dụng gì làm đầu vào băm.",
+          "tooltip": "Sử dụng {result} dẫn đến một sơ đồ vòng tròn cân nặng không có băm."
+        },
+        "hash_fallback": {
+          "label": "Băm Dự phòng",
+          "help": "Sử dụng gì làm đầu vào băm nếu {hash_on} chính không trả về một băm",
+          "tooltip": "Sử dụng gì làm đầu vào băm nếu {hash_on} chính không trả về một băm (ví dụ: tiêu đề bị thiếu hoặc không xác định được Consumer). Không khả dụng nếu {hash_on} được đặt thành {cookie}.",
+          "hash_on": "băm trên",
+          "cookie": "cookie"
+        },
+        "active_health_checks": {
+          "label": "Kiểm tra Sức khỏe Chủ động",
+          "help": "Chủ động kiểm tra sức khỏe các mục tiêu."
+        },
+        "passive_health_checks": {
+          "label": "Kiểm tra Sức khỏe Thụ động / Ngắt mạch",
+          "help": "Kiểm tra được thực hiện dựa trên các yêu cầu được chuyển tiếp bởi API Gateway (HTTP/HTTPS/TCP), mà không phát sinh thêm lưu lượng."
+        },
+        "healthchecks_threshold": {
+          "label": "Ngưỡng Kiểm tra Sức khỏe"
+        },
+        "header": {
+          "label": "Tiêu đề"
+        },
+        "headers": {
+          "label": "Tiêu đề",
+          "tooltip_active": "Giá trị tiêu đề có thể được phân tách bởi dấu phẩy (giá trị1, giá trị2, giá trị3)."
+        },
+        "cookie": {
+          "label": "Cookie"
+        },
+        "cookie_path": {
+          "label": "Đường dẫn Cookie"
+        },
+        "query_argument": {
+          "label": "Tham số Truy vấn"
+        },
+        "uri_capture": {
+          "label": "Bắt URI"
+        },
+        "active_healthcheck_type": {
+          "label": "Loại Kiểm tra Sức khỏe Chủ động"
+        },
+        "http_path": {
+          "label": "Đường dẫn HTTP"
+        },
+        "timeout": {
+          "label": "Thời gian Chờ"
+        },
+        "concurrency": {
+          "label": "Đồng thời"
+        },
+        "https_sni": {
+          "label": "HTTPS SNI"
+        },
+        "verify_ssl": {
+          "label": "Xác minh Certificate SSL khi thực hiện kiểm tra sức khỏe chủ động sử dụng HTTPS"
+        },
+        "interval": {
+          "label": "Khoảng thời gian",
+          "help": "Giá trị bằng không cho biết rằng các thử nghiệm chủ động cho các mục tiêu hoạt động tốt đã bị vô hiệu hóa."
+        },
+        "successes": {
+          "label": "Thành công"
+        },
+        "http_statuses": {
+          "label": "Trạng thái HTTP"
+        },
+        "http_failures": {
+          "label": "Thất bại HTTP"
+        },
+        "tcp_failures": {
+          "label": "Thất bại TCP"
+        },
+        "timeouts": {
+          "label": "Thời gian Chờ"
+        },
+        "passive_health_check_type": {
+          "label": "Loại Kiểm tra Sức khỏe Thụ động"
+        }
+      }
+    },
+    "labels": {
+      "created_at": "Thời gian Tạo"
+    }
+  },
+  "targets": {
+    "list": {
+      "table_headers": {
+        "id": "ID",
+        "target_address": "Địa chỉ Mục tiêu",
+        "weight": "Trọng số",
+        "tags": "Thẻ"
+      },
+      "empty_state": {
+        "title": "Cấu hình một Mục tiêu Mới",
+        "description": "Một mục tiêu là một địa chỉ IP/tên máy chủ với một cổng xác định một thể hiện của một dịch vụ backend."
+      },
+      "toolbar_actions": {
+        "new_target": "Mục tiêu Mới"
+      }
+    },
+    "title": "Các Mục tiêu",
+    "actions": {
+      "create": "Mục tiêu Mới",
+      "copy_id": "Sao chép ID",
+      "copy_json": "Sao chép JSON",
+      "edit": "Chỉnh sửa",
+      "delete": "Xóa",
+      "mark_healthy": "Đánh dấu hoạt động tốt",
+      "mark_unhealthy": "Đánh dấu không hoạt động tốt"
+    },
+    "delete": {
+      "title": "Xóa một Mục tiêu",
+      "description": "Hành động này không thể đảo ngược, vì vậy hãy đảm bảo kiểm tra việc sử dụng mục tiêu trước khi xóa."
+    },
+    "errors": {
+      "general": "Không thể truy xuất các mục tiêu",
+      "delete": "Mục tiêu không thể bị xóa vào thời điểm này.",
+      "copy": "Sao chép vào clipboard không thành công",
+      "weight": "Giá trị phải nằm trong khoảng từ 0 đến 65535"
+    },
+    "copy": {
+      "success": "Đã sao chép {val} vào clipboard",
+      "success_brief": "Đã sao chép thành công vào clipboard"
+    },
+    "form": {
+      "create": {
+        "title": "Mục tiêu Mới"
+      },
+      "edit": {
+        "title": "Chỉnh sửa Mục tiêu"
+      },
+      "buttons": {
+        "save": "Lưu",
+        "cancel": "Hủy"
+      },
+      "fields": {
+        "target": {
+          "label": "Địa chỉ Mục tiêu",
+          "placeholder": "Nhập IP/tên máy chủ và cổng",
+          "tooltip": "Địa chỉ mục tiêu (IP hoặc tên máy chủ) và cổng. Nếu bỏ qua, cổng mặc định là 8000."
+        },
+        "weight": {
+          "label": "Trọng số",
+          "tooltip": "Trọng số của mục tiêu này liên quan đến các mục tiêu khác trong upstream. Giá trị phải nằm trong khoảng từ 0 đến 65535, mặc định là 100."
+        },
+        "tags": {
+          "label": "Thẻ",
+          "placeholder": "Nhập danh sách các thẻ cách nhau bởi dấu phẩy",
+          "help": "Ví dụ: thẻ1, thẻ2, thẻ3"
+        }
+      }
+    }
+  }
+}

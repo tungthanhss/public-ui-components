@@ -1,0 +1,79 @@
+{
+  "actions": {
+    "create": "SNI mới",
+    "copy_id": "Sao chép ID",
+    "copy_json": "Sao chép JSON",
+    "edit": "Chỉnh sửa",
+    "delete": "Xóa",
+    "clear": "Xóa",
+    "loading": "Đang tải..."
+  },
+  "search": {
+    "placeholder": "Lọc theo tên hoặc ID chính xác",
+    "no_results": "Không tìm thấy kết quả"
+  },
+  "snis": {
+    "title": "SNIs",
+    "list": {
+      "toolbar_actions": {
+        "new": "SNI mới"
+      },
+      "table_headers": {
+        "name": "Tên",
+        "id": "ID",
+        "certificate_id": "ID Certificate SSL",
+        "tags": "Thẻ"
+      },
+      "empty_state": {
+        "title": "Cấu hình một SNI mới",
+        "description": "SNIs được sử dụng để ánh xạ tên miền với một Certificate."
+      }
+    }
+  },
+  "form": {
+    "sections": {
+      "general": {
+        "title": "Thông tin chung",
+        "description": "Thông tin chung sẽ giúp xác định và quản lý SNI này."
+      },
+      "certificate": {
+        "title": "Certificate",
+        "description": "Ánh xạ một đối tượng Certificate hiện có tới các tên miền"
+      }
+    },
+    "fields": {
+      "name": {
+        "label": "Tên",
+        "placeholder": "Nhập một tên duy nhất cho SNI này"
+      },
+      "tags": {
+        "label": "Thẻ",
+        "placeholder": "Nhập danh sách thẻ cách nhau bằng dấu phẩy",
+        "help": "ví dụ: thẻ1, thẻ2, thẻ3",
+        "tooltip": "Một tập hợp tùy chọn các chuỗi để nhóm và lọc, cách nhau bằng dấu phẩy."
+      },
+      "certificate_id": {
+        "label": "ID Certificate SSL",
+        "placeholder": "Nhập hoặc chọn một ID Certificate",
+        "footer": "Tìm kiếm theo ID chính xác để tìm các Certificate không có trong danh sách"
+      }
+    }
+  },
+  "delete": {
+    "title": "Xóa một SNI",
+    "description": "Hành động này không thể đảo ngược, vì vậy hãy đảm bảo kiểm tra việc sử dụng SNI trước khi xóa."
+  },
+  "errors": {
+    "delete": "Không thể xóa SNI vào lúc này.",
+    "general": "Không thể truy xuất SNIs",
+    "certificates": {
+      "fetch": "Không thể lấy các Certificate có sẵn",
+      "invalid": "Vui lòng chọn một ID Certificate hợp lệ"
+    },
+    "copy": "Không thể sao chép vào clipboard"
+  },
+  "copy": {
+    "success": "Đã sao chép {val} vào clipboard",
+    "success_brief": "Đã sao chép thành công vào clipboard"
+  }
+}

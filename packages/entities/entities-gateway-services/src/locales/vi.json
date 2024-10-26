@@ -1,0 +1,179 @@
+{
+  "actions": {
+    "create": "Tạo Gateway Service Mới",
+    "serverless_create": "Thêm Service",
+    "copy_id": "Sao Chép ID",
+    "copy_json": "Sao Chép JSON",
+    "edit": "Chỉnh Sửa",
+    "clear": "Xóa",
+    "view": "Xem Chi Tiết",
+    "delete": {
+      "title": "Xóa Gateway Service",
+      "description": "Việc xóa Gateway Service này sẽ đồng thời loại bỏ các plugin liên quan. Hành động này không thể được hoàn tác.",
+      "menu_label": "Xóa"
+    }
+  },
+  "search": {
+    "placeholder": {
+      "konnect": "Lọc theo tên",
+      "kongManager": "Lọc theo tên chính xác hoặc ID"
+    }
+  },
+  "gateway_services": {
+    "title": "Gateway Service",
+    "list": {
+      "toolbar_actions": {
+        "new_gateway_service": "Gateway Service Mới"
+      },
+      "table_headers": {
+        "name": "Name",
+        "control_plane": "Control Plane",
+        "protocol": "Protocol",
+        "host": "Host",
+        "port": "Port",
+        "path": "Path",
+        "enabled": "Enabled",
+        "tags": "Tags",
+        "id": "ID",
+        "created_at": "Created At",
+        "updated_at": "Last Modified"
+      },
+      "empty_state": {
+        "title": "Cấu Hình Gateway Service Mới",
+        "description": "Gateway Service được sử dụng để proxy lưu lượng.",
+        "serverless_title": "Cấu Hình Gateway Service Đầu Tiên Của Bạn"
+      }
+    },
+    "form": {
+      "sections": {
+        "general": {
+          "title": "Thông Tin Chung",
+          "description": "Thông tin chung giúp xác định và quản lý Gateway Service này."
+        },
+        "keys": {
+          "title": "Endpoint Service",
+          "description": "Định nghĩa endpoint cho Service này bằng cách xác định URL đầy đủ hoặc các phần tử riêng lẻ của nó.",
+          "checkedGroupLabel": "Chọn cách và nơi để gửi lưu lượng",
+          "urlLabel": "URL Đầy Đủ",
+          "checkedGroupAltLabel": "Giao Thức, Máy Chủ, Cổng và Đường Dẫn",
+          "viewAdvancedFields": "Xem Các Trường Nâng Cao"
+        }
+      },
+      "fields": {
+        "upstream_url": {
+          "label": "Upstream URL",
+          "placeholder": "Nhập URL",
+          "tooltip_for_konnect": "Đây là URL của API mà bạn sẽ quản lý trong Konnect.",
+          "tooltip_for_km": "Đây là URL của API mà bạn sẽ quản lý trong API Gateway."
+        },
+        "name": {
+          "label": "Tên",
+          "placeholder": "Nhập tên duy nhất",
+          "tooltip": "Tên của Service."
+        },
+        "protocol": {
+          "label": "Protocol",
+          "tooltip": "Protocol được sử dụng để giao tiếp với upstream.",
+          "options": {
+            "http": "http",
+            "https": "https",
+            "tcp": "tcp",
+            "tls": "tls",
+            "tls_passthrough": "tls_passthrough",
+            "grpc": "grpc",
+            "grpcs": "grpcs",
+            "ws": "ws",
+            "wss": "wss",
+            "udp": "udp"
+          }
+        },
+        "host": {
+          "label": "Host",
+          "placeholder": "Nhập tên Host",
+          "tooltip": "Host của upstream. Lưu ý rằng giá trị máy chủ phân biệt chữ hoa và chữ thường."
+        },
+        "path": {
+          "label": "Path",
+          "placeholder": "Nhập Path",
+          "tooltip": "Path được sử dụng trong yêu cầu đến upstream."
+        },
+        "port": {
+          "label": "Port",
+          "tooltip": "Port của upstream."
+        },
+        "retries": {
+          "label": "Số Lần Thử Lại",
+          "tooltip": "Số lần thử lại khi thất bại trong việc proxy."
+        },
+        "connect_timeout": {
+          "label": "Thời Gian Chờ Kết Nối",
+          "tooltip": "Thời gian chờ để thiết lập kết nối đến upstream, tính bằng mili giây."
+        },
+        "write_timeout": {
+          "label": "Thời Gian Chờ Ghi",
+          "tooltip": "Thời gian chờ giữa hai thao tác ghi liên tiếp khi truyền yêu cầu đến upstream, tính bằng mili giây."
+        },
+        "read_timeout": {
+          "label": "Thời Gian Chờ Đọc",
+          "tooltip": "Thời gian chờ giữa hai thao tác đọc liên tiếp khi truyền yêu cầu đến upstream, tính bằng mili giây."
+        },
+        "client_certificate": {
+          "label": "Certificate Client",
+          "placeholder": "Nhập ID Certificate",
+          "tooltip": "Certificate sẽ được sử dụng như là Certificate client trong quá trình bắt tay TLS với upstream."
+        },
+        "ca_certificates": {
+          "label": "Certificate CA",
+          "placeholder": "Nhập danh sách ID Certificate CA, cách nhau bằng dấu phẩy",
+          "tooltip": "Danh sách UUID của các đối tượng Certificate CA được sử dụng để xây dựng kho tin cậy trong quá trình xác minh Certificate TLS của upstream. Nếu được đặt thành {code2}, sẽ tuân theo mặc định của Nginx. Nếu danh sách CA mặc định trong Nginx không được chỉ định và xác minh TLS được bật, thì quá trình bắt tay với upstream sẽ luôn thất bại (vì không có CA nào được tin tưởng).",
+          "code1": "Certificate CA",
+          "code2": "null"
+        },
+        "tls_verify_enabled": {
+          "label": "Xác Minh TLS",
+          "help": "Nếu không chọn, sẽ sử dụng thiết lập mặc định của hệ thống",
+          "tooltip": "Có bật xác minh Certificate TLS của upstream hay không. Nếu đặt thành {code1}, thì mặc định của Nginx sẽ được tuân theo.",
+          "code1": "null"
+        },
+        "tls_verify_option": {
+          "unset": {
+            "display": "Sử dụng thiết lập mặc định của hệ thống"
+          },
+          "true": {
+            "label": "Đúng",
+            "display": "Bật"
+          },
+          "false": {
+            "label": "Sai",
+            "display": "Tắt"
+          }
+        },
+        "tags": {
+          "label": "Thẻ",
+          "tooltip": "Một tập hợp các chuỗi tùy chọn liên quan đến Service để phân nhóm và lọc.",
+          "placeholder": "Nhập danh sách các thẻ, cách nhau bằng dấu phẩy",
+          "help": "ví dụ: thẻ1, thẻ2, thẻ3"
+        },
+        "enabled": {
+          "label": "Kích Hoạt",
+          "tooltip": "Service có đang hoạt động hay không. Nếu đặt thành {false}, hành vi proxy sẽ như thể các tuyến đường gắn với nó không tồn tại (404). Mặc định: {true}.",
+          "false": "false",
+          "true": "true"
+        }
+      }
+    }
+  },
+  "errors": {
+    "general": "Không thể lấy các Gateway Service",
+    "delete": "Không thể xóa Gateway Service vào lúc này.",
+    "copy": "Không thể sao chép vào clipboard",
+    "urlErrorMessage": "Lỗi: URL không hợp lệ"
+  },
+  "copy": {
+    "success": "Đã sao chép {val} vào clipboard",
+    "success_brief": "Đã sao chép thành công vào clipboard"
+  },
+  "glossary": {
+    "gateway_services": "Gateway Service"
+  }
+}
