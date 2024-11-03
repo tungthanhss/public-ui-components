@@ -1,60 +1,60 @@
 {
   "actions": {
-    "create": "New Route",
-    "copy_id": "Copy ID",
-    "copy_json": "Copy JSON",
-    "edit": "Edit",
-    "delete": "Delete",
-    "clear": "Clear",
-    "view": "View Details",
-    "loading": "Loading..."
+    "create": "Tạo Tuyến mới",
+    "copy_id": "Sao chép ID",
+    "copy_json": "Sao chép JSON",
+    "edit": "Chỉnh sửa",
+    "delete": "Xóa",
+    "clear": "Xóa",
+    "view": "Xem chi tiết",
+    "loading": "Đang tải..."
   },
   "search": {
     "placeholder": {
-      "konnect": "Filter by name",
-      "kongManager": "Filter by exact name or ID"
+      "konnect": "Lọc theo tên",
+      "kongManager": "Lọc theo tên chính xác hoặc ID"
     },
-    "no_results": "No results found"
+    "no_results": "Không tìm thấy kết quả"
   },
   "routes": {
-    "title": "Routes",
+    "title": "Tuyến",
     "list": {
       "toolbar_actions": {
-        "new_route": "New Route"
+        "new_route": "Tuyến mới"
       },
       "table_headers": {
-        "name": "Name",
-        "protocols": "Protocols",
-        "hosts": "Hosts",
-        "methods": "Methods",
-        "paths": "Paths",
-        "expression": "Expression",
+        "name": "Tên",
+        "protocols": "Giao thức",
+        "hosts": "Máy chủ",
+        "methods": "Phương thức",
+        "paths": "Đường dẫn",
+        "expression": "Biểu thức",
         "id": "ID",
-        "tags": "Tags",
-        "created_at": "Created At",
-        "updated_at": "Last Modified"
+        "tags": "Thẻ",
+        "created_at": "Ngày tạo",
+        "updated_at": "Cập nhật lần cuối"
       },
       "empty_state": {
-        "title": "Configure a New Route",
-        "description": "Routes proxy requests to an associated Service."
+        "title": "Cấu hình một Tuyến mới",
+        "description": "Tuyến chuyển tiếp yêu cầu đến một Dịch vụ liên kết."
       }
     }
   },
   "delete": {
-    "title": "Delete a Route",
-    "description": "Deleting this route will also remove any associated plugins. This action cannot be reversed."
+    "title": "Xóa một Tuyến",
+    "description": "Xóa tuyến này cũng sẽ gỡ bỏ bất kỳ plugin liên quan nào. Hành động này không thể hoàn tác."
   },
   "errors": {
-    "general": "Routes could not be retrieved",
-    "delete": "The route could not be deleted at this time.",
-    "copy": "Failed to copy to clipboard",
+    "general": "Không thể truy xuất các tuyến",
+    "delete": "Không thể xóa tuyến vào lúc này.",
+    "copy": "Không thể sao chép vào bộ nhớ tạm",
     "services": {
-      "fetch": "Could not fetch available services"
+      "fetch": "Không thể lấy các dịch vụ có sẵn"
     }
   },
   "copy": {
-    "success": "Copied {val} to clipboard",
-    "success_brief": "Successfully copied to clipboard"
+    "success": "Đã sao chép {val} vào bộ nhớ tạm",
+    "success_brief": "Đã sao chép thành công vào bộ nhớ tạm"
   },
   "form": {
     "protocols": {
@@ -78,182 +78,182 @@
     },
     "sections": {
       "general": {
-        "title": "General Information",
-        "description": "General information will help you identify and manage this route"
+        "title": "Thông tin chung",
+        "description": "Thông tin chung giúp bạn xác định và quản lý tuyến này"
       },
       "config": {
-        "title": "Route Configuration",
-        "description": "Route configuration determines how this route will handle incoming requests"
+        "title": "Cấu hình Tuyến",
+        "description": "Cấu hình tuyến xác định cách xử lý yêu cầu đến"
       },
       "routingRules": {
-        "title": "Routing Rules"
+        "title": "Quy tắc Định tuyến"
       },
       "routingExpression": {
-        "title": "Routing Expression"
+        "title": "Biểu thức Định tuyến"
       }
     },
     "fields": {
       "service_id": {
-        "label": "Service",
-        "placeholder": "Select a service"
+        "label": "Dịch vụ",
+        "placeholder": "Chọn một dịch vụ"
       },
       "name": {
-        "label": "Name",
-        "placeholder": "Enter a unique name",
-        "tooltip": "The name of the Route. Route names must be unique, and they are case sensitive. For example, there can be two different Routes named 'test' and 'Test'."
+        "label": "Tên",
+        "placeholder": "Nhập một tên duy nhất",
+        "tooltip": "Tên của Tuyến. Tên tuyến phải là duy nhất và phân biệt chữ hoa chữ thường. Ví dụ: có thể có hai tuyến khác nhau tên 'test' và 'Test'."
       },
       "service": {
-        "label": "Gateway Service",
-        "tooltip": "The Service this Route is associated to. This is where the Route proxies traffic to."
+        "label": "Dịch vụ Cổng vào",
+        "tooltip": "Dịch vụ mà Tuyến này liên kết. Đây là nơi Tuyến chuyển tiếp lưu lượng."
       },
       "tags": {
-        "label": "Tags",
-        "tooltip": "An optional set of strings associated with the Route for grouping and filtering.",
-        "placeholder": "Enter a list of tags separated by commas",
-        "help": "e.g. tag1, tag2, tag3"
+        "label": "Thẻ",
+        "tooltip": "Một tập hợp chuỗi không bắt buộc liên kết với Tuyến để nhóm và lọc.",
+        "placeholder": "Nhập danh sách thẻ, ngăn cách bằng dấu phẩy",
+        "help": "ví dụ: tag1, tag2, tag3"
       },
       "protocols": {
-        "label": "Protocols",
-        "tooltip": "Routes have a protocols property to restrict the client protocol they should listen for.",
-        "tooltipConfig": "An array of the protocols this Route should allow. See the {code1} section for a list of accepted protocols. When set to only {code2}, HTTP requests are answered with an upgrade error. When it is set to only {code3}, this is essentially the same as {code4} in that both HTTP and HTTPS requests are allowed. Default: {code5}.",
-        "code1": "Route Object",
+        "label": "Giao thức",
+        "tooltip": "Tuyến có thuộc tính giao thức để giới hạn giao thức mà nó sẽ lắng nghe từ client.",
+        "tooltipConfig": "Một mảng các giao thức mà Tuyến này cho phép. Xem phần {code1} để biết danh sách các giao thức chấp nhận. Khi chỉ đặt {code2}, các yêu cầu HTTP sẽ trả về lỗi nâng cấp. Khi chỉ đặt {code3}, điều này về cơ bản giống như {code4} vì cả yêu cầu HTTP và HTTPS đều được phép. Mặc định: {code5}.",
+        "code1": "Đối tượng Tuyến",
         "code2": "https",
         "code3": "http",
         "code4": "['http', 'https']",
         "code5": "['http', 'https']"
       },
       "path_handling": {
-        "label": "Path Handling",
-        "tooltip": "This treats service.path, route.path and request path as segments of a URL.",
-        "tooltipConfig": "Controls how the Service path, Route path and requested path are combined when sending a request to the upstream. See above for a detailed description of each behavior."
+        "label": "Xử lý Đường dẫn",
+        "tooltip": "Điều này xử lý service.path, route.path và đường dẫn yêu cầu như các đoạn của URL.",
+        "tooltipConfig": "Điều khiển cách mà Đường dẫn của Dịch vụ, Đường dẫn của Tuyến và Đường dẫn yêu cầu được kết hợp khi gửi yêu cầu đến upstream. Xem ở trên để biết mô tả chi tiết về từng hành vi."
       },
       "https_redirect_status_code": {
-        "label": "HTTPS Redirect Status Code",
-        "tooltip": "The status code Kong responds with when all properties of a Route match except the protocol i.e. if the protocol of the request is {code1} instead of {code2}. {code3}  header is injected by Kong if the field is set to 301, 302, 307 or 308. Note: This config applies only if the Route is configured to only accept the {code4} protocol.",
+        "label": "Mã Trạng thái Chuyển hướng HTTPS",
+        "tooltip": "Mã trạng thái Gateway phản hồi khi tất cả các thuộc tính của Tuyến khớp ngoại trừ giao thức, ví dụ nếu giao thức của yêu cầu là {code1} thay vì {code2}. Tiêu đề {code3} được Gateway chèn nếu trường này được đặt thành 301, 302, 307 hoặc 308. Lưu ý: Cấu hình này chỉ áp dụng nếu Tuyến được cấu hình để chỉ chấp nhận giao thức {code4}.",
         "code1": "HTTP",
         "code2": "HTTPS",
-        "code3": "Location",
+        "code3": "Vị trí",
         "code4": "https"
       },
       "regex_priority": {
-        "label": "Regex Priority",
-        "tooltip": "A number used to choose which route resolves a given request when several routes match it using regexes simultaneously. When two routes match the path and have the same {code1}, the older one (lowest {code2}) is used. Note that the priority for non-regex routes is different (longer non-regex routes are matched before shorter ones).",
+        "label": "Ưu tiên Regex",
+        "tooltip": "Một số được sử dụng để chọn tuyến nào xử lý yêu cầu nhất định khi nhiều tuyến trùng khớp bằng cách sử dụng regex. Khi hai tuyến trùng khớp với đường dẫn và có cùng {code1}, tuyến cũ hơn (có {code2} thấp nhất) sẽ được sử dụng. Lưu ý rằng ưu tiên cho các tuyến không regex là khác nhau (các tuyến không regex dài hơn được ưu tiên hơn các tuyến ngắn hơn).",
         "code1": "regex_priority",
         "code2": "created_at"
       },
       "strip_path": {
-        "label": "Strip Path",
-        "tooltip": "When matching a Route via one of the {code1}, strip the matching prefix from the upstream request URL.",
-        "code1": "paths"
+        "label": "Xóa Đường dẫn",
+        "tooltip": "Khi trùng khớp với một Tuyến qua một trong các {code1}, xóa tiền tố trùng khớp khỏi URL yêu cầu upstream.",
+        "code1": "đường dẫn"
       },
       "preserve_host": {
-        "label": "Preserve Host",
-        "tooltip": "When matching a Route via one of the {code1} domain names, use the request {code2} header in the upstream request headers. If set to {code3}, the upstream {code4} header will be that of the Service's {code5}.",
-        "code1": "hosts",
+        "label": "Giữ nguyên Host",
+        "tooltip": "Khi trùng khớp với một Tuyến qua một trong các tên miền {code1}, sử dụng tiêu đề {code2} của yêu cầu trong tiêu đề của yêu cầu upstream. Nếu đặt là {code3}, tiêu đề {code4} của upstream sẽ là của {code5} của Dịch vụ.",
+        "code1": "máy chủ",
         "code2": "Host",
         "code3": "false",
         "code4": "Host",
         "code5": "host"
       },
       "paths": {
-        "label": "Paths",
-        "placeholder": "Enter a path",
-        "tooltip": "A list of paths that match this Route."
+        "label": "Đường dẫn",
+        "placeholder": "Nhập một đường dẫn",
+        "tooltip": "Danh sách các đường dẫn khớp với Tuyến này."
       },
       "snis": {
         "label": "SNIs",
-        "placeholder": "Enter a SNI",
-        "tooltip": "A list of SNIs (Server Name Indications from a TLS ClientHello) that match this Route."
+        "placeholder": "Nhập một SNI",
+        "tooltip": "Danh sách các SNIs (Server Name Indications từ một TLS ClientHello) khớp với Tuyến này."
       },
       "hosts": {
-        "label": "Hosts",
-        "placeholder": "Enter a host",
-        "tooltip": "A list of domain names that match this Route.",
-        "tooltipConfig": "A list of domain names that match this Route. Note that the hosts value is case sensitive."
+        "label": "Máy chủ",
+        "placeholder": "Nhập một máy chủ",
+        "tooltip": "Danh sách các tên miền khớp với Tuyến này.",
+        "tooltipConfig": "Danh sách các tên miền khớp với Tuyến này. Lưu ý rằng giá trị hosts phân biệt chữ hoa chữ thường."
       },
       "methods": {
-        "label": "Methods",
-        "tooltip": "A list of HTTP methods that match this Route.",
+        "label": "Phương thức",
+        "tooltip": "Danh sách các phương thức HTTP khớp với Tuyến này.",
         "custom": {
-          "label": "Custom",
-          "placeholder": "Enter a custom method",
-          "tooltip": "Custom methods can be used with default selections. Uppercase characters are required."
+          "label": "Tùy chỉnh",
+          "placeholder": "Nhập một phương thức tùy chỉnh",
+          "tooltip": "Các phương thức tùy chỉnh có thể được sử dụng với các lựa chọn mặc định. Yêu cầu ký tự viết hoa."
         }
       },
       "headers": {
-        "label": "Headers",
-        "tooltip": "Header values can be separated by commas (value1, value2, value3).",
+        "label": "Tiêu đề",
+        "tooltip": "Các giá trị tiêu đề có thể được ngăn cách bằng dấu phẩy (giá trị1, giá trị2, giá trị3).",
         "name": {
-          "placeholder": "Enter a header name"
+          "placeholder": "Nhập một tên tiêu đề"
         },
         "values": {
-          "placeholder": "Enter a header value"
+          "placeholder": "Nhập một giá trị tiêu đề"
         },
-        "tooltipConfig": "One or more lists of values indexed by header name that will cause this Route to match if present in the request. The {code1} header cannot be used with this attribute: hosts should be specified using the {code2} attribute. When {code3} contains only one value and that value starts with the special prefix {code4], the value is interpreted as a regular expression.",
+        "tooltipConfig": "Một hoặc nhiều danh sách các giá trị được đánh chỉ số theo tên tiêu đề sẽ làm Tuyến này khớp nếu có trong yêu cầu. Tiêu đề {code1} không thể được sử dụng với thuộc tính này: các máy chủ phải được chỉ định bằng thuộc tính {code2}. Khi {code3} chỉ chứa một giá trị và giá trị đó bắt đầu bằng tiền tố đặc biệt {code4], giá trị đó được coi là biểu thức regex.",
         "code1": "Host",
         "code2": "hosts",
         "code3": "headers",
         "code4": "*"
       },
       "sources": {
-        "label": "Sources",
-        "tooltip": "A list of IP sources of incoming connections that match this Route when using stream routing.",
+        "label": "Nguồn",
+        "tooltip": "Danh sách các địa chỉ IP nguồn của các kết nối đến khớp với Tuyến này khi sử dụng định tuyến luồng.",
         "ip": {
-          "placeholder": "Enter a source IP"
+          "placeholder": "Nhập một IP nguồn"
         },
         "port": {
-          "placeholder": "Enter a source port"
+          "placeholder": "Nhập một cổng nguồn"
         }
       },
       "destinations": {
-        "label": "Destinations",
-        "tooltip": "A list of IP destinations of incoming connections that match this Route when using stream routing.",
+        "label": "Điểm đến",
+        "tooltip": "Danh sách các địa chỉ IP điểm đến của các kết nối đến khớp với Tuyến này khi sử dụng định tuyến luồng.",
         "ip": {
-          "placeholder": "Enter a destination IP"
+          "placeholder": "Nhập một IP điểm đến"
         },
         "port": {
-          "placeholder": "Enter a destination port"
+          "placeholder": "Nhập một cổng điểm đến"
         }
       },
       "response_buffering": {
-        "label": "Response buffering",
-        "tooltip": "Whether to enable response body buffering or not. With HTTP 1.1, it may make sense to turn this off on services that send data with chunked transfer encoding."
+        "label": "Đệm phản hồi",
+        "tooltip": "Bật hoặc tắt việc đệm nội dung phản hồi. Với HTTP 1.1, có thể tắt tính năng này đối với các dịch vụ gửi dữ liệu bằng mã hóa truyền chuyển mảnh."
       },
       "request_buffering": {
-        "label": "Request buffering",
-        "tooltip": "Whether to enable request body buffering or not. With HTTP 1.1, it may make sense to turn this off on services that receive data with chunked transfer encoding."
+        "label": "Đệm yêu cầu",
+        "tooltip": "Bật hoặc tắt việc đệm nội dung yêu cầu. Với HTTP 1.1, có thể tắt tính năng này đối với các dịch vụ nhận dữ liệu bằng mã hóa truyền chuyển mảnh."
       },
       "expression": {
-        "label": "Expression",
-        "tooltip": "The route expression."
+        "label": "Biểu thức",
+        "tooltip": "Biểu thức của tuyến."
       },
       "priority": {
-        "label": "Priority",
-        "tooltip": "A number used to choose which route resolves a given request when several routes match it using expression simultaneously."
+        "label": "Ưu tiên",
+        "tooltip": "Một số được dùng để chọn tuyến nào xử lý yêu cầu nhất định khi nhiều tuyến trùng khớp cùng lúc bằng biểu thức."
       }
     },
     "flavors": {
-      "traditional": "Traditional",
-      "expressions": "Expressions"
+      "traditional": "Truyền thống",
+      "expressions": "Biểu thức"
     },
-    "viewAdvancedFields": "View Advanced Fields",
-    "addNewRule": "Add New Rule",
+    "viewAdvancedFields": "Xem các trường nâng cao",
+    "addNewRule": "Thêm Quy tắc Mới",
     "warning": {
-      "rulesMessage": "For {protocol}, at least one of {routingRules} must be set.",
+      "rulesMessage": "Đối với {protocol}, ít nhất một trong các {routingRules} phải được thiết lập.",
       "singleRule": "{routingRules}",
-      "multipleRules": "{routingRules} or {lastRoutingRule}",
+      "multipleRules": "{routingRules} hoặc {lastRoutingRule}",
       "cannotChangeFlavor": {
-        "create": "The format of the route cannot be changed once created.",
-        "edit": "This route was configured in the {format} format, and cannot be changed after creation. You can switch to the {format} tab to edit, or create a new route in a different format instead."
+        "create": "Định dạng của tuyến không thể thay đổi sau khi đã tạo.",
+        "edit": "Tuyến này đã được cấu hình theo định dạng {format}, không thể thay đổi sau khi tạo. Bạn có thể chuyển sang tab {format} để chỉnh sửa hoặc tạo một tuyến mới với định dạng khác."
       }
     },
     "expressions_editor": {
-      "loading": "Loading the Expressions editor…",
-      "error": "Error occurred while loading the Expressions editor. Please view the console for more details."
+      "loading": "Đang tải trình chỉnh sửa Biểu thức…",
+      "error": "Đã xảy ra lỗi khi tải trình chỉnh sửa Biểu thức. Vui lòng xem bảng điều khiển để biết thêm chi tiết."
     },
     "expression_playground": {
-      "test_link": "Test with Router Playground",
-      "supported_protocols_hint": "Currently only supports the following protocols: {protocols}"
+      "test_link": "Kiểm tra với Trình Thử Định tuyến",
+      "supported_protocols_hint": "Hiện tại chỉ hỗ trợ các giao thức sau: {protocols}"
     }
   }
 }

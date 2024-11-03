@@ -23,7 +23,7 @@
     "title": "Gateway Service",
     "list": {
       "toolbar_actions": {
-        "new_gateway_service": "Gateway Service Mới"
+        "new_gateway_service": "Gateway Service"
       },
       "table_headers": {
         "name": "Name",
