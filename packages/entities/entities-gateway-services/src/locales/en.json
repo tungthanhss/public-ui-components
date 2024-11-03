@@ -1,29 +1,29 @@
 {
   "actions": {
-    "create": "New Gateway Service",
-    "serverless_create": "Add a Service",
-    "copy_id": "Copy ID",
-    "copy_json": "Copy JSON",
-    "edit": "Edit",
-    "clear": "Clear",
-    "view": "View Details",
+    "create": "Tạo Gateway Service Mới",
+    "serverless_create": "Thêm Service",
+    "copy_id": "Sao Chép ID",
+    "copy_json": "Sao Chép JSON",
+    "edit": "Chỉnh Sửa",
+    "clear": "Xóa",
+    "view": "Xem Chi Tiết",
     "delete": {
-      "title": "Delete a Gateway Service",
-      "description": "Deleting this Gateway Service will also remove any associated plugins. This action cannot be reversed.",
-      "menu_label": "Delete"
+      "title": "Xóa Gateway Service",
+      "description": "Việc xóa Gateway Service này sẽ đồng thời loại bỏ các plugin liên quan. Hành động này không thể được hoàn tác.",
+      "menu_label": "Xóa"
     }
   },
   "search": {
     "placeholder": {
-      "konnect": "Filter by name",
-      "kongManager": "Filter by exact name or ID"
+      "konnect": "Lọc theo tên",
+      "kongManager": "Lọc theo tên chính xác hoặc ID"
     }
   },
   "gateway_services": {
-    "title": "Gateway Services",
+    "title": "Gateway Service",
     "list": {
       "toolbar_actions": {
-        "new_gateway_service": "New Gateway Service"
+        "new_gateway_service": "Gateway Service Mới"
       },
       "table_headers": {
         "name": "Name",
@@ -39,41 +39,41 @@
         "updated_at": "Last Modified"
       },
       "empty_state": {
-        "title": "Configure a New Gateway Service",
-        "description": "Gateway services are used to proxy traffic.",
-        "serverless_title": "Configure your first Gateway Service"
+        "title": "Cấu Hình Gateway Service Mới",
+        "description": "Gateway Service được sử dụng để proxy lưu lượng.",
+        "serverless_title": "Cấu Hình Gateway Service Đầu Tiên Của Bạn"
       }
     },
     "form": {
       "sections": {
         "general": {
-          "title": "General Information",
-          "description": "General information will help identify and manage this Gateway Service."
+          "title": "Thông Tin Chung",
+          "description": "Thông tin chung giúp xác định và quản lý Gateway Service này."
         },
         "keys": {
-          "title": "Service Endpoint",
-          "description": "Define the endpoint for this service by specifying the full URL or by its separate elements.",
-          "checkedGroupLabel": "Choose how and where to send traffic",
-          "urlLabel": "Full URL",
-          "checkedGroupAltLabel": "Protocol, Host, Port and Path",
-          "viewAdvancedFields": "View Advanced Fields"
+          "title": "Endpoint Service",
+          "description": "Định nghĩa endpoint cho Service này bằng cách xác định URL đầy đủ hoặc các phần tử riêng lẻ của nó.",
+          "checkedGroupLabel": "Chọn cách và nơi để gửi lưu lượng",
+          "urlLabel": "URL Đầy Đủ",
+          "checkedGroupAltLabel": "Giao Thức, Máy Chủ, Cổng và Đường Dẫn",
+          "viewAdvancedFields": "Xem Các Trường Nâng Cao"
         }
       },
       "fields": {
         "upstream_url": {
           "label": "Upstream URL",
-          "placeholder": "Enter a URL",
-          "tooltip_for_konnect": "This is the URL of the API you will manage in Konnect.",
-          "tooltip_for_km": "This is the URL of the API you will manage in Kong Gateway."
+          "placeholder": "Nhập URL",
+          "tooltip_for_konnect": "Đây là URL của API mà bạn sẽ quản lý trong Konnect.",
+          "tooltip_for_km": "Đây là URL của API mà bạn sẽ quản lý trong API Gateway."
         },
         "name": {
-          "label": "Name",
-          "placeholder": "Enter a unique name",
-          "tooltip": "The Service name."
+          "label": "Tên",
+          "placeholder": "Nhập tên duy nhất",
+          "tooltip": "Tên của Service."
         },
         "protocol": {
           "label": "Protocol",
-          "tooltip": "The protocol used to communicate with the upstream.",
+          "tooltip": "Protocol được sử dụng để giao tiếp với upstream.",
           "options": {
             "http": "http",
             "https": "https",
@@ -89,74 +89,74 @@
         },
         "host": {
           "label": "Host",
-          "placeholder": "Enter a host",
-          "tooltip": "The host of the upstream server. Note that the host value is case sensitive."
+          "placeholder": "Nhập tên Host",
+          "tooltip": "Host của upstream. Lưu ý rằng giá trị máy chủ phân biệt chữ hoa và chữ thường."
         },
         "path": {
           "label": "Path",
-          "placeholder": "Enter a path",
-          "tooltip": "The path to be used in request to the upstream server."
+          "placeholder": "Nhập Path",
+          "tooltip": "Path được sử dụng trong yêu cầu đến upstream."
         },
         "port": {
           "label": "Port",
-          "tooltip": "The upstream server port."
+          "tooltip": "Port của upstream."
         },
         "retries": {
-          "label": "Retries",
-          "tooltip": "The number of retries to execute upon failure to proxy."
+          "label": "Số Lần Thử Lại",
+          "tooltip": "Số lần thử lại khi thất bại trong việc proxy."
         },
         "connect_timeout": {
-          "label": "Connection Timeout",
-          "tooltip": "The timeout in milliseconds for establishing a connection to the upstream server."
+          "label": "Thời Gian Chờ Kết Nối",
+          "tooltip": "Thời gian chờ để thiết lập kết nối đến upstream, tính bằng mili giây."
         },
         "write_timeout": {
-          "label": "Write Timeout",
-          "tooltip": "The timeout in milliseconds between two successive write operations for transmitting a request to the upstream server."
+          "label": "Thời Gian Chờ Ghi",
+          "tooltip": "Thời gian chờ giữa hai thao tác ghi liên tiếp khi truyền yêu cầu đến upstream, tính bằng mili giây."
         },
         "read_timeout": {
-          "label": "Read Timeout",
-          "tooltip": "The timeout in milliseconds between two successive read operations for transmitting a request to the upstream server."
+          "label": "Thời Gian Chờ Đọc",
+          "tooltip": "Thời gian chờ giữa hai thao tác đọc liên tiếp khi truyền yêu cầu đến upstream, tính bằng mili giây."
         },
         "client_certificate": {
-          "label": "Client Certificate",
-          "placeholder": "Enter a Certificate ID",
-          "tooltip": "Certificate to be used as client certificate while TLS handshaking to the upstream server."
+          "label": "Certificate Client",
+          "placeholder": "Nhập ID Certificate",
+          "tooltip": "Certificate sẽ được sử dụng như là Certificate client trong quá trình bắt tay TLS với upstream."
         },
         "ca_certificates": {
-          "label": "CA Certificates",
-          "placeholder": "Enter a comma separated list of CA Certificate IDs",
-          "tooltip": "Array of {code1} object UUIDs that are used to build the trust store while verifying upstream server's TLS certificate. If set to {code2} when Nginx default is respected. If default CA list in Nginx are not specified and TLS verification is enabled, then handshake with upstream server will always fail (because no CA are trusted).",
-          "code1": "CA Certificate",
+          "label": "Certificate CA",
+          "placeholder": "Nhập danh sách ID Certificate CA, cách nhau bằng dấu phẩy",
+          "tooltip": "Danh sách UUID của các đối tượng Certificate CA được sử dụng để xây dựng kho tin cậy trong quá trình xác minh Certificate TLS của upstream. Nếu được đặt thành {code2}, sẽ tuân theo mặc định của Nginx. Nếu danh sách CA mặc định trong Nginx không được chỉ định và xác minh TLS được bật, thì quá trình bắt tay với upstream sẽ luôn thất bại (vì không có CA nào được tin tưởng).",
+          "code1": "Certificate CA",
           "code2": "null"
         },
         "tls_verify_enabled": {
-          "label": "TLS Verify",
-          "help": "If unchecked, use default system setting",
-          "tooltip": "Whether to enable verification of upstream server TLS certificate. If set to {code1}, then the Nginx default is respected.",
+          "label": "Xác Minh TLS",
+          "help": "Nếu không chọn, sẽ sử dụng thiết lập mặc định của hệ thống",
+          "tooltip": "Có bật xác minh Certificate TLS của upstream hay không. Nếu đặt thành {code1}, thì mặc định của Nginx sẽ được tuân theo.",
           "code1": "null"
         },
         "tls_verify_option": {
           "unset": {
-            "display": "Use default system setting"
+            "display": "Sử dụng thiết lập mặc định của hệ thống"
           },
           "true": {
-            "label": "True",
-            "display": "On"
+            "label": "Đúng",
+            "display": "Bật"
           },
           "false": {
-            "label": "False",
-            "display": "Off"
+            "label": "Sai",
+            "display": "Tắt"
           }
         },
         "tags": {
-          "label": "Tags",
-          "tooltip": "An optional set of strings associated with the Service for grouping and filtering.",
-          "placeholder": "Enter a list of tags separated by comma",
-          "help": "e.g. tag1, tag2, tag3"
+          "label": "Thẻ",
+          "tooltip": "Một tập hợp các chuỗi tùy chọn liên quan đến Service để phân nhóm và lọc.",
+          "placeholder": "Nhập danh sách các thẻ, cách nhau bằng dấu phẩy",
+          "help": "ví dụ: thẻ1, thẻ2, thẻ3"
         },
         "enabled": {
-          "label": "Enabled",
-          "tooltip": "Whether the Service is active. If set to {false}, the proxy behavior will be as if any routes attached to it do not exist (404). Default: {true}.",
+          "label": "Kích Hoạt",
+          "tooltip": "Service có đang hoạt động hay không. Nếu đặt thành {false}, hành vi proxy sẽ như thể các tuyến đường gắn với nó không tồn tại (404). Mặc định: {true}.",
           "false": "false",
           "true": "true"
         }
@@ -164,16 +164,16 @@
     }
   },
   "errors": {
-    "general": "Gateway Services could not be retrieved",
-    "delete": "The gateway service could not be deleted at this time.",
-    "copy": "Failed to copy to clipboard",
-    "urlErrorMessage": "Error: invalid URL"
+    "general": "Không thể lấy các Gateway Service",
+    "delete": "Không thể xóa Gateway Service vào lúc này.",
+    "copy": "Không thể sao chép vào clipboard",
+    "urlErrorMessage": "Lỗi: URL không hợp lệ"
   },
   "copy": {
-    "success": "Copied {val} to clipboard",
-    "success_brief": "Successfully copied to clipboard"
+    "success": "Đã sao chép {val} vào clipboard",
+    "success_brief": "Đã sao chép thành công vào clipboard"
   },
   "glossary": {
-    "gateway_services": "gateway services"
+    "gateway_services": "Gateway Service"
   }
 }
