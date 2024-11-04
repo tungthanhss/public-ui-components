@@ -1,9 +1,9 @@
 {
   "certificates": {
-    "title": "Certificates",
+    "title": "Certificate",
     "list": {
       "toolbar_actions": {
-        "new_certificate": "New Certificate"
+        "new_certificate": "Certificate mới"
       },
       "table_headers": {
         "subject": "Subject",
@@ -15,92 +15,92 @@
         "snis": "SNIs"
       },
       "empty_state": {
-        "title": "Configure a New Certificate",
-        "description": "Certificates handle SSL/TLS termination for encrypted requests."
+        "title": "Cấu hình một Certificate mới",
+        "description": "Certificate xử lý kết thúc SSL/TLS cho các yêu cầu mã hóa."
       }
     },
     "form": {
       "sections": {
         "ssl": {
-          "title": "SSL Key Pair",
-          "description": "The PEM-encoded public certificate chain and private key of the SSL key pair and the alternate."
+          "title": "Cặp khóa SSL",
+          "description": "Chuỗi Certificate công khai và khóa riêng của cặp khóa SSL được mã hóa PEM và bản thay thế."
         },
         "general": {
-          "title": "General Information",
-          "description": "General information will help identify and manage this key."
+          "title": "Thông tin chung",
+          "description": "Thông tin chung sẽ giúp nhận dạng và quản lý khóa này."
         }
       },
       "fields": {
         "cert": {
-          "label": "Cert",
-          "tooltip": "PEM-encoded public certificate chain of the SSL key pair. This field is {emphasis}, which means it can be securely stored as a secret in a vault. References must follow a specific format.",
-          "emphasis": "referenceable"
+          "label": "Certificate",
+          "tooltip": "Chuỗi Certificate công khai của cặp khóa SSL được mã hóa PEM. Trường này {emphasis}, có nghĩa là nó có thể được lưu trữ an toàn dưới dạng bí mật trong kho. Các tham chiếu phải tuân theo một định dạng cụ thể.",
+          "emphasis": "có thể tham chiếu"
         },
         "key": {
-          "label": "Key",
-          "tooltip": "PEM-encoded private key of the SSL key pair. This field is {emphasis}, which means it can be securely stored as a secret in a vault. References must follow a specific format.",
-          "emphasis": "referenceable"
+          "label": "Khóa",
+          "tooltip": "Khóa riêng của cặp khóa SSL được mã hóa PEM. Trường này {emphasis}, có nghĩa là nó có thể được lưu trữ an toàn dưới dạng bí mật trong kho. Các tham chiếu phải tuân theo một định dạng cụ thể.",
+          "emphasis": "có thể tham chiếu"
         },
         "cert_alt": {
-          "label": "Cert Alt",
-          "tooltip": "PEM-encoded public certificate chain of the alternate SSL key pair. This should only be set if you have both RSA and ECDSA types of certificate available and would like Kong to prefer serving using ECDSA certs when client advertises support for it. This field is {emphasis}, which means it can be securely stored as a secret in a vault. References must follow a specific format.",
-          "emphasis": "referenceable"
+          "label": "Certificate thay thế",
+          "tooltip": "Chuỗi Certificate công khai của cặp khóa SSL thay thế được mã hóa PEM. Chỉ nên thiết lập nếu bạn có cả hai loại Certificate RSA và ECDSA và muốn API Gatewayưu tiên phục vụ sử dụng Certificate ECDSA khi khách hàng quảng cáo hỗ trợ cho nó. Trường này {emphasis}, có nghĩa là nó có thể được lưu trữ an toàn dưới dạng bí mật trong kho. Các tham chiếu phải tuân theo một định dạng cụ thể.",
+          "emphasis": "có thể tham chiếu"
         },
         "key_alt": {
-          "label": "Key Alt",
-          "tooltip": "PEM-encoded private key of the alternate SSL key pair. This should only be set if you have both RSA and ECDSA types of certificate available and would like Kong to prefer serving using ECDSA certs when client advertises support for it. This field is {emphasis}, which means it can be securely stored as a secret in a vault. References must follow a specific format.",
-          "emphasis": "referenceable"
+          "label": "Khóa thay thế",
+          "tooltip": "Khóa riêng của cặp khóa SSL thay thế được mã hóa PEM. Chỉ nên thiết lập nếu bạn có cả hai loại Certificate RSA và ECDSA và muốn API Gatewayưu tiên phục vụ sử dụng Certificate ECDSA khi khách hàng quảng cáo hỗ trợ cho nó. Trường này {emphasis}, có nghĩa là nó có thể được lưu trữ an toàn dưới dạng bí mật trong kho. Các tham chiếu phải tuân theo một định dạng cụ thể.",
+          "emphasis": "có thể tham chiếu"
         },
         "snis": {
           "label": "SNIs",
-          "placeholder": "Enter an SNI",
-          "add": "Add an SNI",
-          "tooltip": "Zero or more hostnames to associate with this certificate as SNIs",
-          "editingTip": "To manage SNIs for this certificate, click {link}.",
-          "editingTipLink": "here"
+          "placeholder": "Nhập một SNI",
+          "add": "Thêm một SNI",
+          "tooltip": "Không hoặc nhiều tên máy chủ để liên kết với Certificate này dưới dạng SNIs",
+          "editingTip": "Để quản lý SNIs cho Certificate này, nhấp vào {link}.",
+          "editingTipLink": "tại đây"
         },
         "tags": {
-          "label": "Tags",
-          "placeholder": "Enter a list of tags separated by comma",
-          "help": "e.g. tag1, tag2, tag3",
-          "tooltip": "An optional set of strings for grouping and filtering, separated by commas."
+          "label": "Thẻ",
+          "placeholder": "Nhập danh sách các thẻ, cách nhau bằng dấu phẩy",
+          "help": "ví dụ: tag1, tag2, tag3",
+          "tooltip": "Một tập hợp tùy chọn các chuỗi để nhóm và lọc, cách nhau bằng dấu phẩy."
         }
       }
     },
     "actions": {
-      "create": "New Certificate",
-      "copy_id": "Copy ID",
-      "copy_json": "Copy JSON",
-      "edit": "Edit",
-      "addSni": "Add to New SNI",
-      "delete": "Delete",
-      "clear": "Clear",
-      "view": "View Details"
+      "create": "Certificate mới",
+      "copy_id": "Sao chép ID",
+      "copy_json": "Sao chép JSON",
+      "edit": "Chỉnh sửa",
+      "addSni": "Thêm vào SNI mới",
+      "delete": "Xóa",
+      "clear": "Xóa",
+      "view": "Xem chi tiết"
     },
     "search": {
-      "placeholder": "Filter by exact ID"
+      "placeholder": "Lọc theo ID chính xác"
     },
     "delete": {
-      "title": "Delete a Certificate",
-      "description": "Your organization's original certificate {bolded-text}.",
-      "boldedText": "will not be affected",
-      "description2": "This action cannot be reversed so make sure to check the certificate usage before deleting."
+      "title": "Xóa một Certificate",
+      "description": "Certificate gốc của tổ chức của bạn {bolded-text}.",
+      "boldedText": "sẽ không bị ảnh hưởng",
+      "description2": "Hành động này không thể hoàn tác, vì vậy hãy chắc chắn kiểm tra việc sử dụng Certificate trước khi xóa."
     },
     "errors": {
-      "general": "Certificates could not be retrieved",
-      "delete": "The certificate could not be deleted at this time",
-      "copy": "Failed to copy to clipboard"
+      "general": "Không thể lấy Certificate",
+      "delete": "Certificate không thể bị xóa vào thời điểm này",
+      "copy": "Không thể sao chép vào clipboard"
     },
     "copy": {
-      "success": "Copied {val} to clipboard",
-      "success_brief": "Successfully copied to clipboard"
+      "success": "Đã sao chép {val} vào clipboard",
+      "success_brief": "Đã sao chép thành công vào clipboard"
     }
   },
   "ca-certificates": {
-    "title": "CA Certificates",
+    "title": "Certificate CA",
     "list": {
       "toolbar_actions": {
-        "new_ca_certificate": "New CA Certificate"
+        "new_ca_certificate": "Certificate CA mới"
       },
       "table_headers": {
         "issuer": "Issuer",
@@ -108,64 +108,64 @@
         "tags": "Tags"
       },
       "empty_state": {
-        "title": "Configure a New CA Certificate",
-        "description": "CA certificates validate client or server certificates."
+        "title": "Cấu hình một Certificate CA mới",
+        "description": "Certificate CA xác thực các Certificate của máy khách hoặc máy chủ."
       }
     },
     "form": {
       "sections": {
         "cert": {
-          "title": "Public Certificate",
-          "description": "The PEM-encoded public certificate of the CA and it’s SHA256 hex digest."
+          "title": "Certificate công khai",
+          "description": "Certificate công khai của CA được mã hóa PEM và mã băm SHA256 của nó."
         },
         "general": {
-          "title": "General Information",
-          "description": "General information will help identify and manage this key."
+          "title": "Thông tin chung",
+          "description": "Thông tin chung sẽ giúp nhận dạng và quản lý khóa này."
         }
       },
       "fields": {
         "cert": {
-          "label": "Cert",
-          "tooltip": "PEM-encoded public certificate of the CA."
+          "label": "Certificate",
+          "tooltip": "Certificate công khai của CA được mã hóa PEM."
         },
         "cert_digest": {
-          "label": "Cert Digest",
-          "tooltip": "SHA256 hex digest of the public certificate"
+          "label": "Mã băm Certificate",
+          "tooltip": "Mã băm SHA256 của Certificate công khai"
         },
         "tags": {
-          "label": "Tags",
-          "placeholder": "Enter a list of tags separated by comma",
-          "help": "e.g. tag1, tag2, tag3",
-          "tooltip": "An optional set of strings for grouping and filtering, separated by commas."
+          "label": "Thẻ",
+          "placeholder": "Nhập danh sách các thẻ, cách nhau bằng dấu phẩy",
+          "help": "ví dụ: tag1, tag2, tag3",
+          "tooltip": "Một tập hợp tùy chọn các chuỗi để nhóm và lọc, cách nhau bằng dấu phẩy."
         }
       }
     },
     "actions": {
-      "create": "New CA Certificate",
-      "copy_id": "Copy ID",
-      "copy_json": "Copy JSON",
-      "edit": "Edit",
-      "delete": "Delete",
-      "clear": "Clear",
-      "view": "View Details"
+      "create": "Certificate CA mới",
+      "copy_id": "Sao chép ID",
+      "copy_json": "Sao chép JSON",
+      "edit": "Chỉnh sửa",
+      "delete": "Xóa",
+      "clear": "Làm trống",
+      "view": "Xem chi tiết"
     },
     "search": {
-      "placeholder": "Filter by exact ID"
+      "placeholder": "Lọc theo ID chính xác"
     },
     "delete": {
-      "title": "Delete a CA Certificate",
-      "description": "Your organization's original certificate {bolded-text}.",
-      "boldedText": "will not be affected",
-      "description2": "This action cannot be reversed so make sure to check the certificate usage before deleting."
+      "title": "Xóa một Certificate CA",
+      "description": "Certificate gốc của tổ chức của bạn {bolded-text}.",
+      "boldedText": "sẽ không bị ảnh hưởng",
+      "description2": "Hành động này không thể hoàn tác, vì vậy hãy chắc chắn kiểm tra việc sử dụng Certificate trước khi xóa."
     },
     "errors": {
-      "general": "CA Certificates could not be retrieved",
-      "delete": "The CA Certificate could not be deleted at this time",
-      "copy": "Failed to copy to clipboard"
+      "general": "Không thể lấy Certificate CA",
+      "delete": "Certificate CA không thể bị xóa vào thời điểm này",
+      "copy": "Không thể sao chép vào clipboard"
     },
     "copy": {
-      "success": "Copied {val} to clipboard",
-      "success_brief": "Successfully copied to clipboard"
+      "success": "Đã sao chép {val} vào clipboard",
+      "success_brief": "Đã sao chép thành công vào clipboard"
     }
   },
   "general": {

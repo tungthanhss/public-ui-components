@@ -1,79 +1,79 @@
 {
   "actions": {
-    "create": "New SNI",
-    "copy_id": "Copy ID",
-    "copy_json": "Copy JSON",
-    "edit": "Edit",
-    "delete": "Delete",
-    "clear": "Clear",
-    "loading": "Loading..."
+    "create": "SNI mới",
+    "copy_id": "Sao chép ID",
+    "copy_json": "Sao chép JSON",
+    "edit": "Chỉnh sửa",
+    "delete": "Xóa",
+    "clear": "Xóa",
+    "loading": "Đang tải..."
   },
   "search": {
-    "placeholder": "Filter by exact name or ID",
-    "no_results": "No results found"
+    "placeholder": "Lọc theo tên hoặc ID chính xác",
+    "no_results": "Không tìm thấy kết quả"
   },
   "snis": {
     "title": "SNIs",
     "list": {
       "toolbar_actions": {
-        "new": "New SNI"
+        "new": "SNI mới"
       },
       "table_headers": {
-        "name": "Name",
+        "name": "Tên",
         "id": "ID",
-        "certificate_id": "SSL Certificate ID",
-        "tags": "Tags"
+        "certificate_id": "ID Certificate SSL",
+        "tags": "Thẻ"
       },
       "empty_state": {
-        "title": "Configure a New SNI",
-        "description": "SNIs are used to map hostnames to a certificate."
+        "title": "Cấu hình một SNI mới",
+        "description": "SNIs được sử dụng để ánh xạ tên miền với một Certificate."
       }
     }
   },
   "form": {
     "sections": {
       "general": {
-        "title": "General Information",
-        "description": "General information will help identify and manage this SNI."
+        "title": "Thông tin chung",
+        "description": "Thông tin chung sẽ giúp xác định và quản lý SNI này."
       },
       "certificate": {
         "title": "Certificate",
-        "description": "Map an existing Certificate object to hostnames"
+        "description": "Ánh xạ một đối tượng Certificate hiện có tới các tên miền"
       }
     },
     "fields": {
       "name": {
-        "label": "Name",
-        "placeholder": "Enter a unique name for this SNI"
+        "label": "Tên",
+        "placeholder": "Nhập một tên duy nhất cho SNI này"
       },
       "tags": {
-        "label": "Tags",
-        "placeholder": "Enter a list of tags separated by comma",
-        "help": "e.g. tag1, tag2, tag3",
-        "tooltip": "An optional set of strings for grouping and filtering, separated by commas."
+        "label": "Thẻ",
+        "placeholder": "Nhập danh sách thẻ cách nhau bằng dấu phẩy",
+        "help": "ví dụ: thẻ1, thẻ2, thẻ3",
+        "tooltip": "Một tập hợp tùy chọn các chuỗi để nhóm và lọc, cách nhau bằng dấu phẩy."
       },
       "certificate_id": {
-        "label": "SSL Certificate ID",
-        "placeholder": "Enter or select a Certificate ID",
-        "footer": "Search by exact ID to find certificates not included in the list"
+        "label": "ID Certificate SSL",
+        "placeholder": "Nhập hoặc chọn một ID Certificate",
+        "footer": "Tìm kiếm theo ID chính xác để tìm các Certificate không có trong danh sách"
       }
     }
   },
   "delete": {
-    "title": "Delete an SNI",
-    "description": "This action cannot be reversed so make sure to check the SNI usage before deleting."
+    "title": "Xóa một SNI",
+    "description": "Hành động này không thể đảo ngược, vì vậy hãy đảm bảo kiểm tra việc sử dụng SNI trước khi xóa."
   },
   "errors": {
-    "delete": "The SNI could not be deleted at this time.",
-    "general": "SNIs could not be retrieved",
+    "delete": "Không thể xóa SNI vào lúc này.",
+    "general": "Không thể truy xuất SNIs",
     "certificates": {
-      "fetch": "Could not fetch available certificates",
-      "invalid": "Please select a valid certificate ID"
+      "fetch": "Không thể lấy các Certificate có sẵn",
+      "invalid": "Vui lòng chọn một ID Certificate hợp lệ"
     },
-    "copy": "Failed to copy to clipboard"
+    "copy": "Không thể sao chép vào clipboard"
   },
   "copy": {
-    "success": "Copied {val} to clipboard",
-    "success_brief": "Successfully copied to clipboard"
+    "success": "Đã sao chép {val} vào clipboard",
+    "success_brief": "Đã sao chép thành công vào clipboard"
   }
 }

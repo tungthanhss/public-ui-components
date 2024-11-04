@@ -8,90 +8,90 @@
         "id": "ID"
       },
       "empty_state": {
-        "title": "Configure a New Consumer",
-        "description": "Consumers are the end users of a service.",
-        "title_for_consumer_group": "Configure a New Consumer"
+        "title": "Cấu hình Consumer Mới",
+        "description": "Consumer là những Consumer cuối của dịch vụ.",
+        "title_for_consumer_group": "Cấu hình Consumer Mới"
       },
       "toolbar_actions": {
-        "new_consumer": "New Consumer"
+        "new_consumer": "Consumer Mới"
       }
     },
-    "title": "Consumers",
+    "title": "Consumer",
     "search": {
       "placeholder": {
-        "konnect": "Filter by name",
-        "kongManager": "Filter by exact username or ID"
+        "konnect": "Lọc theo tên",
+        "kongManager": "Lọc theo tên Consumer hoặc ID chính xác"
       }
     },
     "actions": {
-      "add_consumer": "Add Consumer",
-      "create": "New Consumer",
-      "copy_id": "Copy ID",
-      "copy_json": "Copy JSON",
-      "edit": "Edit",
-      "delete": "Delete",
-      "remove": "Remove",
-      "view": "View Details"
+      "add_consumer": "Thêm Consumer",
+      "create": "Consumer Mới",
+      "copy_id": "Sao chép ID",
+      "copy_json": "Sao chép JSON",
+      "edit": "Chỉnh sửa",
+      "delete": "Xóa",
+      "remove": "Xóa bỏ",
+      "view": "Xem Chi Tiết"
     },
     "delete": {
-      "title": "Delete a Consumer",
-      "description": "Deleting this consumer will also remove this consumer from any associated consumer group. This action cannot be reversed."
+      "title": "Xóa Consumer",
+      "description": "Xóa Consumer này cũng sẽ loại bỏ họ khỏi bất kỳ nhóm Consumer liên kết nào. Hành động này không thể hoàn tác."
     },
     "consumer_groups": {
       "add": {
-        "title": "Add Consumers",
-        "ctaText": "Add consumers to this group",
-        "consumers_label": "Consumers",
-        "consumer_placeholder": "Add consumer",
-        "footer": "Search by exact name or ID to find consumers not included in the list"
+        "title": "Thêm Consumer",
+        "ctaText": "Thêm Consumer vào nhóm này",
+        "consumers_label": "Consumer",
+        "consumer_placeholder": "Thêm Consumer",
+        "footer": "Tìm kiếm theo tên hoặc ID chính xác để tìm Consumer không có trong danh sách"
       },
       "remove": {
-        "title": "Remove a Consumer",
-        "confirmation": "Are you sure you want to remove this consumer {consumer} from consumer group {consumerGroup}?",
-        "confirmationNoCG": "Are you sure you want to remove this consumer {consumer} from this consumer group?",
-        "description": "Removing this consumer from the group could change the rate limit policy applied to this consumer."
+        "title": "Xóa Consumer",
+        "confirmation": "Bạn có chắc muốn loại bỏ Consumer {consumer} khỏi nhóm Consumer {consumerGroup}?",
+        "confirmationNoCG": "Bạn có chắc muốn loại bỏ Consumer {consumer} khỏi nhóm Consumer này?",
+        "description": "VViệc loại bỏ một người tiêu dùng khỏi nhóm có thể ảnh hưởng đến chính sách giới hạn tỷ lệ áp dụng cho người tiêu dùng đó. "
       }
     },
     "errors": {
-      "general": "Consumers could not be retrieved",
-      "delete": "The consumer could not be deleted at this time.",
-      "copy": "Failed to copy to clipboard",
-      "add": "Some consumers could not be added at this time.",
-      "already_added": "This consumer has already been added to the consumer group"
+      "general": "Không thể truy xuất Consumer",
+      "delete": "Không thể xóa Consumer vào lúc này.",
+      "copy": "Không thể sao chép vào clipboard",
+      "add": "Một số Consumer không thể được thêm vào vào lúc này.",
+      "already_added": "Consumer này đã được thêm vào nhóm Consumer"
     },
     "copy": {
-      "success": "Copied {val} to clipboard",
-      "success_brief": "Successfully copied to clipboard"
+      "success": "Đã sao chép {val} vào clipboard",
+      "success_brief": "Đã sao chép thành công vào clipboard"
     },
     "form": {
-      "title": "Consumer Identification",
+      "title": "Xác định Consumer",
       "info": {
-        "title": "General Information",
-        "description": "General information will help identify and manage added consumer."
+        "title": "Thông Tin Chung",
+        "description": "Thông tin chung sẽ giúp xác định và quản lý Consumer đã thêm."
       },
       "consumer_identification": {
-        "title": "Consumer Identification",
-        "description": "A consumer can have both unique username and unique custom ID or one of them."
+        "title": "Xác định Consumer",
+        "description": "Một Consumer có thể có cả tên Consumer duy nhất và ID tùy chỉnh duy nhất hoặc chỉ một trong hai."
       }
     },
     "fields": {
       "username": {
-        "label": "Username",
-        "placeholder": "Enter a unique username",
-        "tooltip": "The unique username of the Consumer. You must send either this field or {custom_id} with the request.",
+        "label": "Tên Consumer",
+        "placeholder": "Nhập tên Consumer duy nhất",
+        "tooltip": "Tên Consumer duy nhất của Consumer. Bạn phải gửi trường này hoặc {custom_id} với yêu cầu.",
         "custom_id": "custom_id"
       },
       "custom_id": {
-        "label": "Custom ID",
-        "placeholder": "Enter a unique custom ID",
-        "tooltip": "Field for storing an existing unique ID for the Consumer - useful for mapping Kong with users in your existing database. You must send either this field or {username} with the request.",
+        "label": "ID Tùy Chỉnh",
+        "placeholder": "Nhập ID tùy chỉnh duy nhất",
+        "tooltip": "Trường để lưu trữ một ID duy nhất hiện có cho Consumer - hữu ích để ánh xạ API Gateway với Consumer trong cơ sở dữ liệu hiện có của bạn. Bạn phải gửi trường này hoặc {username} với yêu cầu.",
         "username": "username"
       },
       "tags": {
-        "label": "Tags",
-        "placeholder": "Enter a list of tags separated by comma",
-        "help": "e.g. tag1, tag2, tag3",
-        "tooltip": "An optional set of strings associated with the Consumer for grouping and filtering."
+        "label": "Thẻ",
+        "placeholder": "Nhập danh sách các thẻ cách nhau bằng dấu phẩy",
+        "help": "ví dụ: tag1, tag2, tag3",
+        "tooltip": "Một tập hợp chuỗi tùy chọn liên kết với Consumer để nhóm và lọc."
       }
     }
   }

@@ -1,9 +1,9 @@
 {
   "keySets": {
-    "title": "Key Sets",
+    "title": "Bộ Khóa",
     "list": {
       "toolbar_actions": {
-        "new_key_set": "New Key Set"
+        "new_key_set": "Tạo Bộ Khóa Mới"
       },
       "table_headers": {
         "name": "Name",
@@ -11,52 +11,52 @@
         "tags": "Tags"
       },
       "empty_state": {
-        "title": "Configure a New Key Set",
-        "description": "A Key Set object holds a collection of asymmetric key objects. This entity allows to logically group keys by their purpose."
+        "title": "Cấu Hình Bộ Khóa Mới",
+        "description": "Một đối tượng Bộ Khóa chứa một tập hợp các đối tượng khóa bất đối xứng, cho phép nhóm các khóa theo mục đích của chúng."
       }
     },
     "actions": {
-      "create": "New Key Set",
-      "copy_id": "Copy ID",
-      "copy_json": "Copy JSON",
-      "edit": "Edit",
-      "delete": "Delete",
-      "clear": "Clear",
-      "view": "View Details"
+      "create": "Tạo Bộ Khóa Mới",
+      "copy_id": "Sao Chép ID",
+      "copy_json": "Sao Chép JSON",
+      "edit": "Chỉnh Sửa",
+      "delete": "Xóa",
+      "clear": "Xóa",
+      "view": "Xem Chi Tiết"
     },
     "search": {
-      "placeholder": "Filter by exact name or ID"
+      "placeholder": "Lọc theo tên hoặc ID chính xác"
     },
     "delete": {
-      "title": "Delete a Key Set",
-      "description": "Deleting this key set will also delete keys associated. This action cannot be reversed so make sure to check the key set usage before deleting."
+      "title": "Xóa Bộ Khóa",
+      "description": "Xóa bộ khóa này cũng sẽ xóa các khóa liên quan. Hành động này không thể hoàn tác, vì vậy hãy chắc chắn kiểm tra việc sử dụng bộ khóa trước khi xóa."
     },
     "errors": {
-      "general": "Key sets could not be retrieved",
-      "delete": "The key set could not be deleted at this time.",
-      "copy": "Failed to copy to clipboard"
+      "general": "Không thể lấy bộ khóa",
+      "delete": "Bộ khóa không thể bị xóa vào thời điểm này.",
+      "copy": "Không thể sao chép vào clipboard"
     },
     "copy": {
-      "success": "Copied {val} to clipboard",
-      "success_brief": "Successfully copied to clipboard"
+      "success": "Đã sao chép {val} vào clipboard",
+      "success_brief": "Sao chép thành công vào clipboard"
     },
     "form": {
       "sections": {
         "general": {
-          "title": "General Information",
-          "description": "General information will help identify and manage this key set."
+          "title": "Thông Tin Chung",
+          "description": "Thông tin chung sẽ giúp xác định và quản lý bộ khóa này."
         }
       },
       "fields": {
         "name": {
-          "label": "Name",
-          "placeholder": "Enter a unique name for this key set"
+          "label": "Tên",
+          "placeholder": "Nhập tên duy nhất cho bộ khóa này"
         },
         "tags": {
-          "label": "Tags",
-          "placeholder": "Enter a list of tags separated by comma",
-          "help": "e.g. tag1, tag2, tag3",
-          "tooltip": "An optional set of strings for grouping and filtering, separated by commas."
+          "label": "Thẻ",
+          "placeholder": "Nhập danh sách thẻ cách nhau bằng dấu phẩy",
+          "help": "Ví dụ: thẻ1, thẻ2, thẻ3",
+          "tooltip": "Một tập hợp tùy chọn các chuỗi để nhóm và lọc, cách nhau bằng dấu phẩy."
         }
       }
     }

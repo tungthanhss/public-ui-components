@@ -8,143 +8,143 @@
         "tags": "Tags"
       },
       "empty_state": {
-        "title": "Configure a New Upstream",
-        "description": "Upstreams are used to load balance incoming requests."
+        "title": "Cấu hình một Upstream mới",
+        "description": "Upstreams được sử dụng để cân bằng tải cho các yêu cầu đến."
       },
       "toolbar_actions": {
-        "new_upstream": "New Upstream"
+        "new_upstream": "Upstream mới"
       }
     },
     "title": "Upstreams",
     "search": {
-      "placeholder": "Filter by exact name or ID"
+      "placeholder": "Lọc theo tên hoặc ID chính xác"
     },
     "actions": {
-      "create": "New Upstream",
-      "copy_id": "Copy ID",
-      "copy_json": "Copy JSON",
-      "edit": "Edit",
-      "delete": "Delete",
-      "view": "View Details"
+      "create": "Upstream mới",
+      "copy_id": "Sao chép ID",
+      "copy_json": "Sao chép JSON",
+      "edit": "Chỉnh sửa",
+      "delete": "Xóa",
+      "view": "Xem chi tiết"
     },
     "delete": {
-      "title": "Delete an Upstream",
-      "description": "This action cannot be reversed so make sure to check upstream usage before deleting."
+      "title": "Xóa một Upstream",
+      "description": "Hành động này không thể hoàn tác, vì vậy hãy chắc chắn kiểm tra việc sử dụng upstream trước khi xóa."
     },
     "errors": {
-      "general": "Upstreams could not be retrieved",
-      "delete": "The upstream could not be deleted at this time.",
-      "copy": "Failed to copy to clipboard"
+      "general": "Không thể lấy Upstreams",
+      "delete": "Upstream không thể bị xóa tại thời điểm này.",
+      "copy": "Không thể sao chép vào clipboard"
     },
     "copy": {
-      "success": "Copied {val} to clipboard",
-      "success_brief": "Successfully copied to clipboard"
+      "success": "Đã sao chép {val} vào clipboard",
+      "success_brief": "Đã sao chép vào clipboard thành công"
     },
     "form": {
       "errors": {
-        "name_required": "Name is required",
-        "should_be_integer": "Field should contain an integer",
-        "in_range": "Accepts an integer in the range of 10 - 65536"
+        "name_required": "Tên là bắt buộc",
+        "should_be_integer": "Trường này nên chứa một số nguyên",
+        "in_range": "Chấp nhận một số nguyên trong khoảng 10 - 65536"
       },
       "general_info": {
-        "title": "General Information",
-        "help": "General information will help identify and manage this Upstream."
+        "title": "Thông tin chung",
+        "help": "Thông tin chung sẽ giúp xác định và quản lý Upstream này."
       },
       "load_balancing": {
-        "title": "Load Balancing",
-        "help": "Active health checks actively probe targets for their health. Currently only support HTTP/HTTPS targets."
+        "title": "Cân bằng tải",
+        "help": "Kiểm tra tình trạng hoạt động chủ động sẽ thực hiện kiểm tra các mục tiêu để đảm bảo chúng đang hoạt động bình thường. Hiện tại chỉ hỗ trợ các mục tiêu HTTP/HTTPS."
       },
       "health_check": {
-        "title": "Health Checks & Circuit Breakers",
-        "help": "Active health checks actively probe targets for their health. Currently only support HTTP/HTTPS targets."
+        "title": "Kiểm tra tình trạng hoạt động & Ngắt mạch",
+        "help": "Kiểm tra tình trạng hoạt động chủ động sẽ thực hiện kiểm tra các mục tiêu để đảm bảo chúng đang hoạt động bình thường. Hiện tại chỉ hỗ trợ các mục tiêu HTTP/HTTPS."
       },
       "active_health_check": {
-        "title": "Active Health Checks",
-        "help": "Active health checks actively probe targets for their health. Currently only support HTTP/HTTPS targets."
+        "title": "Kiểm tra tình trạng hoạt động chủ động",
+        "help": "Kiểm tra tình trạng hoạt động chủ động sẽ thực hiện kiểm tra các mục tiêu để đảm bảo chúng đang hoạt động bình thường. Hiện tại chỉ hỗ trợ các mục tiêu HTTP/HTTPS."
       },
       "passive_health_check": {
-        "title": "Passive Health Checks",
-        "help": "Passive health checks, also known as circuit breakers, are checks performed based on the requests being proxied by Kong (HTTP/HTTPS/TCP), with no additional traffic being generated."
+        "title": "Kiểm tra tình trạng hoạt động thụ động",
+        "help": "Kiểm tra tình trạng hoạt động thụ động, còn được gọi là ngắt mạch, là các kiểm tra được thực hiện dựa trên các yêu cầu được chuyển tiếp bởi API Gateway (HTTP/HTTPS/TCP), mà không tạo thêm lưu lượng."
       },
       "buttons": {
-        "view_documentation": "View documentation"
+        "view_documentation": "Xem tài liệu"
       },
       "algorithms": {
         "round_robin_label": "Round Robin",
-        "least_connections_label": "Least Connections",
-        "consistent_hashing_label": "Consistent Hashing",
-        "latency_label": "Latency"
+        "least_connections_label": "Kết nối ít nhất",
+        "consistent_hashing_label": "Băm nhất quán",
+        "latency_label": "Độ trễ"
       },
       "hash_labels": {
-        "none": "None",
+        "none": "Không có",
         "consumer": "Consumer",
         "ip": "IP",
         "header": "Header",
         "cookie": "Cookie",
-        "path": "Path",
-        "query_argument": "Query Argument",
-        "uri_capture": "URI Capture"
+        "path": "Đường dẫn",
+        "query_argument": "Tham số truy vấn",
+        "uri_capture": "Bắt URI"
       },
       "hash_tooltips": {
         "hash_on_header": {
-          "text": "The header name to take the value from as hash input. Only required when {hash_on} is set to {header}",
+          "text": "Tên header để lấy giá trị làm đầu vào băm. Chỉ cần thiết khi {hash_on} được đặt thành {header}",
           "hash_on": "hash_on",
           "header": "header"
         },
         "hash_on_uri_capture": {
-          "text": "The name of the route URI capture to take the value from as hash input. Only required when {hash_on} is set to {uri_capture}",
+          "text": "Tên của đoạn URI bắt để lấy giá trị làm đầu vào băm. Chỉ cần thiết khi {hash_on} được đặt thành {uri_capture}",
           "hash_on": "hash_on",
           "uri_capture": "uri_capture"
         },
         "hash_on_query_arg": {
-          "text": "The name of the query string argument to take the value from as hash input. Only required when {hash_on} is set to {query_arg}",
+          "text": "Tên của tham số chuỗi truy vấn để lấy giá trị làm đầu vào băm. Chỉ cần thiết khi {hash_on} được đặt thành {query_arg}",
           "hash_on": "hash_on",
           "query_arg": "query_arg"
         },
         "hash_on_cookie": {
-          "text": "The cookie name to take the value from as hash input. Only required when {hash_on} or {hash_fallback} is set to {cookie}. If the specified cookie is not in the request, Kong will generate a value and set the cookie in the response.",
+          "text": "Tên cookie để lấy giá trị làm đầu vào băm. Chỉ cần thiết khi {hash_on} hoặc {hash_fallback} được đặt thành {cookie}. Nếu cookie đã chỉ định không có trong yêu cầu, API Gateway sẽ tạo một giá trị và đặt cookie trong phản hồi.",
           "hash_on": "hash_on",
           "hash_fallback": "hash_fallback",
           "cookie": "cookie"
         },
         "hash_on_cookie_path": {
-          "text": "The cookie path to set in the response headers. Only required when {hash_on} or {hash_fallback} is set to {cookie}.",
+          "text": "Đường dẫn cookie để thiết lập trong tiêu đề phản hồi. Chỉ cần thiết khi {hash_on} hoặc {hash_fallback} được đặt thành {cookie}.",
           "hash_on": "hash_on",
           "hash_fallback": "hash_fallback",
           "cookie": "cookie"
         },
         "slots": {
-          "text": "The number of slots in the load balancer algorithm. If {algorithm} is set to {round_robin}, this setting determines the maximum number of slots. If {algorithm} is set to {consistent_hashing}, this setting determines the actual number of slots in the algorithm. Accepts an integer in the range {min}-{max}",
+          "text": "Số lượng slots trong thuật toán cân bằng tải. Nếu {algorithm} được đặt thành {round_robin}, cài đặt này xác định số lượng slots tối đa. Nếu {algorithm} được đặt thành {consistent_hashing}, cài đặt này xác định số lượng slots thực tế trong thuật toán. Chấp nhận một số nguyên trong khoảng {min}-{max}",
           "algorithm": "algorithm",
           "round_robin": "round-robin",
           "consistent_hashing": "consistent-hashing"
         },
-        "tags": "An optional set of strings associated with the Upstream for grouping and filtering.",
+        "tags": "Một tập hợp các chuỗi tùy chọn liên quan đến Upstream để nhóm và lọc.",
         "hash_fallback": {
-          "text": "What to use as hashing input if the primary {hash_on} does not return a hash (eg. header is missing, or no Consumer identified). Not available if {hash_on} is set to {cookie}",
+          "text": "Cái gì sẽ được sử dụng làm đầu vào băm nếu {hash_on} chính không trả về một băm (ví dụ: header bị thiếu hoặc không xác định được Consumer). Không có sẵn nếu {hash_on} được đặt thành {cookie}",
           "hash_on": "hash_on",
           "cookie": "cookie"
         },
         "hash_fallback_header": {
-          "text": "The header name to take the value from as hash input. Only required when {hash_fallback} is set to {header}",
+          "text": "Tên header để lấy giá trị làm đầu vào băm. Chỉ cần thiết khi {hash_fallback} được đặt thành {header}",
           "hash_fallback": "hash_fallback",
           "header": "header"
         },
         "hash_fallback_query_arg": {
-          "text": "The name of the query string argument to take the value from as hash input. Only required when {hash_fallback} is set to {query_arg}",
+          "text": "Tên của tham số chuỗi truy vấn để lấy giá trị làm đầu vào băm. Chỉ cần thiết khi {hash_fallback} được đặt thành {query_arg}",
           "hash_fallback": "hash_fallback",
           "query_arg": "query_arg"
         },
         "hash_fallback_uri_capture": {
-          "text": "The name of the route URI capture to take the value from as hash input. Only required when {hash_fallback} is set to {uri_capture}",
+          "text": "Tên của đoạn URI bắt để lấy giá trị làm đầu vào băm. Chỉ cần thiết khi {hash_fallback} được đặt thành {uri_capture}",
           "hash_fallback": "hash_fallback",
           "uri_capture": "uri_capture"
         },
         "host_header": {
-          "text": "The hostname to be used as {host} header when proxying requests through Kong.",
+          "text": "Tên miền sẽ được sử dụng làm tiêu đề {host} khi chuyển tiếp các yêu cầu qua API Gateway.",
           "host": "Host"
         },
-        "client_certificate": "If set, the certificate to be used as client certificate while TLS handshaking to the upstream server."
+        "client_certificate": "Nếu được thiết lập, Certificate sẽ được sử dụng làm Certificate khách hàng trong quá trình bắt tay TLS đến máy chủ upstream."
       },
       "healthcheck_type_labels": {
         "http": "HTTP",
@@ -154,203 +154,203 @@
         "grsps": "gRPCs"
       },
       "healthy": {
-        "label": "Healthy",
-        "help": "The counter thresholds to determine whether targets are healthy."
+        "label": "Hoạt động tốt",
+        "help": "Các ngưỡng đếm để xác định xem các mục tiêu có hoạt động tốt hay không."
       },
       "unhealthy": {
-        "label": "Unhealthy",
-        "help": "The counter thresholds to determine whether targets are unhealthy."
+        "label": "Không hoạt động tốt",
+        "help": "Các ngưỡng đếm để xác định xem các mục tiêu có không hoạt động tốt hay không."
       },
       "passive_healthy": {
-        "label": "Healthy",
-        "help": "The counter thresholds to determine whether targets are healthy."
+        "label": "Hoạt động tốt",
+        "help": "Các ngưỡng đếm để xác định xem các mục tiêu có hoạt động tốt hay không."
       },
       "passive_unhealthy": {
-        "label": "Unhealthy",
-        "help": "The counter thresholds to determine whether targets are unhealthy."
+        "label": "Không hoạt động tốt",
+        "help": "Các ngưỡng đếm để xác định xem các mục tiêu có không hoạt động tốt hay không."
       },
       "fields": {
         "name": {
-          "label": "Name",
-          "placeholder": "Enter or select a host",
-          "tooltip": "This is a hostname, which must be equal to the {host} of a Service.",
-          "host": "host"
+          "label": "Tên",
+          "placeholder": "Nhập hoặc chọn một máy chủ",
+          "tooltip": "Đây là tên máy chủ, phải bằng với {host} của một dịch vụ.",
+          "host": "máy chủ"
         },
         "host_header": {
-          "label": "Host Header"
+          "label": "Tiêu đề Máy chủ"
         },
         "client_certificate": {
-          "label": "Client Certificate",
-          "placeholder": "Select or enter a Certificate ID",
-          "tooltip": "If set, the certificate to be used as client certificate while TLS handshaking to the upstream server."
+          "label": "Certificate Khách hàng",
+          "placeholder": "Chọn hoặc nhập ID Certificate",
+          "tooltip": "Nếu được thiết lập, Certificate sẽ được sử dụng làm Certificate khách hàng trong khi bắt tay TLS với máy chủ phía trên."
         },
         "tags": {
-          "label": "Tags",
-          "placeholder": "Enter a list of tags separated by comma",
-          "help": "e.g. tag1, tag2, tag3",
-          "tooltip": "An optional set of strings associated with the Upstream for grouping and filtering."
+          "label": "Thẻ",
+          "placeholder": "Nhập danh sách các thẻ cách nhau bởi dấu phẩy",
+          "help": "Ví dụ: thẻ1, thẻ2, thẻ3",
+          "tooltip": "Một tập hợp tùy chọn các chuỗi liên kết với Upstream để nhóm và lọc."
         },
         "algorithm": {
-          "label": "Algorithm",
-          "tooltip": "Which load balancing algorithm to use."
+          "label": "Thuật toán",
+          "tooltip": "Thuật toán cân bằng tải nào sẽ được sử dụng."
         },
         "slots": {
           "label": "Slots",
-          "help": "Accepts an integer in the range of 10 - 65536"
+          "help": "Chấp nhận một số nguyên trong khoảng từ 10 đến 65536"
         },
         "hash_on": {
-          "label": "Hash on",
-          "help": "What to use as hashing input.",
-          "tooltip": "What to use as hashing input. Using {result} results in a weighted-round-robin scheme with no hashing."
+          "label": "Băm trên",
+          "help": "Sử dụng gì làm đầu vào băm.",
+          "tooltip": "Sử dụng {result} dẫn đến một sơ đồ vòng tròn cân nặng không có băm."
         },
         "hash_fallback": {
-          "label": "Hash Fallback",
-          "help": "What to use as hashing input if the primary hash_on does not return a hash",
-          "tooltip": "What to use as hashing input if the primary {hash_on} does not return a hash (eg. header is missing, or no Consumer identified). Not available if {hash_on} is set to {cookie}.",
-          "hash_on": "hash_on",
+          "label": "Băm Dự phòng",
+          "help": "Sử dụng gì làm đầu vào băm nếu {hash_on} chính không trả về một băm",
+          "tooltip": "Sử dụng gì làm đầu vào băm nếu {hash_on} chính không trả về một băm (ví dụ: tiêu đề bị thiếu hoặc không xác định được Consumer). Không khả dụng nếu {hash_on} được đặt thành {cookie}.",
+          "hash_on": "băm trên",
           "cookie": "cookie"
         },
         "active_health_checks": {
-          "label": "Active Health Checks",
-          "help": "Actively probe the targets for their health."
+          "label": "Kiểm tra Sức khỏe Chủ động",
+          "help": "Chủ động kiểm tra sức khỏe các mục tiêu."
         },
         "passive_health_checks": {
-          "label": "Passive Health Checks / Circuit Breakers",
-          "help": "Checks performed based on the requests being proxied by Kong (HTTP/HTTPS/TCP), with no additional traffic being generated."
+          "label": "Kiểm tra Sức khỏe Thụ động / Ngắt mạch",
+          "help": "Kiểm tra được thực hiện dựa trên các yêu cầu được chuyển tiếp bởi API Gateway (HTTP/HTTPS/TCP), mà không phát sinh thêm lưu lượng."
         },
         "healthchecks_threshold": {
-          "label": "Healthchecks Threshold"
+          "label": "Ngưỡng Kiểm tra Sức khỏe"
         },
         "header": {
-          "label": "Header"
+          "label": "Tiêu đề"
         },
         "headers": {
-          "label": "Headers",
-          "tooltip_active": "Header values can be separated by commas (value1, value2, value3)."
+          "label": "Tiêu đề",
+          "tooltip_active": "Giá trị tiêu đề có thể được phân tách bởi dấu phẩy (giá trị1, giá trị2, giá trị3)."
         },
         "cookie": {
           "label": "Cookie"
         },
         "cookie_path": {
-          "label": "Cookie Path"
+          "label": "Đường dẫn Cookie"
         },
         "query_argument": {
-          "label": "Query Argument"
+          "label": "Tham số Truy vấn"
         },
         "uri_capture": {
-          "label": "URI Capture"
+          "label": "Bắt URI"
         },
         "active_healthcheck_type": {
-          "label": "Active Health Check Type"
+          "label": "Loại Kiểm tra Sức khỏe Chủ động"
         },
         "http_path": {
-          "label": "HTTP Path"
+          "label": "Đường dẫn HTTP"
         },
         "timeout": {
-          "label": "Timeout"
+          "label": "Thời gian Chờ"
         },
         "concurrency": {
-          "label": "Concurrency"
+          "label": "Đồng thời"
         },
         "https_sni": {
           "label": "HTTPS SNI"
         },
         "verify_ssl": {
-          "label": "Verify the SSL certificate when performing active health checks using HTTPS"
+          "label": "Xác minh Certificate SSL khi thực hiện kiểm tra sức khỏe chủ động sử dụng HTTPS"
         },
         "interval": {
-          "label": "Interval",
-          "help": "A value of zero indicates that active probes for healthy targets are disabled."
+          "label": "Khoảng thời gian",
+          "help": "Giá trị bằng không cho biết rằng các thử nghiệm chủ động cho các mục tiêu hoạt động tốt đã bị vô hiệu hóa."
         },
         "successes": {
-          "label": "Successes"
+          "label": "Thành công"
         },
         "http_statuses": {
-          "label": "HTTP Statuses"
+          "label": "Trạng thái HTTP"
         },
         "http_failures": {
-          "label": "HTTP Failures"
+          "label": "Thất bại HTTP"
         },
         "tcp_failures": {
-          "label": "TCP Failures"
+          "label": "Thất bại TCP"
         },
         "timeouts": {
-          "label": "Timeouts"
+          "label": "Thời gian Chờ"
         },
         "passive_health_check_type": {
-          "label": "Passive Health Check Type"
+          "label": "Loại Kiểm tra Sức khỏe Thụ động"
         }
       }
     },
     "labels": {
-      "created_at": "Created at"
+      "created_at": "Thời gian Tạo"
     }
   },
   "targets": {
     "list": {
       "table_headers": {
         "id": "ID",
-        "target_address": "Target Address",
-        "weight": "Weight",
-        "tags": "Tags"
+        "target_address": "Địa chỉ Mục tiêu",
+        "weight": "Trọng số",
+        "tags": "Thẻ"
       },
       "empty_state": {
-        "title": "Configure a New Target",
-        "description": "A target is an IP address/hostname with a port that identifies an instance of a backend service."
+        "title": "Cấu hình một Mục tiêu Mới",
+        "description": "Một mục tiêu là một địa chỉ IP/tên máy chủ với một cổng xác định một thể hiện của một dịch vụ backend."
       },
       "toolbar_actions": {
-        "new_target": "New Target"
+        "new_target": "Mục tiêu Mới"
       }
     },
-    "title": "Targets",
+    "title": "Các Mục tiêu",
     "actions": {
-      "create": "New Target",
-      "copy_id": "Copy ID",
-      "copy_json": "Copy JSON",
-      "edit": "Edit",
-      "delete": "Delete",
-      "mark_healthy": "Mark Healthy",
-      "mark_unhealthy": "Mark Unhealthy"
+      "create": "Mục tiêu Mới",
+      "copy_id": "Sao chép ID",
+      "copy_json": "Sao chép JSON",
+      "edit": "Chỉnh sửa",
+      "delete": "Xóa",
+      "mark_healthy": "Đánh dấu hoạt động tốt",
+      "mark_unhealthy": "Đánh dấu không hoạt động tốt"
     },
     "delete": {
-      "title": "Delete a Target",
-      "description": "This action cannot be reversed so make sure to check target usage before deleting."
+      "title": "Xóa một Mục tiêu",
+      "description": "Hành động này không thể đảo ngược, vì vậy hãy đảm bảo kiểm tra việc sử dụng mục tiêu trước khi xóa."
     },
     "errors": {
-      "general": "Targets could not be retrieved",
-      "delete": "The target could not be deleted at this time.",
-      "copy": "Failed to copy to clipboard",
-      "weight": "Value must be in range 0 to 65535"
+      "general": "Không thể truy xuất các mục tiêu",
+      "delete": "Mục tiêu không thể bị xóa vào thời điểm này.",
+      "copy": "Sao chép vào clipboard không thành công",
+      "weight": "Giá trị phải nằm trong khoảng từ 0 đến 65535"
     },
     "copy": {
-      "success": "Copied {val} to clipboard",
-      "success_brief": "Successfully copied to clipboard"
+      "success": "Đã sao chép {val} vào clipboard",
+      "success_brief": "Đã sao chép thành công vào clipboard"
     },
     "form": {
       "create": {
-        "title": "New Target"
+        "title": "Mục tiêu Mới"
       },
       "edit": {
-        "title": "Edit Target"
+        "title": "Chỉnh sửa Mục tiêu"
       },
       "buttons": {
-        "save": "Save",
-        "cancel": "Cancel"
+        "save": "Lưu",
+        "cancel": "Hủy"
       },
       "fields": {
         "target": {
-          "label": "Target Address",
-          "placeholder": "Enter IP/hostname and port",
-          "tooltip": "The target address (IP or hostname) and port. If omitted the port defaults to 8000."
+          "label": "Địa chỉ Mục tiêu",
+          "placeholder": "Nhập IP/tên máy chủ và cổng",
+          "tooltip": "Địa chỉ mục tiêu (IP hoặc tên máy chủ) và cổng. Nếu bỏ qua, cổng mặc định là 8000."
         },
         "weight": {
-          "label": "Weight",
-          "tooltip": "The weight of this target in relation to other targets in the upstream. Value must be in range 0 to 65535, defaults to 100."
+          "label": "Trọng số",
+          "tooltip": "Trọng số của mục tiêu này liên quan đến các mục tiêu khác trong upstream. Giá trị phải nằm trong khoảng từ 0 đến 65535, mặc định là 100."
         },
         "tags": {
-          "label": "Tags",
-          "placeholder": "Enter a list of tags separated by comma",
-          "help": "e.g. tag1, tag2, tag3"
+          "label": "Thẻ",
+          "placeholder": "Nhập danh sách các thẻ cách nhau bởi dấu phẩy",
+          "help": "Ví dụ: thẻ1, thẻ2, thẻ3"
         }
       }
     }

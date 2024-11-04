@@ -2,89 +2,89 @@
   "consumer_groups": {
     "list": {
       "table_headers": {
-        "name": "Name",
-        "consumers_count": "Consumers",
-        "tags": "Tags",
+        "name": "Tên",
+        "consumers_count": "Consumer",
+        "tags": "Thẻ",
         "id": "ID"
       },
       "empty_state": {
-        "title": "Configure a New Consumer Group",
-        "description": "Use consumer groups to manage custom rate limiting configuration for subsets of consumers.",
-        "title_for_consumer": "Add to a Consumer Group"
+        "title": "Cấu hình Nhóm Consumer Mới",
+        "description": "Sử dụng nhóm Consumer để quản lý cấu hình giới hạn tốc độ tùy chỉnh cho các nhóm Consumer cụ thể.",
+        "title_for_consumer": "Thêm vào Nhóm Consumer"
       },
       "toolbar_actions": {
-        "new_consumer_group": "New Consumer Group"
+        "new_consumer_group": "Nhóm Consumer Mới"
       }
     },
-    "title": "Consumer Groups",
+    "title": "Nhóm Consumer",
     "search": {
-      "placeholder": "Filter by exact name or ID"
+      "placeholder": "Lọc theo tên hoặc ID chính xác"
     },
     "actions": {
-      "add_to_group": "Add to Consumer Group",
-      "create": "New Consumer Group",
-      "copy_id": "Copy ID",
-      "copy_json": "Copy JSON",
-      "edit": "Edit",
-      "delete": "Delete",
-      "exit": "Exit",
-      "view": "View Details"
+      "add_to_group": "Thêm vào Nhóm Consumer",
+      "create": "Nhóm Consumer Mới",
+      "copy_id": "Sao chép ID",
+      "copy_json": "Sao chép JSON",
+      "edit": "Chỉnh sửa",
+      "delete": "Xóa",
+      "exit": "Thoát",
+      "view": "Xem Chi Tiết"
     },
     "delete": {
-      "title": "Delete a Consumer Group",
-      "description": "Deleting this group will remove this group from all plugins and its rate limit configuration. This action cannot be reversed."
+      "title": "Xóa Nhóm Consumer",
+      "description": "Xóa nhóm này sẽ loại bỏ nhóm khỏi tất cả các plugin và cấu hình giới hạn tốc độ của nhóm. Hành động này không thể hoàn tác."
     },
     "consumers": {
       "add": {
-        "title": "Add To Consumer Groups",
-        "ctaText": "Add this consumer to consumer groups",
-        "consumer_groups_label": "Consumer Groups",
-        "consumer_group_placeholder": "Add to consumer groups",
-        "footer": "Search by exact name or ID to find consumer groups not included in the list"
+        "title": "Thêm Vào Nhóm Consumer",
+        "ctaText": "Thêm Consumer này vào nhóm Consumer",
+        "consumer_groups_label": "Nhóm Consumer",
+        "consumer_group_placeholder": "Thêm vào nhóm Consumer",
+        "footer": "Tìm kiếm theo tên hoặc ID chính xác để tìm các nhóm Consumer không có trong danh sách"
       },
       "exit": {
-        "title": "Exit from a Consumer Group",
-        "confirmation": "Are you sure you want to remove consumer {consumer} from consumer group {consumerGroup}?",
-        "confirmationNoUsername": "Are you sure you want this consumer to exit from consumer group {consumerGroup}?",
-        "description": "Exiting from the group could change the rate limit policy applied to this consumer."
+        "title": "Thoát khỏi Nhóm Consumer",
+        "confirmation": "Bạn có chắc muốn loại bỏ Consumer {consumer} khỏi nhóm Consumer {consumerGroup}?",
+        "confirmationNoUsername": "Bạn có chắc muốn Consumer này thoát khỏi nhóm Consumer {consumerGroup}?",
+        "description": "Thoát khỏi nhóm có thể thay đổi chính sách giới hạn tốc độ áp dụng cho Consumer này."
       }
     },
     "errors": {
-      "general": "Consumer Groups could not be retrieved",
-      "delete": "The consumer group could not be deleted at this time.",
-      "copy": "Failed to copy to clipboard",
-      "add": "The consumer could not be added to some groups at this time.",
-      "already_added": "The consumer is already in this consumer group",
-      "add_consumer": "An unexpected error occurred while adding consumers. Please try again.",
-      "remove_consumer": "An unexpected error occurred while removing consumers. Please try again."
+      "general": "Không thể truy xuất Nhóm Consumer",
+      "delete": "Không thể xóa nhóm Consumer vào lúc này.",
+      "copy": "Không thể sao chép vào clipboard",
+      "add": "Không thể thêm Consumer vào một số nhóm vào lúc này.",
+      "already_added": "Consumer đã nằm trong nhóm Consumer này",
+      "add_consumer": "Đã xảy ra lỗi không mong muốn khi thêm Consumer. Vui lòng thử lại.",
+      "remove_consumer": "Đã xảy ra lỗi không mong muốn khi loại bỏ Consumer. Vui lòng thử lại."
     },
     "copy": {
-      "success": "Copied {val} to clipboard",
-      "success_brief": "Successfully copied to clipboard"
+      "success": "Đã sao chép {val} vào clipboard",
+      "success_brief": "Đã sao chép thành công vào clipboard"
     },
     "form": {
       "general_info": {
-        "title": "General Information",
-        "description": "General information will help identify and manage this consumer group."
+        "title": "Thông Tin Chung",
+        "description": "Thông tin chung sẽ giúp xác định và quản lý nhóm Consumer này."
       },
       "consumers": {
-        "title": "Consumers",
-        "description": "Add or remove consumers from this group"
+        "title": "Consumer",
+        "description": "Thêm hoặc loại bỏ Consumer khỏi nhóm này"
       },
       "fields": {
         "name": {
-          "label": "Name",
-          "placeholder": "Enter a unique name for this consumer group "
+          "label": "Tên",
+          "placeholder": "Nhập tên duy nhất cho nhóm Consumer này"
         },
         "tags": {
-          "label": "Tags",
-          "placeholder": "Enter a list of tags separated by comma",
-          "help": "e.g. tag1, tag2, tag3",
-          "tooltip": "An optional set of strings for grouping and filtering, separated by commas."
+          "label": "Thẻ",
+          "placeholder": "Nhập danh sách các thẻ cách nhau bằng dấu phẩy",
+          "help": "ví dụ: tag1, tag2, tag3",
+          "tooltip": "Một tập hợp chuỗi tùy chọn để nhóm và lọc, cách nhau bằng dấu phẩy."
         },
         "consumers": {
-          "label": "Consumers",
-          "placeholder": "Select one or more consumers"
+          "label": "Consumer",
+          "placeholder": "Chọn một hoặc nhiều Consumer"
         }
       }
     }

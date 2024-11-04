@@ -1,141 +1,141 @@
 {
   "actions": {
-    "create": "New Vault",
-    "copy_id": "Copy ID",
-    "copy_json": "Copy JSON",
-    "edit": "Edit",
-    "delete": "Delete",
-    "view": "View Details"
+    "create": "Tạo Vault Mới",
+    "copy_id": "Sao chép ID",
+    "copy_json": "Sao chép JSON",
+    "edit": "Chỉnh sửa",
+    "delete": "Xóa",
+    "view": "Xem Chi Tiết"
   },
   "delete": {
-    "title": "Delete a Vault",
-    "title_for_secret": "Delete a Secret",
-    "description": "This action cannot be reversed."
+    "title": "Xóa một Vault",
+    "title_for_secret": "Xóa một Bí Mật",
+    "description": "Hành động này không thể đảo ngược."
   },
   "errors": {
-    "general": "Vaults could not be retrieved",
-    "delete": "The vault could not be deleted at this time.",
-    "copy": "Failed to copy to clipboard"
+    "general": "Không thể truy xuất Vaults",
+    "delete": "Vault không thể bị xóa vào lúc này.",
+    "copy": "Sao chép vào clipboard thất bại"
   },
   "search": {
     "placeholder_for_vaults": {
-      "konnect": "Filter by exact prefix or ID"
+      "konnect": "Lọc theo tiền tố hoặc ID chính xác"
     },
     "placeholder_for_secrets": {
-      "konnect": "Filter by exact key"
+      "konnect": "Lọc theo khóa chính xác"
     }
   },
   "vaults": {
     "title": "Vaults",
     "list": {
       "toolbar_actions": {
-        "new_vault": "New Vault"
+        "new_vault": "Vault Mới"
       },
       "table_headers": {
-        "prefix": "Prefix",
-        "name": "Vault Type",
-        "description": "Description",
-        "tags": "Tags",
+        "prefix": "Tiền Tố",
+        "name": "Loại Vault",
+        "description": "Mô Tả",
+        "tags": "Thẻ",
         "id": "ID"
       },
       "empty_state": {
-        "title": "Configure a New Vault",
-        "description": "Improve the security of your Kong Gateway deployment with centralized secrets."
+        "title": "Cấu hình một Vault Mới",
+        "description": "Cải thiện bảo mật cho triển khai API Gateway của bạn với bí mật tập trung."
       }
     }
   },
   "secrets": {
-    "title": "Secrets",
+    "title": "Bí Mật",
     "list": {
       "toolbar_actions": {
-        "new_secret": "Store New Secret"
+        "new_secret": "Lưu Bí Mật Mới"
       },
       "table_headers": {
-        "key": "Secret Key",
-        "updated_at": "Updated At"
+        "key": "Khóa Bí Mật",
+        "updated_at": "Cập Nhật Lần Cuối"
       },
       "empty_state": {
-        "title": "No Secrets Stored",
-        "description": "Improve the security of your Kong Gateway deployment with centralized secrets."
+        "title": "Không Có Bí Mật Nào Được Lưu",
+        "description": "Cải thiện bảo mật cho triển khai API Gateway của bạn với bí mật tập trung."
       }
     },
     "form": {
       "info": {
-        "title": "Secret",
-        "description": "Enter the secret key and secret value to be stored in Konnect vault"
+        "title": "Bí Mật",
+        "description": "Nhập khóa bí mật và giá trị bí mật để lưu trong vault của Konnect"
       },
       "fields": {
         "key": {
-          "label": "Key",
-          "placeholder": "Enter key"
+          "label": "Khóa",
+          "placeholder": "Nhập khóa"
         },
         "value": {
-          "label": "Value",
-          "placeholder": "Enter value here, can be simple values or multi-line"
+          "label": "Giá Trị",
+          "placeholder": "Nhập giá trị ở đây, có thể là giá trị đơn giản hoặc đa dòng"
         }
       },
-      "hint": "Once saved, the secret value will not be visible"
+      "hint": "Khi đã lưu, giá trị bí mật sẽ không được hiển thị"
     }
   },
   "copy": {
-    "success": "Copied {val} to clipboard",
-    "success_brief": "Successfully copied to clipboard"
+    "success": "Đã sao chép {val} vào clipboard",
+    "success_brief": "Sao chép vào clipboard thành công"
   },
   "labels": {
-    "vault_type": "Vault Type"
+    "vault_type": "Loại Vault"
   },
   "form": {
     "sections": {
       "general": {
-        "title": "General Information",
-        "description": "General information helps identify and manage this Vault instance."
+        "title": "Thông tin chung",
+        "description": "Thông tin chung giúp xác định và quản lý session bản Vault này."
       },
       "config": {
-        "title": "Vault Configuration",
-        "description": "Select a type of Vault and configure properties specific to each type of Vault."
+        "title": "Cấu hình Vault",
+        "description": "Chọn loại Vault và cấu hình các thuộc tính cụ thể cho mỗi loại Vault."
       }
     },
     "fields": {
       "prefix": {
-        "label": "Prefix",
-        "placeholder": "Enter a unique prefix for this vault",
-        "help": "e.g. my-vault",
-        "tooltip": "The prefix is used to load the right Vault configuration and implementation when referencing secrets with the other entities."
+        "label": "Tiền tố",
+        "placeholder": "Nhập một tiền tố duy nhất cho vault này",
+        "help": "ví dụ: my-vault",
+        "tooltip": "Tiền tố được sử dụng để tải cấu hình và triển khai Vault đúng khi tham chiếu đến các bí mật với các thực thể khác."
       },
       "description": {
-        "label": "Description",
-        "placeholder": "Enter some description for this vault"
+        "label": "Mô tả",
+        "placeholder": "Nhập một số mô tả cho vault này"
       },
       "tags": {
-        "label": "Tags",
-        "placeholder": "Enter a list of tags separated by comma",
-        "help": "e.g. tag1, tag2, tag3"
+        "label": "Thẻ",
+        "placeholder": "Nhập danh sách các thẻ được phân tách bằng dấu phẩy",
+        "help": "ví dụ: tag1, tag2, tag3"
       }
     },
     "config": {
       "konnect": {
         "label": "Konnect",
-        "description": "Access secrets stored directly in Konnect's unified platform to easily reference in Kong Gateway configuration."
+        "description": "Truy cập các bí mật được lưu trữ trực tiếp trong nền tảng thống nhất của Konnect để dễ dàng tham chiếu trong cấu hình API Gateway."
       },
       "env": {
-        "label": "Environment Variables",
-        "description": "Access secrets stored via variables to be made available in Kong Gateway at runtime.",
+        "label": "Biến Môi Trường",
+        "description": "Truy cập các bí mật được lưu trữ qua các biến để có thể sử dụng trong API Gateway tại thời gian chạy.",
         "fields": {
           "prefix": {
-            "label": "Environment Variable Prefix",
-            "placeholder": "Enter your environment variable vault prefix",
-            "tooltip": "Data plane will access all the environment variables starting with this prefix."
+            "label": "Tiền tố Biến Môi Trường",
+            "placeholder": "Nhập tiền tố vault biến môi trường của bạn",
+            "tooltip": "Data plane sẽ truy cập tất cả các biến môi trường bắt đầu với tiền tố này."
           }
         }
       },
       "aws": {
         "label": "AWS Secrets Manager",
-        "description": "Access secrets stored in AWS Secrets Manager for Kong Gateway configuration.",
+        "description": "Truy cập các bí mật được lưu trữ trong AWS Secrets Manager cho cấu hình API Gateway.",
         "fields": {
           "region": {
-            "label": "Region",
-            "placeholder": "Select an AWS region",
-            "tooltip": "The AWS region your vault is located in",
+            "label": "Khu vực",
+            "placeholder": "Chọn một khu vực AWS",
+            "tooltip": "Khu vực AWS nơi vault của bạn được đặt",
             "locations": {
               "us-east-1": {
                 "location": "N. Virginia"
@@ -153,7 +153,7 @@
                 "location": "Cape Town"
               },
               "ap-east-1": {
-                "location": "Hong Kong"
+                "location": "Hồng Kông"
               },
               "ap-southeast-3": {
                 "location": "Jakarta"
@@ -212,40 +212,40 @@
             }
           },
           "endpoint_url": {
-            "label": "Endpoint URL",
-            "tooltip": "The AWS SecretsManager service endpoint url. If not specified, the value used by vault will be the official AWS SecretsManager service url which is `https://secretsmanager.<region>.amazonaws.com`. You can specify a complete URL(including the \"http/https\" scheme) to override the endpoint that vault will connect to."
+            "label": "URL Điểm cuối",
+            "tooltip": "URL điểm cuối của dịch vụ AWS SecretsManager. Nếu không chỉ định, giá trị được sử dụng bởi vault sẽ là URL dịch vụ AWS SecretsManager chính thức là `https://secretsmanager.<region>.amazonaws.com`. Bạn có thể chỉ định một URL hoàn chỉnh (bao gồm cả giao thức \"http/https\") để ghi đè điểm cuối mà vault sẽ kết nối đến."
           },
           "assume_role_arn": {
-            "label": "Assume Role ARN",
-            "tooltip": "The target AWS IAM role ARN that will be assumed. Typically this is used for operating between multiple roles or cross-accounts. If you are not using assume role you should not specify this value."
+            "label": "ARN Vai trò Giả định",
+            "tooltip": "ARN của vai trò IAM AWS mà sẽ được giả định. Thông thường, điều này được sử dụng cho việc hoạt động giữa nhiều vai trò hoặc qua các tài khoản. Nếu bạn không sử dụng vai trò giả định, bạn không nên chỉ định giá trị này."
           },
           "role_session_name": {
-            "label": "Role Session Name",
-            "tooltip": "The role session name used for role assuming."
+            "label": "Tên session Vai trò",
+            "tooltip": "Tên session vai trò được sử dụng cho việc giả định vai trò."
           },
           "sts_endpoint_url": {
-            "label": "STS Endpoint URL",
-            "tooltip": "The custom STS endpoint URL used for role assuming in AWS Vault. Note that this value will override the default STS endpoint URL(which should be `https: //sts.amazonaws.com`, or `https: //sts.<region>.amazonaws.com` if you have `AWS_STS_REGIONAL_ENDPOINTS` set to `regional`). If you are not using private VPC endpoint for STS service, you should not specify this value."
+            "label": "URL Điểm cuối STS",
+            "tooltip": "URL điểm cuối STS tùy chỉnh được sử dụng cho việc giả định vai trò trong AWS Vault. Lưu ý rằng giá trị này sẽ ghi đè URL điểm cuối STS mặc định (nên là `https://sts.amazonaws.com`, hoặc `https://sts.<region>.amazonaws.com` nếu bạn đã đặt `AWS_STS_REGIONAL_ENDPOINTS` thành `regional`). Nếu bạn không sử dụng điểm cuối VPC riêng tư cho dịch vụ STS, bạn không nên chỉ định giá trị này."
           }
         }
       },
       "gcp": {
-        "label": "Google Secret Manager",
-        "description": "Access secrets stored in Google Secret Manager for Kong Gateway configuration.",
+        "label": "Quản lý Bí mật Google",
+        "description": "Truy cập các bí mật được lưu trữ trong Quản lý Bí mật Google cho cấu hình API Gateway.",
         "fields": {
           "project_id": {
-            "label": "Project ID",
-            "placeholder": "Enter your Google Cloud Project ID",
+            "label": "ID Dự án",
+            "placeholder": "Nhập ID Dự án Google Cloud của bạn",
             "tooltip": {
-              "text": "Visit your Google API Console and select {italic-text} in the projects list to see your project ID",
-              "italicText": "Manage all projects"
+              "text": "Truy cập vào Bảng điều khiển API Google của bạn và chọn {italic-text} trong danh sách dự án để xem ID dự án của bạn",
+              "italicText": "Quản lý tất cả các dự án"
             }
           }
         }
       },
       "hcv": {
         "label": "HashiCorp Vault",
-        "description": "Access secrets stored in HashiCorp Vault for Kong Gateway configuration.",
+        "description": "Truy cập các bí mật được lưu trữ trong HashiCorp Vault cho cấu hình API Gateway.",
         "fields": {
           "protocol": {
             "label": "Protocol"
@@ -272,66 +272,66 @@
             "label": "Token"
           },
           "kube_role": {
-            "label": "Kubernetes Role"
+            "label": "Vai trò Kubernetes"
           },
           "kube_auth_path": {
-            "label": "Kubernetes Auth Path"
+            "label": "Đường dẫn Xác thực Kubernetes"
           },
           "kube_api_token_file": {
-            "label": "Kubernetes API Token File"
+            "label": "Tệp Mã token API Kubernetes"
           },
           "approle_auth_path": {
-            "label": "App Role Auth Path"
+            "label": "Đường dẫn Xác thực App Role"
           },
           "approle_role_id": {
-            "label": "App Role Role ID"
+            "label": "ID Vai trò App Role"
           },
           "approle_secret_id": {
-            "label": "App Role Secret ID"
+            "label": "ID Bí mật App Role"
           },
           "approle_secret_id_file": {
-            "label": "App Role Secret ID File"
+            "label": "Tệp ID Bí mật App Role"
           },
           "approle_response_wrapping": {
-            "label": "App Role Response Wrapping"
+            "label": "Gói phản hồi App Role"
           }
         }
       },
       "azure": {
         "label": "Azure Vault",
-        "description": "Access secrets stored in Azure Key Vault for Kong Gateway configuration.",
+        "description": "Truy cập các bí mật được lưu trữ trong Azure Key Vault cho cấu hình API Gateway .",
         "fields": {
           "location": {
-            "label": "Location"
+            "label": "Vị trí"
           },
           "vault_uri": {
-            "label": "Vault URI"
+            "label": "URI Kho lưu trữ"
           },
           "credential_prefix": {
-            "label": "Credential Prefix"
+            "label": "Tiền tố Thông tin xác thực"
           },
           "type": {
-            "label": "Type",
-            "placeholder": "Select a type"
+            "label": "Loại",
+            "placeholder": "Chọn một loại"
           },
           "client_id": {
-            "label": "Client ID"
+            "label": "ID Khách hàng"
           },
           "tenant_id": {
-            "label": "Tenant ID"
+            "label": "ID Tên miền"
           }
         }
       },
       "advancedFields": {
-        "title": "View Advanced Fields",
-        "ttl": "Time-to-Live",
-        "ttlTooltip": "Time-to-live (in seconds) of a secret from a vault when cached by this reference",
-        "negTtl": "Negative Time-to-Live",
-        "negTtlTooltip": "Time-to-live (in seconds) of a vault miss (no secret)",
-        "resurrectTtl": "Time-to-Live Resurrection",
-        "resurrectTtlTooltip": "Time (in seconds) for which stale secrets from the vault are resurrected for when they cannot be refreshed"
+        "title": "Xem Các Trường Nâng cao",
+        "ttl": "Thời gian sống",
+        "ttlTooltip": "Thời gian sống (tính bằng giây) của một bí mật từ một kho lưu trữ khi được lưu vào bộ nhớ cache bởi tham chiếu này",
+        "negTtl": "Thời gian sống Âm",
+        "negTtlTooltip": "Thời gian sống (tính bằng giây) của một lần không tìm thấy kho lưu trữ (không có bí mật)",
+        "resurrectTtl": "Thời gian sống Tái sinh",
+        "resurrectTtlTooltip": "Thời gian (tính bằng giây) mà các bí mật cũ từ kho lưu trữ được tái sinh khi chúng không thể được làm mới"
       }
     },
-    "unavailable": "This vault provider is available on Enterprise."
+    "unavailable": "Nhà cung cấp kho lưu trữ này có sẵn trên Enterprise."
   }
 }
