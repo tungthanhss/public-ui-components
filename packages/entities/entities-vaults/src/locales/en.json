@@ -29,7 +29,7 @@
     "title": "Vaults",
     "list": {
       "toolbar_actions": {
-        "new_vault": "Vault Mới"
+        "new_vault": "Tạo mới Vault"
       },
       "table_headers": {
         "prefix": "Tiền Tố",

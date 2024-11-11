@@ -13,7 +13,7 @@
         "title_for_consumer": "Thêm vào Nhóm Consumer"
       },
       "toolbar_actions": {
-        "new_consumer_group": "Nhóm Consumer Mới"
+        "new_consumer_group": "Tạo mới Nhóm Consumer"
       }
     },
     "title": "Nhóm Consumer",
@@ -22,7 +22,7 @@
     },
     "actions": {
       "add_to_group": "Thêm vào Nhóm Consumer",
-      "create": "Nhóm Consumer Mới",
+      "create": "Tạo mới Nhóm Consumer",
       "copy_id": "Sao chép ID",
       "copy_json": "Sao chép JSON",
       "edit": "Chỉnh sửa",

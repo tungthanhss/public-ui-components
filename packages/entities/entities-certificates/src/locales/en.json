@@ -3,7 +3,7 @@
     "title": "Certificate",
     "list": {
       "toolbar_actions": {
-        "new_certificate": "Certificate mới"
+        "new_certificate": "Tạo mới Certificate"
       },
       "table_headers": {
         "subject": "Subject",
@@ -68,7 +68,7 @@
       }
     },
     "actions": {
-      "create": "Certificate mới",
+      "create": "Tạo mới Certificate",
       "copy_id": "Sao chép ID",
       "copy_json": "Sao chép JSON",
       "edit": "Chỉnh sửa",

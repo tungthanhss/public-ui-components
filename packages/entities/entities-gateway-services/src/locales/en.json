@@ -35,8 +35,8 @@
         "enabled": "Enabled",
         "tags": "Tags",
         "id": "ID",
-        "created_at": "Created At",
-        "updated_at": "Last Modified"
+        "created_at": "Tạo lúc",
+        "updated_at": "Sửa đổi lần cuối"
       },
       "empty_state": {
         "title": "Cấu Hình Gateway Service Mới",

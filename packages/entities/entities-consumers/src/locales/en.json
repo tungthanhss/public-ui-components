@@ -25,7 +25,7 @@
     },
     "actions": {
       "add_consumer": "Thêm Consumer",
-      "create": "Consumer Mới",
+      "create": "Tạo Consumer Mới",
       "copy_id": "Sao chép ID",
       "copy_json": "Sao chép JSON",
       "edit": "Chỉnh sửa",

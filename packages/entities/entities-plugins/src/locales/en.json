@@ -1,590 +1,590 @@
 {
   "actions": {
-    "cancel": "Cancel",
-    "view_configuration": "View Configuration",
-    "create": "New Plugin",
-    "create_custom": "Create",
-    "copy_id": "Copy ID",
-    "copy_json": "Copy JSON",
-    "edit": "Edit",
-    "enable": "Enable",
-    "enabled": "Enabled",
-    "delete": "Delete",
-    "confirm_delete": "Yes, delete",
-    "view": "View Details",
-    "configure_dynamic_ordering": "Configure Dynamic Ordering",
-    "go_to_plugins": "Go to Plugins",
-    "save": "Save",
-    "loading": "Loading..."
+    "cancel": "Hủy",
+    "view_configuration": "Xem Configuration",
+    "create": "Tạo mới Plugin",
+    "create_custom": "Tạo",
+    "copy_id": "Sao Chép ID",
+    "copy_json": "Sao Chép JSON",
+    "edit": "Chỉnh Sửa",
+    "enable": "Bật",
+    "enabled": "Đã Bật",
+    "delete": "Xóa",
+    "confirm_delete": "Đồng ý, xóa",
+    "view": "Xem Chi Tiết",
+    "configure_dynamic_ordering": "Configuration Sắp Xếp Động",
+    "go_to_plugins": "Đi đến Plugins",
+    "save": "Lưu",
+    "loading": "Đang Tải..."
   },
   "view_configuration": {
     "title": "Configuration",
-    "message": "Export configurations for core Kong Gateway objects, like services, routes, and plugins, to either YAML, JSON, or Terraform. This allows for straightforward importing into APIOps tools like decK with YAML, Insomnia and cURL with JSON, or Terraform products with Terraform.",
+    "message": "Xuất Configuration cho các đối tượng chính của API GateWay Gateway, như Service, Route và plugin, dưới dạng YAML, JSON, hoặc Terraform. Điều này cho phép dễ dàng nhập vào các công cụ APIOps như decK với YAML, Insomnia và cURL với JSON, hoặc các sản phẩm Terraform.",
     "yaml": "YAML",
     "terraform": "Terraform",
     "json": "JSON"
   },
   "delete": {
-    "title": "Delete a Plugin",
-    "custom_title": "Delete {name}",
-    "custom_plugin": "Custom Plugin",
-    "description": "This action cannot be reversed.",
-    "description_custom": "Please ensure this plugin is not in use. This action cannot be reversed.",
-    "plugin_schema_in_use_title": "Unable to Delete Custom Plugin",
-    "plugin_schema_in_use_message": "The custom plugin schema {name} is being used in this control plane, please delete any existing instances before you delete this schema.",
-    "confirmModalText1": "Are you sure you want to delete",
-    "confirmModalText2": "Please ensure this plugin is not in use. This delete action cannot be reversed.",
-    "confirm_text": "Type {name} to confirm your action",
-    "success_message": "Successfully deleted custom plugin {name}"
+    "title": "Xóa Plugin",
+    "custom_title": "Xóa {name}",
+    "custom_plugin": "Plugin Tùy Chỉnh",
+    "description": "Hành động này không thể hoàn tác.",
+    "description_custom": "Vui lòng đảm bảo plugin này không còn được sử dụng. Hành động này không thể hoàn tác.",
+    "plugin_schema_in_use_title": "Không Thể Xóa Plugin Tùy Chỉnh",
+    "plugin_schema_in_use_message": "Schema plugin tùy chỉnh {name} đang được sử dụng trong mặt phẳng điều khiển này, vui lòng xóa các trường hợp hiện tại trước khi xóa schema này.",
+    "confirmModalText1": "Bạn có chắc chắn muốn xóa",
+    "confirmModalText2": "Vui lòng đảm bảo plugin này không còn được sử dụng. Hành động xóa này không thể hoàn tác.",
+    "confirm_text": "Nhập {name} để xác nhận hành động của bạn",
+    "success_message": "Đã xóa thành công plugin tùy chỉnh {name}"
   },
   "copy": {
-    "success": "Copied {val} to clipboard",
-    "success_brief": "Successfully copied to clipboard",
-    "tooltip": "Copy {label}",
-    "success_tooltip": "Copied!"
+    "success": "Đã sao chép {val} vào clipboard",
+    "success_brief": "Sao chép thành công vào clipboard",
+    "tooltip": "Sao chép {label}",
+    "success_tooltip": "Đã sao chép!"
   },
   "errors": {
-    "general": "Plugins could not be retrieved",
-    "delete": "The plugin could not be deleted at this time.",
-    "copy": "Failed to copy to clipboard",
-    "load_results": "Error loading available plugins",
-    "load_schema": "Error loading plugin schema"
+    "general": "Không thể truy xuất plugins",
+    "delete": "Không thể xóa plugin vào lúc này.",
+    "copy": "Không thể sao chép vào clipboard",
+    "load_results": "Lỗi khi tải plugins có sẵn",
+    "load_schema": "Lỗi khi tải schema plugin"
   },
   "search": {
     "placeholder": {
-      "konnect": "Filter by name",
-      "kongManager": "Filter by exact instance name or ID",
-      "select": "Filter plugins"
+      "konnect": "Lọc theo tên",
+      "kongManager": "Lọc theo tên hoặc ID chính xác của phiên bản",
+      "select": "Lọc plugin"
     },
     "filter": {
       "field": {
-        "enabled": "Enabled"
+        "enabled": "Đã Bật"
       }
     },
-    "no_results": "No results found for \"{filter}\""
+    "no_results": "Không tìm thấy kết quả cho \"{filter}\""
   },
   "plugins": {
-    "title": "Plugins",
+    "title": "Plugin",
     "list": {
       "toolbar_actions": {
-        "new_plugin": "New Plugin"
+        "new_plugin": "Tạo mới Plugin"
       },
       "table_headers": {
-        "applied_to": "Applied To",
+        "applied_to": "Áp Dụng Cho",
         "applied_to_badges": {
           "consumer": "Consumer",
           "global": "Global",
           "route": "Route",
           "service": "Service",
-          "consumer_group": "Consumer Group"
+          "consumer_group": "Nhóm Consumer"
         },
         "id": "ID",
-        "name": "Name",
-        "instance_name": "Instance Name",
-        "ordering": "Ordering",
+        "name": "Tên",
+        "instance_name": "Tên Phiên Bản",
+        "ordering": "Sắp Xếp",
         "ordering_badge": {
-          "dynamic": "Dynamic",
-          "static": "Static"
+          "dynamic": "Động",
+          "static": "Tĩnh"
         },
-        "enabled": "Enabled",
-        "tags": "Tags"
+        "enabled": "Đã Bật",
+        "tags": "Thẻ"
       },
       "empty_state": {
-        "title": "Configure a New Plugin",
-        "description": "Plugins are used to extend Kong functionality."
+        "title": "Tạo cấu hình Plugin Mới",
+        "description": "Plugin được sử dụng để mở rộng chức năng của Api Gateway."
       }
     },
     "meta": {
       "basic-auth": {
-        "name": "Basic Authentication",
-        "credential_name": "Basic Auth Credential",
-        "description": "Add Basic Authentication to your Services"
+        "name": "Xác Thực Cơ Bản",
+        "credential_name": "Thông Tin Xác Thực Cơ Bản",
+        "description": "Thêm Xác Thực Cơ Bản vào Service của bạn"
       },
       "hmac-auth": {
-        "name": "HMAC Authentication",
-        "credential_name": "HMAC Credential",
-        "description": "Add HMAC Authentication to your Services"
+        "name": "Xác Thực HMAC",
+        "credential_name": "Thông Tin Xác Thực HMAC",
+        "description": "Thêm Xác Thực HMAC vào Service của bạn"
       },
       "jwt-signer": {
-        "name": "JWT Signer",
-        "description": "Verify and (re-)sign one or two tokens in a request"
+        "name": "Ký JWT",
+        "description": "Xác minh và (tái) ký một hoặc hai token trong một yêu cầu"
       },
       "jwt": {
         "name": "JWT",
-        "credential_name": "JWT Credential",
-        "description": "Verify and authenticate JSON Web Tokens"
+        "credential_name": "Thông Tin Xác Thực JWT",
+        "description": "Xác minh và xác thực JSON Web Token"
       },
       "key-auth": {
-        "name": "Key Authentication",
-        "credential_name": "Key Auth Credential",
-        "description": "Add key authentication to your Services"
+        "name": "Xác Thực Bằng Khóa",
+        "credential_name": "Thông Tin Xác Thực Bằng Khóa",
+        "description": "Thêm xác thực bằng khóa vào Service của bạn"
       },
       "key-auth-enc": {
-        "name": "Key Authentication Encrypted",
-        "credential_name": "Key Auth Encrypted",
-        "description": "Add key authentication to your Services with an encrypted token"
+        "name": "Xác Thực Bằng Khóa Mã Hóa",
+        "credential_name": "Thông Tin Xác Thực Khóa Mã Hóa",
+        "description": "Thêm xác thực bằng khóa vào Service của bạn với token mã hóa"
       },
       "ldap-auth-advanced": {
-        "name": "LDAP Authentication Advanced",
-        "description": "Integrate Kong with a LDAP server"
+        "name": "Xác Thực LDAP Nâng Cao",
+        "description": "Tích hợp API GateWay với máy chủ LDAP"
       },
       "ldap-auth": {
-        "name": "LDAP Authentication",
-        "description": "Integrate Kong with a LDAP server"
+        "name": "Xác Thực LDAP",
+        "description": "Tích hợp API GateWay với máy chủ LDAP"
       },
       "oauth2-introspection": {
-        "name": "OAuth 2.0 Introspection",
-        "description": "Integrate Kong with a third-party OAuth 2.0 Authorization Server"
+        "name": "Kiểm Tra OAuth 2.0",
+        "description": "Tích hợp API GateWay với Máy Chủ Ủy Quyền OAuth 2.0 của bên thứ ba"
       },
       "oauth2": {
-        "name": "OAuth 2.0 Authentication",
-        "credential_name": "OAuth 2.0 Application",
-        "description": "Add OAuth 2.0 authentication to your Services"
+        "name": "Xác Thực OAuth 2.0",
+        "credential_name": "Ứng Dụng OAuth 2.0",
+        "description": "Thêm xác thực OAuth 2.0 vào Service của bạn"
       },
       "openid-connect": {
-        "name": "OpenID Connect",
-        "description": "Integrate Kong with a third-party OpenID Connect 1.0 Provider"
+        "name": "Kết Nối OpenID",
+        "description": "Tích hợp API GateWay với Nhà Cung Cấp OpenID Connect 1.0 của bên thứ ba"
       },
       "mtls-auth": {
-        "name": "Mutual TLS Authentication",
-        "description": "Secure routes and services with client certificate and mutual TLS authentication"
+        "name": "Xác Thực TLS hỗ trợ",
+        "description": "Bảo mật Route và Service với xác thực chứng chỉ khách hàng và TLS hỗ trợ"
       },
       "vault-auth": {
-        "name": "Vault Authentication",
-        "description": "Secure routes and services with an access token and secret token, stored securely via Vault"
+        "name": "Xác Thực Vault",
+        "description": "Bảo mật Route và Service với token truy cập và token bí mật, lưu trữ an toàn qua Vault"
       },
       "bot-detection": {
-        "name": "Bot Detection",
-        "description": "Detect and clock bots or custom clients"
+        "name": "Phát Hiện Bot",
+        "description": "Phát hiện và chặn các bot hoặc các client tùy chỉnh"
       },
       "cors": {
         "name": "CORS",
-        "description": "Allow developers to make requests from the browser"
+        "description": "Cho phép nhà phát triển gửi yêu cầu từ trình duyệt"
       },
       "ip-restriction": {
-        "name": "IP Restriction",
-        "description": "Whitelist or blacklist IPs that can make requests"
+        "name": "Giới Hạn IP",
+        "description": "Danh sách trắng hoặc đen các IP có thể gửi yêu cầu"
       },
       "opa": {
         "name": "OPA",
-        "description": "Authorize requests against Open Policy Agent"
+        "description": "Ủy quyền yêu cầu đối với Open Policy Agent"
       },
       "kubernetes-sidecar-injector": {
-        "name": "Kubernetes Sidecar Injector",
-        "description": "This plugin will inject Kong dataplane nodes and form a service mesh on top of Kubernetes"
+        "name": "Bộ Tiêm Kubernetes Sidecar",
+        "description": "Plugin này sẽ thêm các node dataplane của API GateWay và tạo một service mesh trên Kubernetes"
       },
       "request-validator": {
-        "name": "Request Validator",
-        "description": "Validate requests before they reach their upstream Service. "
+        "name": "Trình Xác Thực Yêu Cầu",
+        "description": "Xác thực yêu cầu trước khi đến Service đầu nguồn"
       },
       "acl": {
         "name": "ACL",
-        "credential_name": "Access Control Group",
-        "description": "Control which consumers can access Services"
+        "credential_name": "Nhóm Kiểm Soát Truy Cập",
+        "description": "Kiểm soát Consumer nào có thể truy cập Service"
       },
       "canary": {
-        "name": "Canary Release",
-        "description": "Methodically roll out software changes to a subset of users"
+        "name": "Phát Hành Canary",
+        "description": "Triển khai dần các thay đổi phần mềm cho một nhóm Consumer"
       },
       "forward-proxy": {
-        "name": "Forward Proxy",
-        "description": "Allow Kong to connect to intermediary transparent HTTP proxies"
+        "name": "Proxy Chuyển Tiếp",
+        "description": "Cho phép API GateWay kết nối tới các proxy HTTP trung gian trong suốt"
       },
       "proxy-cache": {
-        "name": "Proxy Caching",
-        "description": "Cache and serve commonly requested responses in Kong"
+        "name": "Bộ Đệm Proxy",
+        "description": "Lưu trữ và cung cấp các phản hồi được yêu cầu thường xuyên trong Api Gateway"
       },
       "proxy-cache-advanced": {
-        "name": "Proxy Caching Advanced",
-        "description": "Cache and serve commonly requested responses in Kong"
+        "name": "Bộ Đệm Proxy Nâng Cao",
+        "description": "Lưu trữ và cung cấp các phản hồi được yêu cầu thường xuyên trong Api Gateway"
       },
       "graphql-proxy-cache-advanced": {
-        "name": "GraphQL Proxy Caching Advanced",
-        "description": "Cache and serve commonly requested responses in Kong"
+        "name": "Bộ Đệm Proxy GraphQL Nâng Cao",
+        "description": "Lưu trữ và cung cấp các phản hồi được yêu cầu thường xuyên trong Api Gateway"
       },
       "rate-limiting-advanced": {
-        "name": "Rate Limiting Advanced",
-        "description": "Rate-limit how many HTTP requests a developer can make"
+        "name": "Giới Hạn Tốc Độ Nâng Cao",
+        "description": "Giới hạn số lượng yêu cầu HTTP mà nhà phát triển có thể gửi"
       },
       "rate-limiting": {
-        "name": "Rate Limiting",
-        "description": "Rate-limit how many HTTP requests a developer can make"
+        "name": "Giới Hạn Tốc Độ",
+        "description": "Giới hạn số lượng yêu cầu HTTP mà nhà phát triển có thể gửi"
       },
       "graphql-rate-limiting-advanced": {
-        "name": "GraphQL Rate Limiting Advanced",
-        "description": "Rate-limit how many HTTP requests a developer can make"
+        "name": "Giới Hạn Tốc Độ GraphQL Nâng Cao",
+        "description": "Giới hạn số lượng yêu cầu HTTP mà nhà phát triển có thể gửi"
       },
       "mocking": {
         "name": "Mocking",
-        "description": "Provide mock endpoints to test your APIs in development against your services"
+        "description": "Cung cấp các endpoint giả để thử nghiệm API trong quá trình phát triển với Service của bạn"
       },
       "request-size-limiting": {
-        "name": "Request Size Limiting",
-        "description": "Block requests with bodies greater than a specific size"
+        "name": "Giới Hạn Kích Thước Yêu Cầu",
+        "description": "Chặn các yêu cầu có body lớn hơn kích thước quy định"
       },
       "request-termination": {
-        "name": "Request Termination",
-        "description": "Terminate all requests with a specific response"
+        "name": "Chấm Dứt Yêu Cầu",
+        "description": "Kết thúc tất cả các yêu cầu với một phản hồi cụ thể"
       },
       "response-ratelimiting": {
-        "name": "Response Rate Limiting",
-        "description": "Rate-Limiting based on a custom response header value"
+        "name": "Giới Hạn Tốc Độ Phản Hồi",
+        "description": "Giới hạn tốc độ dựa trên giá trị tiêu đề phản hồi tùy chỉnh"
       },
       "route-by-header": {
-        "name": "Route by Header",
-        "description": "Route requests based on request headers"
+        "name": "Định Tuyến Theo Tiêu Đề",
+        "description": "Định tuyến yêu cầu dựa trên tiêu đề yêu cầu"
       },
       "ai-proxy": {
         "name": "AI Proxy",
-        "description": "Directly call a configured LLM, with mediated security and tuning parameters, and using standardised Kong request and response formats."
+        "description": "Gọi trực tiếp mô hình ngôn ngữ lớn được Configuration, với các thông số bảo mật và điều chỉnh, sử dụng định dạng yêu cầu và phản hồi tiêu chuẩn của Api Gateway."
       },
       "ai-prompt-decorator": {
-        "name": "AI Prompt Decorator",
-        "description": "Prepend and append chat prompts to AI Proxy plugin LLM requests."
+        "name": "Trình Trang Trí Lệnh AI",
+        "description": "Thêm và chèn lệnh trò chuyện vào yêu cầu AI Proxy."
       },
       "ai-prompt-template": {
-        "name": "AI Prompt Template",
-        "description": "Define a set of templates, containing string variable placeholders, that can be consumed by users when used with the AI Proxy plugin."
+        "name": "Mẫu Lệnh AI",
+        "description": "Xác định một tập hợp các mẫu với chỗ trống biến chuỗi để sử dụng trong plugin AI Proxy."
       },
       "ai-prompt-guard": {
-        "name": "AI Prompt Guard",
-        "description": "Define a set of valid, and a set of invalid, regular expression patterns when calling LLM models with the AI Proxy plugin."
+        "name": "Bảo Vệ Lệnh AI",
+        "description": "Xác định các mẫu hợp lệ và không hợp lệ khi gọi mô hình ngôn ngữ lớn với AI Proxy."
       },
       "ai-request-transformer": {
-        "name": "AI Request Transformer",
-        "description": "Use an LLM to transform API request from a user, before sending to the upstream service."
+        "name": "Trình Chuyển Đổi Yêu Cầu AI",
+        "description": "Sử dụng mô hình ngôn ngữ lớn để chuyển đổi yêu cầu API từ Consumer trước khi gửi đến Service đầu nguồn."
       },
       "ai-response-transformer": {
-        "name": "AI Response Transformer",
-        "description": "Use an LLM to transform API responses from the upstream service, before returning to the user."
+        "name": "Trình Chuyển Đổi Phản Hồi AI",
+        "description": "Sử dụng mô hình ngôn ngữ lớn để chuyển đổi phản hồi từ Service đầu nguồn trước khi trả về cho Consumer."
       },
       "ai-rate-limiting-advanced": {
-        "name": "AI Rate Limiting Advanced",
-        "description": "Provides rate limiting for the providers used by any AI plugins."
+        "name": "Giới Hạn Tốc Độ AI Nâng Cao",
+        "description": "Cung cấp giới hạn tốc độ cho các nhà cung cấp được sử dụng bởi các plugin AI."
       },
       "ai-azure-content-safety": {
-        "name": "AI Azure Content Safety",
-        "description": "Allows checking and auditing of AI-Proxy plugin messages, using Azure Cognitive Services, before proxying to upstream large-language model."
+        "name": "Bảo Vệ Nội Dung AI Azure",
+        "description": "Cho phép kiểm tra và đánh giá tin nhắn AI Proxy bằng Service Nhận Thức của Azure trước khi chuyển tiếp tới mô hình ngôn ngữ lớn đầu nguồn."
       },
       "aws-lambda": {
         "name": "AWS Lambda",
-        "description": "Invoke and manage AWS Lambda functions from Kong"
+        "description": "Gọi và quản lý các hàm AWS Lambda từ Api Gateway"
       },
       "azure-functions": {
-        "name": "Azure Functions",
-        "description": "Invoke Azure functions"
+        "name": "Chức Năng Azure",
+        "description": "Gọi các chức năng Azure"
       },
       "openwhisk": {
         "name": "OpenWhisk",
-        "description": "Invoke and manage OpenWhisk actions from Kong"
+        "description": "Gọi và quản lý các hành động OpenWhisk từ Api Gateway"
       },
       "pre-function": {
-        "name": "Kong Functions (Pre-Plugins)",
-        "description": "Add and manage custom lua functions to run before other plugins"
+        "name": "Hàm API GateWay (Trước-Plugin)",
+        "description": "Thêm và quản lý các hàm lua tùy chỉnh để chạy trước các plugin khác"
       },
       "post-function": {
-        "name": "Kong Functions (Post-Plugins)",
-        "description": "Add and manage custom lua functions to run after other plugins"
+        "name": "Hàm API GateWay (Sau-Plugin)",
+        "description": "Thêm và quản lý các hàm lua tùy chỉnh để chạy sau các plugin khác"
       },
       "datadog": {
         "name": "Datadog",
-        "description": "Visualize metrics on Datadog"
+        "description": "Trực quan hóa các số liệu trên Datadog"
       },
       "prometheus": {
         "name": "Prometheus",
-        "description": "Export performance metrics to Prometheus"
+        "description": "Xuất số liệu hiệu suất sang Prometheus"
       },
       "zipkin": {
         "name": "Zipkin",
-        "description": "Propagate zipkin spans and report spans to a zipkin server"
+        "description": "Truyền các span của zipkin và báo cáo chúng tới máy chủ zipkin"
       },
       "collector": {
-        "name": "Collector",
-        "description": "Automate spec-driven development & anomaly detection (Early Access)"
+        "name": "Bộ Thu Thập",
+        "description": "Tự động hóa phát triển dựa trên đặc tả và phát hiện bất thường (Truy cập Sớm)"
       },
       "response-transformer-advanced": {
-        "name": "Response Transformer Advanced",
-        "description": "Transform the response sent by the upstream server on the fly on Kong, before returning the response to the client."
+        "name": "Trình Chuyển Đổi Phản Hồi Nâng Cao",
+        "description": "Chuyển đổi phản hồi từ máy chủ đầu nguồn trực tiếp trên API GateWay trước khi trả về phản hồi cho client."
       },
       "correlation-id": {
         "name": "Correlation ID",
-        "description": "Correlate requests and responses using a unique ID"
+        "description": "Liên kết các yêu cầu và phản hồi bằng một ID duy nhất"
       },
       "request-transformer-advanced": {
         "name": "Request Transformer Advanced",
-        "description": "Use powerful regular expressions, variables and templates to transform API requests"
+        "description": "Sử dụng biểu thức chính quy mạnh mẽ, biến và mẫu để biến đổi yêu cầu API"
       },
       "request-transformer": {
         "name": "Request Transformer",
-        "description": "Modify the request before hitting the upstream server"
+        "description": "Sửa đổi yêu cầu trước khi gửi tới máy chủ upstream"
       },
       "response-transformer": {
         "name": "Response Transformer",
-        "description": "Modify the upstream response before returning it to the client"
+        "description": "Sửa đổi phản hồi từ máy chủ upstream trước khi trả lại cho khách hàng"
       },
       "route-transformer-advanced": {
         "name": "Route Transformer Advanced",
-        "description": "Transforms the routing on the fly in Kong, changing the upstream server/port/path to hit"
+        "description": "Biến đổi định tuyến ngay lập tức trong Api Gateway, thay đổi máy chủ/ cổng/ đường dẫn upstream mà nó sẽ gọi tới"
       },
       "kafka-upstream": {
         "name": "Kafka Upstream",
-        "description": "Transform requests into Kafka messages in a topic"
+        "description": "Biến đổi yêu cầu thành các tin nhắn Kafka trong một chủ đề"
       },
       "degraphql": {
         "name": "DeGraphQL",
-        "description": "Transform a GraphQL upstream into a REST API"
+        "description": "Biến đổi một upstream GraphQL thành một API REST"
       },
       "exit-transformer": {
         "name": "Exit Transformer",
-        "description": "Customize Kong exit responses sent downstream"
+        "description": "Tùy chỉnh các phản hồi thoát của API GateWay gửi xuống"
       },
       "jq": {
         "name": "jq",
-        "description": "Transform JSON objects included in API requests or responses using jq programs"
+        "description": "Biến đổi các đối tượng JSON trong các yêu cầu hoặc phản hồi API bằng cách sử dụng các chương trình jq"
       },
       "file-log": {
         "name": "File Log",
-        "description": "Append request and response data to a log file on disk"
+        "description": "Ghi lại dữ liệu yêu cầu và phản hồi vào một tệp log trên đĩa"
       },
       "http-log": {
         "name": "HTTP Log",
-        "description": "Send request and response logs to an HTTP server"
+        "description": "Gửi các log yêu cầu và phản hồi tới một máy chủ HTTP"
       },
       "loggly": {
         "name": "Loggly",
-        "description": "Send request and response logs to Loggly"
+        "description": "Gửi các log yêu cầu và phản hồi tới Loggly"
       },
       "statsd-advanced": {
         "name": "StatsD Advanced",
-        "description": "Send traffic and Kong performance metrics to StatsD"
+        "description": "Gửi các số liệu lưu lượng và hiệu suất của API GateWay tới StatsD"
       },
       "statsd": {
         "name": "StatsD",
-        "description": "Send request and response logs to StatsD"
+        "description": "Gửi các log yêu cầu và phản hồi tới StatsD"
       },
       "syslog": {
         "name": "Syslog",
-        "description": "Send request and response logs to Syslog"
+        "description": "Gửi các log yêu cầu và phản hồi tới Syslog"
       },
       "tcp-log": {
         "name": "TCP Log",
-        "description": "Send request and response logs to a TCP server"
+        "description": "Gửi các log yêu cầu và phản hồi tới một máy chủ TCP"
       },
       "udp-log": {
         "name": "UDP Log",
-        "description": "Send request and response logs to a UDP server"
+        "description": "Gửi các log yêu cầu và phản hồi tới một máy chủ UDP"
       },
       "kafka-log": {
         "name": "Kafka Log",
-        "description": "Publish request and response logs to a Kafka topic"
+        "description": "Xuất bản các log yêu cầu và phản hồi tới một chủ đề Kafka"
       },
       "session": {
         "name": "Session",
-        "description": "Sessions for Kong authentication"
+        "description": "Các phiên làm việc cho xác thực "
       },
       "upstream-tls": {
         "name": "Upstream TLS",
-        "description": "Enable TLS on upstream traffic by providing Kong with a list of trusted certificates."
+        "description": "Bật TLS cho lưu lượng upstream bằng cách cung cấp cho API GateWay danh sách các chứng chỉ tin cậy."
       },
       "application-registration": {
         "name": "Portal Application Registration",
-        "description": "Allow portal developers to register applications against services"
+        "description": "Cho phép các nhà phát triển cổng đăng ký ứng dụng với các Service"
       },
       "konnect-application-auth": {
         "name": "Konnect Application Auth",
-        "description": "Allow Konnect portal developers to register applications against services"
+        "description": "Cho phép các nhà phát triển cổng Konnect đăng ký ứng dụng với các Service"
       },
       "acme": {
         "name": "ACME",
-        "description": "Let's Encrypt and ACMEv2 integration with Kong"
+        "description": "Tích hợp Let's Encrypt và ACMEv2 với Api Gateway"
       },
       "grpc-gateway": {
         "name": "gRPC Gateway",
-        "description": "Access gRPC services through HTTP REST"
+        "description": "Truy cập các Service gRPC thông qua HTTP REST"
       },
       "grpc-web": {
         "name": "gRPC Web",
-        "description": "Allow browser clients to call gRPC services"
+        "description": "Cho phép các client trình duyệt gọi các Service gRPC"
       },
       "upstream-timeout": {
         "name": "Upstream Timeout",
-        "description": "Configure read, send and connect timeouts to an upstream"
+        "description": "Configuration thời gian chờ đọc, gửi và kết nối tới một upstream"
       },
       "opentelemetry": {
         "name": "OpenTelemetry",
-        "description": "Propagate distributed tracing spans and report low-level spans to a OTLP-compatible server"
+        "description": "Truyền phát các khoảng phân phối và báo cáo các khoảng cấp thấp tới một máy chủ tương thích OTLP"
       },
       "websocket-validator": {
         "name": "WebSocket Validator",
-        "description": "Validate individual WebSocket messages against to a user-specified schema before proxying them"
+        "description": "Xác thực các thông điệp WebSocket riêng lẻ theo một sơ đồ do Consumer chỉ định trước khi chuyển tiếp chúng"
       },
       "websocket-size-limit": {
         "name": "WebSocket Size Limit",
-        "description": "Allows operators to specify a maximum size for incoming WebSocket messages"
+        "description": "Cho phép các quản trị viên chỉ định kích thước tối đa cho các thông điệp WebSocket đến"
       },
       "tls-metadata-headers": {
         "name": "TLS Metadata Headers",
-        "description": "Detects client certificates in requests, retrieves the TLS metadata, and proxies this metadata via HTTP headers"
+        "description": "Phát hiện các chứng chỉ của client trong các yêu cầu, lấy dữ liệu TLS, và chuyển tiếp dữ liệu này qua các tiêu đề HTTP"
       },
       "tls-handshake-modifier": {
         "name": "TLS Handshake Modifier",
-        "description": "Requests the client certificate and if it exists, makes it available to other plugins acting on the request"
+        "description": "Yêu cầu chứng chỉ client và nếu có, cung cấp cho các plugin khác đang hoạt động trên yêu cầu"
       },
       "oas-validation": {
         "name": "OAS Validation",
-        "description": "Validate HTTP requests and responses based on an API Specification."
+        "description": "Xác thực các yêu cầu và phản hồi HTTP dựa trên một Đặc tả API."
       },
       "jwe-decrypt": {
-        "name": "Kong JWE Decrypt",
-        "description": "The Kong JWE Decrypt plugin makes it possible to decrypt an inbound token(JWE) in a request."
+        "name": "API GateWay JWE Decrypt",
+        "description": "Plugin API GateWay JWE Decrypt cho phép giải mã một token (JWE) đến trong một yêu cầu."
       },
       "xml-threat-protection": {
         "name": "XML Threat Protection",
-        "description": "Reduce the risk of XML attacks by checking the structure of XML payloads."
+        "description": "Giảm thiểu rủi ro từ các cuộc tấn công XML bằng cách kiểm tra cấu trúc của các payload XML."
       },
       "saml": {
         "name": "SAML",
-        "description": "Security Assertion Markup Language (SAML) is an open standard for exchanging authentication and authorization data between an identity provider and a service provider."
+        "description": "Security Assertion Markup Language (SAML) là một tiêu chuẩn mở để trao đổi dữ liệu xác thực và ủy quyền giữa nhà cung cấp danh tính và nhà cung cấp Service."
       },
       "app-dynamics": {
         "name": "AppDynamics",
-        "description": "This plugin integrates Kong with the AppDynamics APM platform so that proxy requests handled by Kong can be identified and analyzed in AppDynamics."
+        "description": "Plugin này tích hợp API GateWay với nền tảng AppDynamics APM để các yêu cầu proxy được xử lý bởi API GateWay có thể được nhận diện và phân tích trong AppDynamics."
       },
       "json-threat-protection": {
         "name": "JSON Threat Protection",
-        "description": "Apply size checks on JSON payload and minimize risk of content-level attacks"
+        "description": "Áp dụng các kiểm tra kích thước cho payload JSON và giảm thiểu rủi ro từ các cuộc tấn công ở mức nội dung"
       },
       "standard-webhooks": {
         "name": "Standard Webhooks",
-        "description": "Validate incoming webhooks adhere to the Standard Webhooks specification, to which Kong is a contributor"
+        "description": "Xác thực các webhook đến tuân thủ theo đặc tả Standard Webhooks, mà API GateWay là một nhà đóng góp"
       },
       "ai-proxy-advanced": {
         "name": "AI Proxy Advanced",
-        "description": "Route across different LLMs and models using advanced load balancing algorithms, including semantic routing."
+        "description": "Định tuyến giữa các LLM và mô hình khác nhau sử dụng các thuật toán cân bằng tải nâng cao, bao gồm định tuyến ngữ nghĩa."
       },
       "ai-semantic-cache": {
         "name": "AI Semantic Cache",
-        "description": "Semantically cache AI requests to any LLM to reduce latency, improve end-user experiences and optimize GenAI costs."
+        "description": "Lưu cache ngữ nghĩa cho các yêu cầu AI tới bất kỳ LLM nào để giảm độ trễ, cải thiện trải nghiệm Consumer cuối và tối ưu hóa chi phí GenAI."
       },
       "ai-semantic-prompt-guard": {
         "name": "AI Semantic Prompt Guard",
-        "description": "Semantically and intelligently create allow and deny lists of topics that can be requested across every LLM."
+        "description": "Tạo danh sách cho phép và từ chối một cách ngữ nghĩa và thông minh các chủ đề có thể được yêu cầu trên mọi LLM."
       },
       "header-cert-auth": {
         "name": "Header Certificate Authentication",
-        "description": "Authenticate clients with MTLS certificate passed in header by a WAF or load balancer"
+        "description": "Xác thực các client với chứng chỉ MTLS được truyền trong tiêu đề bởi WAF hoặc bộ cân bằng tải"
       },
       "upstream-oauth": {
         "name": "Upstream OAuth",
-        "description": "Configure Kong to obtain a OAuth2 token to consume an upstream API"
+        "description": "Configuration API GateWay để lấy một token OAuth2 để tiêu thụ một API upstream"
       },
       "confluent": {
         "name": "Confluent",
-        "description": "Streamlines integration with Confluent Cloud and transforms requests into messages published to a Confluent topic."
+        "description": "Tối ưu hóa tích hợp với Confluent Cloud và biến đổi các yêu cầu thành các tin nhắn được xuất bản tới một chủ đề Confluent."
       }
     },
     "fields": {
-      "service": "Service ID",
-      "route": "Route ID",
-      "consumer": "Consumer ID",
-      "consumer_group": "Consumer Group ID"
+      "service": "Mã Service",
+      "route": "Mã lộ trình",
+      "consumer": "Mã Consumer",
+      "consumer_group": "Mã nhóm Consumer"
     },
     "select": {
-      "custom_badge_text": "This plugin is data plane node specific",
-      "unavailable_tooltip": "This plugin is not available",
-      "already_exists": "This plugin is already applied to this resource",
-      "misc_plugins": "Other Plugins",
-      "view_more": "View more",
-      "view_less": "View less",
+      "custom_badge_text": "Plugin này là đặc thù cho nút dữ liệu",
+      "unavailable_tooltip": "Plugin này không khả dụng",
+      "already_exists": "Plugin này đã được áp dụng cho tài nguyên này",
+      "misc_plugins": "Các Plugin Khác",
+      "view_more": "Xem thêm",
+      "view_less": "Xem ít hơn",
       "tabs": {
         "kong": {
-          "title": "Kong Plugins",
-          "description": "Kong plugins are bundled by default with Kong Gateway and are available across all control planes.",
-          "empty_title": "No Plugins",
-          "empty_description": "No plugins are available."
+          "title": "Plugin của Api Gateway",
+          "description": "Plugin của API GateWay được đóng gói theo mặc định với API GateWay Gateway và có sẵn trên tất cả các control plane.",
+          "empty_title": "Không có Plugin",
+          "empty_description": "Không có plugin nào khả dụng."
         },
         "custom": {
-          "title": "Custom Plugins",
-          "description": "Custom plugins will be available in this control plane only.",
-          "disabled_tooltip": "Custom Plugins are not available with this Gateway. Create a Hybrid Gateway to leverage Custom Plugins.",
-          "empty_title": "No Custom Plugins",
-          "empty_description": "No custom plugins have been added to this Control Plane.",
+          "title": "Plugin Tùy Chỉnh",
+          "description": "Plugin tùy chỉnh chỉ có sẵn trong control plane này.",
+          "disabled_tooltip": "Plugin Tùy Chỉnh không khả dụng với Gateway này. Tạo một Hybrid Gateway để sử dụng Plugin Tùy Chỉnh.",
+          "empty_title": "Không có Plugin Tùy Chỉnh",
+          "empty_description": "Không có plugin tùy chỉnh nào đã được thêm vào Control Plane này.",
           "create": {
-            "name": "Custom Plugin",
-            "description": "Upload schema file to create custom plugin"
+            "name": "Plugin Tùy Chỉnh",
+            "description": "Tải lên tệp sơ đồ để tạo plugin tùy chỉnh"
           }
         }
       },
       "highlighted_plugins": {
-        "title": "Highlighted Plugins"
+        "title": "Plugin Nổi Bật"
       }
     },
     "form": {
-      "no_selection": "No selection...",
+      "no_selection": "Chưa chọn...",
       "fields": {
         "enabled": {
-          "label": "Enabled",
-          "on_text": "This plugin is Enabled",
-          "off_text": "This plugin is Disabled"
+          "label": "Đã kích hoạt",
+          "on_text": "Plugin này đã được kích hoạt",
+          "off_text": "Plugin này đã bị vô hiệu hóa"
         },
         "instance_name": {
-          "label": "Instance Name",
-          "help": "A custom name for this plugin instance to help identifying from the list view."
+          "label": "Tên Instance",
+          "help": "Tên tùy chỉnh cho instance plugin này để giúp nhận diện từ chế độ xem danh sách."
         },
         "protocols": {
-          "label": "Protocols",
-          "placeholder": "Select valid protocols for the plugin",
-          "placeholderWithDefaultValues": "Select valid protocols for the plugin. Default protocols: {protocols}",
-          "help": "A list of the request protocols that will trigger this plugin. The default value, as well as the possible values allowed on this field, may change depending on the plugin type."
+          "label": "Giao thức",
+          "placeholder": "Chọn giao thức hợp lệ cho plugin",
+          "placeholderWithDefaultValues": "Chọn giao thức hợp lệ cho plugin. Giao thức mặc định: {protocols}",
+          "help": "Danh sách các giao thức yêu cầu sẽ kích hoạt plugin này. Giá trị mặc định cũng như các giá trị có thể chấp nhận cho trường này có thể thay đổi tùy theo loại plugin."
         }
       },
       "scoping": {
-        "label": "Scoped",
+        "label": "Phạm vi",
         "global": {
           "label": "Global",
-          "help": "All services, routes, and consumers"
+          "help": "Tất cả các Service, Route và Consumer"
         },
         "gateway_service": {
-          "label": "Gateway Service",
-          "help": "The Gateway Service to which this plugin configuration will apply",
-          "placeholder": "Select a Gateway Service",
-          "plural": "Gateway Services"
+          "label": "Service Gateway",
+          "help": "Service Gateway mà Configuration plugin này sẽ áp dụng",
+          "placeholder": "Chọn Service Gateway",
+          "plural": "Các Service Gateway"
         },
         "route": {
           "label": "Route",
-          "help": "The Route that this Plugin configuration will target",
-          "placeholder": "Select a Route",
-          "plural": "Routes"
+          "help": "Route mà Configuration Plugin này sẽ nhắm tới",
+          "placeholder": "Chọn một Route",
+          "plural": "Các Route"
         },
         "consumer": {
           "label": "Consumer",
-          "help": "The Consumer that this plugin configuration will target",
-          "placeholder": "Select a Consumer",
-          "plural": "Consumers"
+          "help": "Consumer mà Configuration plugin này sẽ nhắm tới",
+          "placeholder": "Chọn một Consumer",
+          "plural": "Các Consumer"
         },
         "consumer_group": {
-          "label": "Consumer Group",
-          "help": "The Consumer Group that this plugin configuration will target",
-          "placeholder": "Select a Consumer Group",
-          "plural": "Consumer Groups"
+          "label": "Nhóm Consumer",
+          "help": "Nhóm Consumer mà Configuration plugin này sẽ nhắm tới",
+          "placeholder": "Chọn một Nhóm Consumer",
+          "plural": "Các Nhóm Consumer"
         }
       },
       "grouping": {
         "plugin_configuration": {
-          "title": "Plugin Configuration",
-          "description": "Configuration parameters for this plugin. View advanced parameters for extended configuration.",
-          "empty": "This plugin does not have required parameters."
+          "title": "Configuration Plugin",
+          "description": "Các tham số Configuration cho plugin này. Xem các tham số nâng cao để Configuration mở rộng.",
+          "empty": "Plugin này không có tham số bắt buộc."
         },
         "advanced_parameters": {
-          "view": "View Advanced Parameters",
-          "hide": "Hide Advanced Parameters"
+          "view": "Xem Các Tham số Nâng cao",
+          "hide": "Ẩn Các Tham số Nâng cao"
         }
       },
       "field_rules": {
-        "at_least_one_of": "At least one of these parameters is required: {parameters}",
-        "only_one_of": "Exactly one of these parameters is required: {parameters}",
-        "mutually_required": "All of these parameters are required: {parameters}",
-        "only_one_of_mutually_required": "Exactly one of the following parameter combinations is required (all parameters within a chosen combination are required):"
+        "at_least_one_of": "Ít nhất một trong số các tham số này là bắt buộc: {parameters}",
+        "only_one_of": "Chỉ một trong số các tham số này là bắt buộc: {parameters}",
+        "mutually_required": "Tất cả các tham số này là bắt buộc: {parameters}",
+        "only_one_of_mutually_required": "Chỉ một trong các tổ hợp tham số sau là bắt buộc (tất cả các tham số trong một tổ hợp đã chọn là bắt buộc):"
       }
     }
   },
@@ -592,33 +592,33 @@
     "plugin": "plugin"
   },
   "vault_secret_picker": {
-    "title": "Look up Key in Vault",
+    "title": "Tra cứu Khóa trong Vault",
     "vault": {
       "label": "Vault",
-      "placeholder": "Select a vault"
+      "placeholder": "Chọn một vault"
     },
     "secret_id": {
-      "label": "Secret ID",
-      "input_placeholder": "Enter a secret ID",
-      "select_placeholder": "Select or enter a complete secret ID"
+      "label": "ID Bí mật",
+      "input_placeholder": "Nhập ID bí mật",
+      "select_placeholder": "Chọn hoặc nhập một ID bí mật hoàn chỉnh"
     },
     "optional_secret_key": {
-      "label": "Secret Key",
-      "placeholder": "Enter the key or key path to access a nested secret value",
-      "help": "Optional. e.g. tokens, tokens/refresh_token"
+      "label": "Khóa Bí mật",
+      "placeholder": "Nhập khóa hoặc đường dẫn khóa để truy cập giá trị bí mật lồng nhau",
+      "help": "Tùy chọn. Ví dụ: tokens, tokens/refresh_token"
     },
     "fetch_error": {
-      "vaults": "Could not fetch available vaults",
-      "secrets": "Could not fetch available secrets",
-      "vaults_and_secrets": "Could not fetch available vaults and secrets"
+      "vaults": "Không thể lấy danh sách các vault có sẵn",
+      "secrets": "Không thể lấy danh sách các bí mật có sẵn",
+      "vaults_and_secrets": "Không thể lấy danh sách các vault và bí mật có sẵn"
     },
-    "no_results": "No results found",
+    "no_results": "Không tìm thấy kết quả nào",
     "actions": {
-      "use_key": "Use Key"
+      "use_key": "Sử dụng Khóa"
     },
     "provider": {
-      "complete_action": "Look up {cta}",
-      "cta": "Key in Vault"
+      "complete_action": "Tra cứu {cta}",
+      "cta": "Khóa trong Vault"
     }
   }
 }

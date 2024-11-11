@@ -16,7 +16,7 @@
     "title": "SNIs",
     "list": {
       "toolbar_actions": {
-        "new": "SNI mới"
+        "new": "Tạo mới SNI"
       },
       "table_headers": {
         "name": "Tên",

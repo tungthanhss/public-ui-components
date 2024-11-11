@@ -12,7 +12,7 @@
         "description": "Upstreams được sử dụng để cân bằng tải cho các yêu cầu đến."
       },
       "toolbar_actions": {
-        "new_upstream": "Upstream mới"
+        "new_upstream": "Tạo mới Upstream"
       }
     },
     "title": "Upstreams",
@@ -20,7 +20,7 @@
       "placeholder": "Lọc theo tên hoặc ID chính xác"
     },
     "actions": {
-      "create": "Upstream mới",
+      "create": "Tạo mới Upstream",
       "copy_id": "Sao chép ID",
       "copy_json": "Sao chép JSON",
       "edit": "Chỉnh sửa",

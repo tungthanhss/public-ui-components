@@ -20,7 +20,7 @@
     "title": "Tuyến",
     "list": {
       "toolbar_actions": {
-        "new_route": "Tuyến mới"
+        "new_route": "Tạo tuyến mới"
       },
       "table_headers": {
         "name": "Tên",
