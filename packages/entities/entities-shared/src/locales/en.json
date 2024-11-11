@@ -20,7 +20,7 @@
     },
     "configuration": {
       "title": "Cấu hình",
-      "message": "Xuất cấu hình cho các đối tượng cốt lõi của Kong Gateway, như dịch vụ, tuyến đường và plugin, dưới dạng YAML hoặc JSON. Điều này cho phép nhập dễ dàng vào các công cụ APIOps như decK với YAML, hoặc Insomnia và cURL với JSON.",
+      "message": "Xuất cấu hình cho các đối tượng cốt lõi của API Gateway, như dịch vụ, tuyến đường và plugin, dưới dạng YAML hoặc JSON. Điều này cho phép nhập dễ dàng vào các công cụ APIOps như decK với YAML, hoặc Insomnia và cURL với JSON.",
       "yaml": "YAML",
       "json": "JSON",
       "terraform": "Terraform"

@@ -13,7 +13,7 @@
         "title_for_consumer_group": "Cấu hình Consumer Mới"
       },
       "toolbar_actions": {
-        "new_consumer": "Consumer Mới"
+        "new_consumer": "Tạo mới Consumer"
       }
     },
     "title": "Consumer",
