@@ -1,6 +1,6 @@
 {
   "actions": {
-    "create": "Tạo Gateway Service Mới",
+    "create": "Tạo mới Gateway Service",
     "serverless_create": "Thêm Service",
     "copy_id": "Sao Chép ID",
     "copy_json": "Sao Chép JSON",
@@ -35,8 +35,8 @@
         "enabled": "Enabled",
         "tags": "Tags",
         "id": "ID",
-        "created_at": "Tạo lúc",
-        "updated_at": "Sửa đổi lần cuối"
+        "created_at": "Created at",
+        "updated_at": "Last modified"
       },
       "empty_state": {
         "title": "Cấu Hình Gateway Service Mới",
@@ -67,7 +67,7 @@
           "tooltip_for_km": "Đây là URL của API mà bạn sẽ quản lý trong API Gateway."
         },
         "name": {
-          "label": "Tên",
+          "label": "Name",
           "placeholder": "Nhập tên duy nhất",
           "tooltip": "Tên của Service."
         },
@@ -102,19 +102,19 @@
           "tooltip": "Port của upstream."
         },
         "retries": {
-          "label": "Số Lần Thử Lại",
+          "label": "Retries",
           "tooltip": "Số lần thử lại khi thất bại trong việc proxy."
         },
         "connect_timeout": {
-          "label": "Thời Gian Chờ Kết Nối",
+          "label": "Connection Timeout",
           "tooltip": "Thời gian chờ để thiết lập kết nối đến upstream, tính bằng mili giây."
         },
         "write_timeout": {
-          "label": "Thời Gian Chờ Ghi",
+          "label": "Write Timeout",
           "tooltip": "Thời gian chờ giữa hai thao tác ghi liên tiếp khi truyền yêu cầu đến upstream, tính bằng mili giây."
         },
         "read_timeout": {
-          "label": "Thời Gian Chờ Đọc",
+         "label": "Read Timeout",
           "tooltip": "Thời gian chờ giữa hai thao tác đọc liên tiếp khi truyền yêu cầu đến upstream, tính bằng mili giây."
         },
         "client_certificate": {
@@ -130,7 +130,7 @@
           "code2": "null"
         },
         "tls_verify_enabled": {
-          "label": "Xác Minh TLS",
+            "label": "TLS Verify",
           "help": "Nếu không chọn, sẽ sử dụng thiết lập mặc định của hệ thống",
           "tooltip": "Có bật xác minh Certificate TLS của upstream hay không. Nếu đặt thành {code1}, thì mặc định của Nginx sẽ được tuân theo.",
           "code1": "null"
@@ -149,13 +149,13 @@
           }
         },
         "tags": {
-          "label": "Thẻ",
+          "label": "Tags",
           "tooltip": "Một tập hợp các chuỗi tùy chọn liên quan đến Service để phân nhóm và lọc.",
           "placeholder": "Nhập danh sách các thẻ, cách nhau bằng dấu phẩy",
           "help": "ví dụ: thẻ1, thẻ2, thẻ3"
         },
         "enabled": {
-          "label": "Kích Hoạt",
+          "label": "Enabled",
           "tooltip": "Service có đang hoạt động hay không. Nếu đặt thành {false}, hành vi proxy sẽ như thể các tuyến đường gắn với nó không tồn tại (404). Mặc định: {true}.",
           "false": "false",
           "true": "true"

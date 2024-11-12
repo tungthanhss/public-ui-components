@@ -60,29 +60,29 @@
       },
       "fields": {
         "id": {
-          "label": "ID Khóa",
+          "label": "Key ID",
           "placeholder": "Nhập ID khóa",
           "tooltip": "Một định danh cho khóa",
           "help": "Nếu sử dụng JWK, cần phải khớp với trường jwk.kid"
         },
         "name": {
-          "label": "Tên",
+          "label": "Name",
           "placeholder": "Nhập tên duy nhất cho khóa này",
           "tooltip": "Tên để liên kết với khóa đã cho"
         },
         "tags": {
-          "label": "Thẻ",
+          "label": "Tags",
           "placeholder": "Nhập danh sách thẻ cách nhau bằng dấu phẩy",
           "help": "Ví dụ: thẻ1, thẻ2, thẻ3",
           "tooltip": "Một tập hợp tùy chọn các chuỗi để nhóm và lọc, cách nhau bằng dấu phẩy."
         },
         "key_set": {
-          "label": "Bộ Khóa",
+          "label": "Key Set",
           "placeholder": "Chọn một bộ khóa để thêm vào",
           "footer": "Tìm kiếm theo ID chính xác để tìm các bộ khóa không có trong danh sách"
         },
         "key_format": {
-          "label": "Định Dạng Khóa",
+        "label": "Key Format",
           "options": {
             "jwk": "JWK",
             "pem": "PEM"
@@ -94,19 +94,19 @@
           "tooltip": "Một khóa web JSON được biểu diễn dưới dạng chuỗi"
         },
         "kid": {
-          "label": "ID Khóa",
+        "label": "Key ID",
           "tooltip": "Một định danh duy nhất cho khóa."
         },
         "set": {
-          "label": "Bộ Khóa",
+          "label": "Key Set",
           "tooltip": "ID (UUID) của bộ khóa mà khóa này sẽ được liên kết."
         },
         "private_key": {
-          "label": "Khóa Riêng",
+          "label": "Private Key",
           "placeholder": "Nhập khóa riêng"
         },
         "public_key": {
-          "label": "Khóa Công Khai",
+          "label": "Public Key",
           "placeholder": "Nhập khóa công khai"
         }
       }

@@ -32,35 +32,35 @@
       },
       "fields": {
         "cert": {
-          "label": "Certificate",
+          "label": "Cert",
           "tooltip": "Chuỗi Certificate công khai của cặp khóa SSL được mã hóa PEM. Trường này {emphasis}, có nghĩa là nó có thể được lưu trữ an toàn dưới dạng bí mật trong kho. Các tham chiếu phải tuân theo một định dạng cụ thể.",
           "emphasis": "có thể tham chiếu"
         },
         "key": {
-          "label": "Khóa",
+          "label": "Key",
           "tooltip": "Khóa riêng của cặp khóa SSL được mã hóa PEM. Trường này {emphasis}, có nghĩa là nó có thể được lưu trữ an toàn dưới dạng bí mật trong kho. Các tham chiếu phải tuân theo một định dạng cụ thể.",
           "emphasis": "có thể tham chiếu"
         },
         "cert_alt": {
-          "label": "Certificate thay thế",
+          "label": "Cert Alt",
           "tooltip": "Chuỗi Certificate công khai của cặp khóa SSL thay thế được mã hóa PEM. Chỉ nên thiết lập nếu bạn có cả hai loại Certificate RSA và ECDSA và muốn API Gatewayưu tiên phục vụ sử dụng Certificate ECDSA khi khách hàng quảng cáo hỗ trợ cho nó. Trường này {emphasis}, có nghĩa là nó có thể được lưu trữ an toàn dưới dạng bí mật trong kho. Các tham chiếu phải tuân theo một định dạng cụ thể.",
           "emphasis": "có thể tham chiếu"
         },
         "key_alt": {
-          "label": "Khóa thay thế",
+          "label": "Key Alt",
           "tooltip": "Khóa riêng của cặp khóa SSL thay thế được mã hóa PEM. Chỉ nên thiết lập nếu bạn có cả hai loại Certificate RSA và ECDSA và muốn API Gatewayưu tiên phục vụ sử dụng Certificate ECDSA khi khách hàng quảng cáo hỗ trợ cho nó. Trường này {emphasis}, có nghĩa là nó có thể được lưu trữ an toàn dưới dạng bí mật trong kho. Các tham chiếu phải tuân theo một định dạng cụ thể.",
           "emphasis": "có thể tham chiếu"
         },
         "snis": {
           "label": "SNIs",
-          "placeholder": "Nhập một SNI",
-          "add": "Thêm một SNI",
+          "placeholder": "Nhập SNI",
+          "add": "Thêm SNI",
           "tooltip": "Không hoặc nhiều tên máy chủ để liên kết với Certificate này dưới dạng SNIs",
           "editingTip": "Để quản lý SNIs cho Certificate này, nhấp vào {link}.",
           "editingTipLink": "tại đây"
         },
         "tags": {
-          "label": "Thẻ",
+          "label": "Tags",
           "placeholder": "Nhập danh sách các thẻ, cách nhau bằng dấu phẩy",
           "help": "ví dụ: tag1, tag2, tag3",
           "tooltip": "Một tập hợp tùy chọn các chuỗi để nhóm và lọc, cách nhau bằng dấu phẩy."
@@ -81,7 +81,7 @@
       "placeholder": "Lọc theo ID chính xác"
     },
     "delete": {
-      "title": "Xóa một Certificate",
+      "title": "Xóa Certificate",
       "description": "Certificate gốc của tổ chức của bạn {bolded-text}.",
       "boldedText": "sẽ không bị ảnh hưởng",
       "description2": "Hành động này không thể hoàn tác, vì vậy hãy chắc chắn kiểm tra việc sử dụng Certificate trước khi xóa."
@@ -100,7 +100,7 @@
     "title": "Certificate CA",
     "list": {
       "toolbar_actions": {
-        "new_ca_certificate": "Certificate CA mới"
+        "new_ca_certificate": "Tạo mới Certificate CA"
       },
       "table_headers": {
         "issuer": "Issuer",
@@ -108,7 +108,7 @@
         "tags": "Tags"
       },
       "empty_state": {
-        "title": "Cấu hình một Certificate CA mới",
+        "title": "Cấu hình Certificate CA",
         "description": "Certificate CA xác thực các Certificate của máy khách hoặc máy chủ."
       }
     },
@@ -129,11 +129,11 @@
           "tooltip": "Certificate công khai của CA được mã hóa PEM."
         },
         "cert_digest": {
-          "label": "Mã băm Certificate",
+          "label": "Cert Digest",
           "tooltip": "Mã băm SHA256 của Certificate công khai"
         },
         "tags": {
-          "label": "Thẻ",
+         "label": "Tags",
           "placeholder": "Nhập danh sách các thẻ, cách nhau bằng dấu phẩy",
           "help": "ví dụ: tag1, tag2, tag3",
           "tooltip": "Một tập hợp tùy chọn các chuỗi để nhóm và lọc, cách nhau bằng dấu phẩy."
@@ -141,7 +141,7 @@
       }
     },
     "actions": {
-      "create": "Certificate CA mới",
+      "create": "Tạo mới Certificate CA",
       "copy_id": "Sao chép ID",
       "copy_json": "Sao chép JSON",
       "edit": "Chỉnh sửa",
@@ -153,7 +153,7 @@
       "placeholder": "Lọc theo ID chính xác"
     },
     "delete": {
-      "title": "Xóa một Certificate CA",
+      "title": "Xóa Certificate CA",
       "description": "Certificate gốc của tổ chức của bạn {bolded-text}.",
       "boldedText": "sẽ không bị ảnh hưởng",
       "description2": "Hành động này không thể hoàn tác, vì vậy hãy chắc chắn kiểm tra việc sử dụng Certificate trước khi xóa."

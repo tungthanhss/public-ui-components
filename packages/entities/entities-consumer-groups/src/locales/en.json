@@ -2,9 +2,9 @@
   "consumer_groups": {
     "list": {
       "table_headers": {
-        "name": "Tên",
-        "consumers_count": "Consumer",
-        "tags": "Thẻ",
+        "name": "Name",
+        "consumers_count": "Consumers",
+        "tags": "Tags",
         "id": "ID"
       },
       "empty_state": {
@@ -73,11 +73,11 @@
       },
       "fields": {
         "name": {
-          "label": "Tên",
+          "label": "Name",
           "placeholder": "Nhập tên duy nhất cho nhóm Consumer này"
         },
         "tags": {
-          "label": "Thẻ",
+          "label": "Tags",
           "placeholder": "Nhập danh sách các thẻ cách nhau bằng dấu phẩy",
           "help": "ví dụ: tag1, tag2, tag3",
           "tooltip": "Một tập hợp chuỗi tùy chọn để nhóm và lọc, cách nhau bằng dấu phẩy."

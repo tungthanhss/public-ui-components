@@ -76,19 +76,19 @@
     },
     "fields": {
       "username": {
-        "label": "Tên Consumer",
+        "label": "Username",
         "placeholder": "Nhập tên Consumer duy nhất",
         "tooltip": "Tên Consumer duy nhất của Consumer. Bạn phải gửi trường này hoặc {custom_id} với yêu cầu.",
         "custom_id": "custom_id"
       },
       "custom_id": {
-        "label": "ID Tùy Chỉnh",
+        "label": "Custom ID",
         "placeholder": "Nhập ID tùy chỉnh duy nhất",
         "tooltip": "Trường để lưu trữ một ID duy nhất hiện có cho Consumer - hữu ích để ánh xạ API Gateway với Consumer trong cơ sở dữ liệu hiện có của bạn. Bạn phải gửi trường này hoặc {username} với yêu cầu.",
         "username": "username"
       },
       "tags": {
-        "label": "Thẻ",
+        "label": "Tags",
         "placeholder": "Nhập danh sách các thẻ cách nhau bằng dấu phẩy",
         "help": "ví dụ: tag1, tag2, tag3",
         "tooltip": "Một tập hợp chuỗi tùy chọn liên kết với Consumer để nhóm và lọc."

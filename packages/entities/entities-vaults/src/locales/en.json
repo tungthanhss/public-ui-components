@@ -32,10 +32,10 @@
         "new_vault": "Tạo mới Vault"
       },
       "table_headers": {
-        "prefix": "Tiền Tố",
-        "name": "Loại Vault",
-        "description": "Mô Tả",
-        "tags": "Thẻ",
+        "prefix": "Prefix",
+        "name": "Vault Type",
+        "description": "Description",
+        "tags": "Tags",
         "id": "ID"
       },
       "empty_state": {
@@ -48,7 +48,7 @@
     "title": "Bí Mật",
     "list": {
       "toolbar_actions": {
-        "new_secret": "Lưu Bí Mật Mới"
+        "new_secret": "Lưu khóa Bí Mật mới"
       },
       "table_headers": {
         "key": "Khóa Bí Mật",
@@ -66,11 +66,11 @@
       },
       "fields": {
         "key": {
-          "label": "Khóa",
+          "label": "Key",
           "placeholder": "Nhập khóa"
         },
         "value": {
-          "label": "Giá Trị",
+          "label": "Value",
           "placeholder": "Nhập giá trị ở đây, có thể là giá trị đơn giản hoặc đa dòng"
         }
       },
@@ -82,7 +82,7 @@
     "success_brief": "Sao chép vào clipboard thành công"
   },
   "labels": {
-    "vault_type": "Loại Vault"
+    "vault_type": "Vault Type"
   },
   "form": {
     "sections": {
@@ -97,17 +97,17 @@
     },
     "fields": {
       "prefix": {
-        "label": "Tiền tố",
+        "label": "Prefix",
         "placeholder": "Nhập một tiền tố duy nhất cho vault này",
         "help": "ví dụ: my-vault",
         "tooltip": "Tiền tố được sử dụng để tải cấu hình và triển khai Vault đúng khi tham chiếu đến các bí mật với các thực thể khác."
       },
       "description": {
-        "label": "Mô tả",
+       "label": "Description",
         "placeholder": "Nhập một số mô tả cho vault này"
       },
       "tags": {
-        "label": "Thẻ",
+        "label": "Tags",
         "placeholder": "Nhập danh sách các thẻ được phân tách bằng dấu phẩy",
         "help": "ví dụ: tag1, tag2, tag3"
       }
@@ -122,7 +122,7 @@
         "description": "Truy cập các bí mật được lưu trữ qua các biến để có thể sử dụng trong API Gateway tại thời gian chạy.",
         "fields": {
           "prefix": {
-            "label": "Tiền tố Biến Môi Trường",
+            "label": "Environment Variable Prefix",
             "placeholder": "Nhập tiền tố vault biến môi trường của bạn",
             "tooltip": "Data plane sẽ truy cập tất cả các biến môi trường bắt đầu với tiền tố này."
           }
@@ -133,7 +133,7 @@
         "description": "Truy cập các bí mật được lưu trữ trong AWS Secrets Manager cho cấu hình API Gateway.",
         "fields": {
           "region": {
-            "label": "Khu vực",
+            "label": "Region",
             "placeholder": "Chọn một khu vực AWS",
             "tooltip": "Khu vực AWS nơi vault của bạn được đặt",
             "locations": {
@@ -212,29 +212,29 @@
             }
           },
           "endpoint_url": {
-            "label": "URL Điểm cuối",
+            "label": "Endpoint URL",
             "tooltip": "URL điểm cuối của dịch vụ AWS SecretsManager. Nếu không chỉ định, giá trị được sử dụng bởi vault sẽ là URL dịch vụ AWS SecretsManager chính thức là `https://secretsmanager.<region>.amazonaws.com`. Bạn có thể chỉ định một URL hoàn chỉnh (bao gồm cả giao thức \"http/https\") để ghi đè điểm cuối mà vault sẽ kết nối đến."
           },
           "assume_role_arn": {
-            "label": "ARN Vai trò Giả định",
+            "label": "Assume Role ARN",
             "tooltip": "ARN của vai trò IAM AWS mà sẽ được giả định. Thông thường, điều này được sử dụng cho việc hoạt động giữa nhiều vai trò hoặc qua các tài khoản. Nếu bạn không sử dụng vai trò giả định, bạn không nên chỉ định giá trị này."
           },
           "role_session_name": {
-            "label": "Tên session Vai trò",
+              "label": "Role Session Name",
             "tooltip": "Tên session vai trò được sử dụng cho việc giả định vai trò."
           },
           "sts_endpoint_url": {
-            "label": "URL Điểm cuối STS",
+            "label": "STS Endpoint URL",
             "tooltip": "URL điểm cuối STS tùy chỉnh được sử dụng cho việc giả định vai trò trong AWS Vault. Lưu ý rằng giá trị này sẽ ghi đè URL điểm cuối STS mặc định (nên là `https://sts.amazonaws.com`, hoặc `https://sts.<region>.amazonaws.com` nếu bạn đã đặt `AWS_STS_REGIONAL_ENDPOINTS` thành `regional`). Nếu bạn không sử dụng điểm cuối VPC riêng tư cho dịch vụ STS, bạn không nên chỉ định giá trị này."
           }
         }
       },
       "gcp": {
-        "label": "Quản lý Bí mật Google",
+        "label": "Google Secret Manager",
         "description": "Truy cập các bí mật được lưu trữ trong Quản lý Bí mật Google cho cấu hình API Gateway.",
         "fields": {
           "project_id": {
-            "label": "ID Dự án",
+            "label": "Project ID",
             "placeholder": "Nhập ID Dự án Google Cloud của bạn",
             "tooltip": {
               "text": "Truy cập vào Bảng điều khiển API Google của bạn và chọn {italic-text} trong danh sách dự án để xem ID dự án của bạn",
@@ -272,28 +272,28 @@
             "label": "Token"
           },
           "kube_role": {
-            "label": "Vai trò Kubernetes"
+            "label": "Kubernetes Role"
           },
           "kube_auth_path": {
-            "label": "Đường dẫn Xác thực Kubernetes"
+            "label": "Kubernetes Auth Path"
           },
           "kube_api_token_file": {
-            "label": "Tệp Mã token API Kubernetes"
+            "label": "Kubernetes API Token File"
           },
           "approle_auth_path": {
-            "label": "Đường dẫn Xác thực App Role"
+            "label": "App Role Auth Path"
           },
           "approle_role_id": {
-            "label": "ID Vai trò App Role"
+            "label": "App Role Role ID"
           },
           "approle_secret_id": {
-            "label": "ID Bí mật App Role"
+            "label": "App Role Secret ID"
           },
           "approle_secret_id_file": {
-            "label": "Tệp ID Bí mật App Role"
+            "label": "App Role Secret ID File"
           },
           "approle_response_wrapping": {
-            "label": "Gói phản hồi App Role"
+            "label": "App Role Response Wrapping"
           }
         }
       },
@@ -302,23 +302,23 @@
         "description": "Truy cập các bí mật được lưu trữ trong Azure Key Vault cho cấu hình API Gateway .",
         "fields": {
           "location": {
-            "label": "Vị trí"
+            "label": "Location"
           },
           "vault_uri": {
-            "label": "URI Kho lưu trữ"
+            "label": "Vault URI"
           },
           "credential_prefix": {
-            "label": "Tiền tố Thông tin xác thực"
+            "label": "Credential Prefix"
           },
           "type": {
-            "label": "Loại",
+            "label": "Type",
             "placeholder": "Chọn một loại"
           },
           "client_id": {
-            "label": "ID Khách hàng"
+            "label": "Client ID"          
           },
           "tenant_id": {
-            "label": "ID Tên miền"
+            "label": "Tenant ID"
           }
         }
       },

@@ -70,24 +70,24 @@
         "new_plugin": "Tạo mới Plugin"
       },
       "table_headers": {
-        "applied_to": "Áp Dụng Cho",
+       "applied_to": "Applied To",
         "applied_to_badges": {
           "consumer": "Consumer",
           "global": "Global",
           "route": "Route",
           "service": "Service",
-          "consumer_group": "Nhóm Consumer"
+          "consumer_group": "Consumer Group"
         },
         "id": "ID",
-        "name": "Tên",
-        "instance_name": "Tên Phiên Bản",
-        "ordering": "Sắp Xếp",
+        "name": "Name",
+        "instance_name": "Instance Name",
+        "ordering": "Ordering",
         "ordering_badge": {
-          "dynamic": "Động",
-          "static": "Tĩnh"
+          "dynamic": "Dynamic",
+          "static": "Static"
         },
-        "enabled": "Đã Bật",
-        "tags": "Thẻ"
+        "enabled": "Enabled",
+        "tags": "Tags"
       },
       "empty_state": {
         "title": "Tạo cấu hình Plugin Mới",
@@ -244,7 +244,7 @@
       },
       "ai-prompt-template": {
         "name": "Mẫu Lệnh AI",
-        "description": "Xác định một tập hợp các mẫu với chỗ trống biến chuỗi để sử dụng trong plugin AI Proxy."
+        "description": "Xác định tập hợp các mẫu với chỗ trống biến chuỗi để sử dụng trong plugin AI Proxy."
       },
       "ai-prompt-guard": {
         "name": "Bảo Vệ Lệnh AI",
@@ -332,7 +332,7 @@
       },
       "degraphql": {
         "name": "DeGraphQL",
-        "description": "Biến đổi một upstream GraphQL thành một API REST"
+        "description": "Biến đổi upstream GraphQL thành API REST"
       },
       "exit-transformer": {
         "name": "Exit Transformer",
@@ -348,7 +348,7 @@
       },
       "http-log": {
         "name": "HTTP Log",
-        "description": "Gửi các log yêu cầu và phản hồi tới một máy chủ HTTP"
+        "description": "Gửi các log yêu cầu và phản hồi tới máy chủ HTTP"
       },
       "loggly": {
         "name": "Loggly",
@@ -368,15 +368,15 @@
       },
       "tcp-log": {
         "name": "TCP Log",
-        "description": "Gửi các log yêu cầu và phản hồi tới một máy chủ TCP"
+        "description": "Gửi các log yêu cầu và phản hồi tới máy chủ TCP"
       },
       "udp-log": {
         "name": "UDP Log",
-        "description": "Gửi các log yêu cầu và phản hồi tới một máy chủ UDP"
+        "description": "Gửi các log yêu cầu và phản hồi tới máy chủ UDP"
       },
       "kafka-log": {
         "name": "Kafka Log",
-        "description": "Xuất bản các log yêu cầu và phản hồi tới một chủ đề Kafka"
+        "description": "Xuất bản các log yêu cầu và phản hồi tới chủ đề Kafka"
       },
       "session": {
         "name": "Session",
@@ -408,15 +408,15 @@
       },
       "upstream-timeout": {
         "name": "Upstream Timeout",
-        "description": "Configuration thời gian chờ đọc, gửi và kết nối tới một upstream"
+        "description": "Configuration thời gian chờ đọc, gửi và kết nối tới upstream"
       },
       "opentelemetry": {
         "name": "OpenTelemetry",
-        "description": "Truyền phát các khoảng phân phối và báo cáo các khoảng cấp thấp tới một máy chủ tương thích OTLP"
+        "description": "Truyền phát các khoảng phân phối và báo cáo các khoảng cấp thấp tới máy chủ tương thích OTLP"
       },
       "websocket-validator": {
         "name": "WebSocket Validator",
-        "description": "Xác thực các thông điệp WebSocket riêng lẻ theo một sơ đồ do Consumer chỉ định trước khi chuyển tiếp chúng"
+        "description": "Xác thực các thông điệp WebSocket riêng lẻ theo sơ đồ do Consumer chỉ định trước khi chuyển tiếp chúng"
       },
       "websocket-size-limit": {
         "name": "WebSocket Size Limit",
@@ -456,7 +456,7 @@
       },
       "standard-webhooks": {
         "name": "Standard Webhooks",
-        "description": "Xác thực các webhook đến tuân thủ theo đặc tả Standard Webhooks, mà API GateWay là một nhà đóng góp"
+        "description": "Xác thực các webhook đến tuân thủ theo đặc tả Standard Webhooks, mà API GateWay là nhà đóng góp"
       },
       "ai-proxy-advanced": {
         "name": "AI Proxy Advanced",
@@ -523,29 +523,29 @@
       "no_selection": "Chưa chọn...",
       "fields": {
         "enabled": {
-          "label": "Đã kích hoạt",
+        "label": "Enabled",
           "on_text": "Plugin này đã được kích hoạt",
           "off_text": "Plugin này đã bị vô hiệu hóa"
         },
         "instance_name": {
-          "label": "Tên Instance",
+          "label": "Instance Name",
           "help": "Tên tùy chỉnh cho instance plugin này để giúp nhận diện từ chế độ xem danh sách."
         },
         "protocols": {
-          "label": "Giao thức",
+          "label": "Protocols",
           "placeholder": "Chọn giao thức hợp lệ cho plugin",
           "placeholderWithDefaultValues": "Chọn giao thức hợp lệ cho plugin. Giao thức mặc định: {protocols}",
           "help": "Danh sách các giao thức yêu cầu sẽ kích hoạt plugin này. Giá trị mặc định cũng như các giá trị có thể chấp nhận cho trường này có thể thay đổi tùy theo loại plugin."
         }
       },
       "scoping": {
-        "label": "Phạm vi",
+        "label": "Scoped",
         "global": {
           "label": "Global",
           "help": "Tất cả các Service, Route và Consumer"
         },
         "gateway_service": {
-          "label": "Service Gateway",
+          "label": "Gateway Service",
           "help": "Service Gateway mà Configuration plugin này sẽ áp dụng",
           "placeholder": "Chọn Service Gateway",
           "plural": "Các Service Gateway"
@@ -553,19 +553,19 @@
         "route": {
           "label": "Route",
           "help": "Route mà Configuration Plugin này sẽ nhắm tới",
-          "placeholder": "Chọn một Route",
+          "placeholder": "Chọn Route",
           "plural": "Các Route"
         },
         "consumer": {
           "label": "Consumer",
           "help": "Consumer mà Configuration plugin này sẽ nhắm tới",
-          "placeholder": "Chọn một Consumer",
+          "placeholder": "Chọn Consumer",
           "plural": "Các Consumer"
         },
         "consumer_group": {
-          "label": "Nhóm Consumer",
+          "label": "Consumer Group",
           "help": "Nhóm Consumer mà Configuration plugin này sẽ nhắm tới",
-          "placeholder": "Chọn một Nhóm Consumer",
+          "placeholder": "Chọn Nhóm Consumer",
           "plural": "Các Nhóm Consumer"
         }
       },
@@ -581,8 +581,8 @@
         }
       },
       "field_rules": {
-        "at_least_one_of": "Ít nhất một trong số các tham số này là bắt buộc: {parameters}",
-        "only_one_of": "Chỉ một trong số các tham số này là bắt buộc: {parameters}",
+        "at_least_one_of": "Ít nhất trong số các tham số này là bắt buộc: {parameters}",
+        "only_one_of": "Chỉ trong số các tham số này là bắt buộc: {parameters}",
         "mutually_required": "Tất cả các tham số này là bắt buộc: {parameters}",
         "only_one_of_mutually_required": "Chỉ một trong các tổ hợp tham số sau là bắt buộc (tất cả các tham số trong một tổ hợp đã chọn là bắt buộc):"
       }
@@ -595,15 +595,15 @@
     "title": "Tra cứu Khóa trong Vault",
     "vault": {
       "label": "Vault",
-      "placeholder": "Chọn một vault"
+      "placeholder": "Chọn vault"
     },
     "secret_id": {
-      "label": "ID Bí mật",
+     "label": "Secret ID",
       "input_placeholder": "Nhập ID bí mật",
       "select_placeholder": "Chọn hoặc nhập một ID bí mật hoàn chỉnh"
     },
     "optional_secret_key": {
-      "label": "Khóa Bí mật",
+      "label": "Secret Key",
       "placeholder": "Nhập khóa hoặc đường dẫn khóa để truy cập giá trị bí mật lồng nhau",
       "help": "Tùy chọn. Ví dụ: tokens, tokens/refresh_token"
     },

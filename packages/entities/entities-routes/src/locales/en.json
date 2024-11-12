@@ -17,36 +17,36 @@
     "no_results": "Không tìm thấy kết quả"
   },
   "routes": {
-    "title": "Tuyến",
+    "title": "Route",
     "list": {
       "toolbar_actions": {
-        "new_route": "Tạo tuyến mới"
+        "new_route": "Tạo Route mới"
       },
       "table_headers": {
-        "name": "Tên",
-        "protocols": "Giao thức",
-        "hosts": "Máy chủ",
-        "methods": "Phương thức",
-        "paths": "Đường dẫn",
-        "expression": "Biểu thức",
-        "id": "ID",
-        "tags": "Thẻ",
-        "created_at": "Ngày tạo",
-        "updated_at": "Cập nhật lần cuối"
+       "name": "Name",
+      "protocols": "Protocols",
+      "hosts": "Hosts",
+      "methods": "Methods",
+      "paths": "Paths",
+      "expression": "Expression",
+      "id": "ID",
+      "tags": "Tags",
+      "created_at": "Created At",
+      "updated_at": "Last Modified"
       },
       "empty_state": {
-        "title": "Cấu hình một Tuyến mới",
-        "description": "Tuyến chuyển tiếp yêu cầu đến một Dịch vụ liên kết."
+        "title": "Cấu hình Route",
+        "description": "Route chuyển tiếp yêu cầu đến một Service liên kết."
       }
     }
   },
   "delete": {
-    "title": "Xóa một Tuyến",
-    "description": "Xóa tuyến này cũng sẽ gỡ bỏ bất kỳ plugin liên quan nào. Hành động này không thể hoàn tác."
+    "title": "Xóa một Route",
+    "description": "Xóa Route này cũng sẽ gỡ bỏ bất kỳ plugin liên quan nào. Hành động này không thể hoàn tác."
   },
   "errors": {
-    "general": "Không thể truy xuất các tuyến",
-    "delete": "Không thể xóa tuyến vào lúc này.",
+    "general": "Không thể truy xuất các Route",
+    "delete": "Không thể xóa Route vào lúc này.",
     "copy": "Không thể sao chép vào bộ nhớ tạm",
     "services": {
       "fetch": "Không thể lấy các dịch vụ có sẵn"
@@ -79,11 +79,11 @@
     "sections": {
       "general": {
         "title": "Thông tin chung",
-        "description": "Thông tin chung giúp bạn xác định và quản lý tuyến này"
+        "description": "Thông tin chung giúp bạn xác định và quản lý Route này"
       },
       "config": {
-        "title": "Cấu hình Tuyến",
-        "description": "Cấu hình tuyến xác định cách xử lý yêu cầu đến"
+        "title": "Cấu hình Route",
+        "description": "Cấu hình Route xác định cách xử lý yêu cầu đến"
       },
       "routingRules": {
         "title": "Quy tắc Định tuyến"
@@ -94,61 +94,61 @@
     },
     "fields": {
       "service_id": {
-        "label": "Dịch vụ",
+        "label": "Service",
         "placeholder": "Chọn một dịch vụ"
       },
       "name": {
-        "label": "Tên",
+        "label": "Name",
         "placeholder": "Nhập một tên duy nhất",
-        "tooltip": "Tên của Tuyến. Tên tuyến phải là duy nhất và phân biệt chữ hoa chữ thường. Ví dụ: có thể có hai tuyến khác nhau tên 'test' và 'Test'."
+        "tooltip": "Tên của Route. Tên Route phải là duy nhất và phân biệt chữ hoa chữ thường. Ví dụ: có thể có hai Route khác nhau tên 'test' và 'Test'."
       },
       "service": {
-        "label": "Dịch vụ Cổng vào",
-        "tooltip": "Dịch vụ mà Tuyến này liên kết. Đây là nơi Tuyến chuyển tiếp lưu lượng."
+        "label": "Gateway Service",
+        "tooltip": "Dịch vụ mà Route này liên kết. Đây là nơi Route chuyển tiếp lưu lượng."
       },
       "tags": {
-        "label": "Thẻ",
-        "tooltip": "Một tập hợp chuỗi không bắt buộc liên kết với Tuyến để nhóm và lọc.",
+        "label": "Tags",
+        "tooltip": "Một tập hợp chuỗi không bắt buộc liên kết với Route để nhóm và lọc.",
         "placeholder": "Nhập danh sách thẻ, ngăn cách bằng dấu phẩy",
         "help": "ví dụ: tag1, tag2, tag3"
       },
       "protocols": {
-        "label": "Giao thức",
-        "tooltip": "Tuyến có thuộc tính giao thức để giới hạn giao thức mà nó sẽ lắng nghe từ client.",
-        "tooltipConfig": "Một mảng các giao thức mà Tuyến này cho phép. Xem phần {code1} để biết danh sách các giao thức chấp nhận. Khi chỉ đặt {code2}, các yêu cầu HTTP sẽ trả về lỗi nâng cấp. Khi chỉ đặt {code3}, điều này về cơ bản giống như {code4} vì cả yêu cầu HTTP và HTTPS đều được phép. Mặc định: {code5}.",
-        "code1": "Đối tượng Tuyến",
+        "label": "Protocols",
+        "tooltip": "Route có thuộc tính giao thức để giới hạn giao thức mà nó sẽ lắng nghe từ client.",
+        "tooltipConfig": "Một mảng các giao thức mà Route này cho phép. Xem phần {code1} để biết danh sách các giao thức chấp nhận. Khi chỉ đặt {code2}, các yêu cầu HTTP sẽ trả về lỗi nâng cấp. Khi chỉ đặt {code3}, điều này về cơ bản giống như {code4} vì cả yêu cầu HTTP và HTTPS đều được phép. Mặc định: {code5}.",
+        "code1": "Đối tượng Route",
         "code2": "https",
         "code3": "http",
         "code4": "['http', 'https']",
         "code5": "['http', 'https']"
       },
       "path_handling": {
-        "label": "Xử lý Đường dẫn",
+        "label": "Path Handling",
         "tooltip": "Điều này xử lý service.path, route.path và đường dẫn yêu cầu như các đoạn của URL.",
-        "tooltipConfig": "Điều khiển cách mà Đường dẫn của Dịch vụ, Đường dẫn của Tuyến và Đường dẫn yêu cầu được kết hợp khi gửi yêu cầu đến upstream. Xem ở trên để biết mô tả chi tiết về từng hành vi."
+        "tooltipConfig": "Điều khiển cách mà Đường dẫn của Dịch vụ, Đường dẫn của Route và Đường dẫn yêu cầu được kết hợp khi gửi yêu cầu đến upstream. Xem ở trên để biết mô tả chi tiết về từng hành vi."
       },
       "https_redirect_status_code": {
-        "label": "Mã Trạng thái Chuyển hướng HTTPS",
-        "tooltip": "Mã trạng thái Gateway phản hồi khi tất cả các thuộc tính của Tuyến khớp ngoại trừ giao thức, ví dụ nếu giao thức của yêu cầu là {code1} thay vì {code2}. Tiêu đề {code3} được Gateway chèn nếu trường này được đặt thành 301, 302, 307 hoặc 308. Lưu ý: Cấu hình này chỉ áp dụng nếu Tuyến được cấu hình để chỉ chấp nhận giao thức {code4}.",
+        "label": "HTTPS Redirect Status Code",
+        "tooltip": "Mã trạng thái Gateway phản hồi khi tất cả các thuộc tính của Route khớp ngoại trừ giao thức, ví dụ nếu giao thức của yêu cầu là {code1} thay vì {code2}. Tiêu đề {code3} được Gateway chèn nếu trường này được đặt thành 301, 302, 307 hoặc 308. Lưu ý: Cấu hình này chỉ áp dụng nếu Route được cấu hình để chỉ chấp nhận giao thức {code4}.",
         "code1": "HTTP",
         "code2": "HTTPS",
         "code3": "Vị trí",
         "code4": "https"
       },
       "regex_priority": {
-        "label": "Ưu tiên Regex",
-        "tooltip": "Một số được sử dụng để chọn tuyến nào xử lý yêu cầu nhất định khi nhiều tuyến trùng khớp bằng cách sử dụng regex. Khi hai tuyến trùng khớp với đường dẫn và có cùng {code1}, tuyến cũ hơn (có {code2} thấp nhất) sẽ được sử dụng. Lưu ý rằng ưu tiên cho các tuyến không regex là khác nhau (các tuyến không regex dài hơn được ưu tiên hơn các tuyến ngắn hơn).",
+        "label": "Regex Priority",
+        "tooltip": "Một số được sử dụng để chọn Route nào xử lý yêu cầu nhất định khi nhiều Route trùng khớp bằng cách sử dụng regex. Khi hai Route trùng khớp với đường dẫn và có cùng {code1}, Route cũ hơn (có {code2} thấp nhất) sẽ được sử dụng. Lưu ý rằng ưu tiên cho các Route không regex là khác nhau (các Route không regex dài hơn được ưu tiên hơn các Route ngắn hơn).",
         "code1": "regex_priority",
         "code2": "created_at"
       },
       "strip_path": {
-        "label": "Xóa Đường dẫn",
-        "tooltip": "Khi trùng khớp với một Tuyến qua một trong các {code1}, xóa tiền tố trùng khớp khỏi URL yêu cầu upstream.",
+       "label": "Strip Path",
+        "tooltip": "Khi trùng khớp với một Route qua một trong các {code1}, xóa tiền tố trùng khớp khỏi URL yêu cầu upstream.",
         "code1": "đường dẫn"
       },
       "preserve_host": {
-        "label": "Giữ nguyên Host",
-        "tooltip": "Khi trùng khớp với một Tuyến qua một trong các tên miền {code1}, sử dụng tiêu đề {code2} của yêu cầu trong tiêu đề của yêu cầu upstream. Nếu đặt là {code3}, tiêu đề {code4} của upstream sẽ là của {code5} của Dịch vụ.",
+        "label": "Preserve Host",
+        "tooltip": "Khi trùng khớp với một Route qua một trong các tên miền {code1}, sử dụng tiêu đề {code2} của yêu cầu trong tiêu đề của yêu cầu upstream. Nếu đặt là {code3}, tiêu đề {code4} của upstream sẽ là của {code5} của Dịch vụ.",
         "code1": "máy chủ",
         "code2": "Host",
         "code3": "false",
@@ -156,24 +156,24 @@
         "code5": "host"
       },
       "paths": {
-        "label": "Đường dẫn",
+        "label": "Paths",
         "placeholder": "Nhập một đường dẫn",
-        "tooltip": "Danh sách các đường dẫn khớp với Tuyến này."
+        "tooltip": "Danh sách các đường dẫn khớp với Route này."
       },
       "snis": {
         "label": "SNIs",
         "placeholder": "Nhập một SNI",
-        "tooltip": "Danh sách các SNIs (Server Name Indications từ một TLS ClientHello) khớp với Tuyến này."
+        "tooltip": "Danh sách các SNIs (Server Name Indications từ một TLS ClientHello) khớp với Route này."
       },
       "hosts": {
-        "label": "Máy chủ",
+        "label": "Hosts",
         "placeholder": "Nhập một máy chủ",
-        "tooltip": "Danh sách các tên miền khớp với Tuyến này.",
-        "tooltipConfig": "Danh sách các tên miền khớp với Tuyến này. Lưu ý rằng giá trị hosts phân biệt chữ hoa chữ thường."
+        "tooltip": "Danh sách các tên miền khớp với Route này.",
+        "tooltipConfig": "Danh sách các tên miền khớp với Route này. Lưu ý rằng giá trị hosts phân biệt chữ hoa chữ thường."
       },
       "methods": {
-        "label": "Phương thức",
-        "tooltip": "Danh sách các phương thức HTTP khớp với Tuyến này.",
+      "label": "Methods",
+        "tooltip": "Danh sách các phương thức HTTP khớp với Route này.",
         "custom": {
           "label": "Tùy chỉnh",
           "placeholder": "Nhập một phương thức tùy chỉnh",
@@ -181,7 +181,7 @@
         }
       },
       "headers": {
-        "label": "Tiêu đề",
+        "label": "Headers",
         "tooltip": "Các giá trị tiêu đề có thể được ngăn cách bằng dấu phẩy (giá trị1, giá trị2, giá trị3).",
         "name": {
           "placeholder": "Nhập một tên tiêu đề"
@@ -189,15 +189,15 @@
         "values": {
           "placeholder": "Nhập một giá trị tiêu đề"
         },
-        "tooltipConfig": "Một hoặc nhiều danh sách các giá trị được đánh chỉ số theo tên tiêu đề sẽ làm Tuyến này khớp nếu có trong yêu cầu. Tiêu đề {code1} không thể được sử dụng với thuộc tính này: các máy chủ phải được chỉ định bằng thuộc tính {code2}. Khi {code3} chỉ chứa một giá trị và giá trị đó bắt đầu bằng tiền tố đặc biệt {code4], giá trị đó được coi là biểu thức regex.",
+        "tooltipConfig": "Một hoặc nhiều danh sách các giá trị được đánh chỉ số theo tên tiêu đề sẽ làm Route này khớp nếu có trong yêu cầu. Tiêu đề {code1} không thể được sử dụng với thuộc tính này: các máy chủ phải được chỉ định bằng thuộc tính {code2}. Khi {code3} chỉ chứa một giá trị và giá trị đó bắt đầu bằng tiền tố đặc biệt {code4], giá trị đó được coi là biểu thức regex.",
         "code1": "Host",
         "code2": "hosts",
         "code3": "headers",
         "code4": "*"
       },
       "sources": {
-        "label": "Nguồn",
-        "tooltip": "Danh sách các địa chỉ IP nguồn của các kết nối đến khớp với Tuyến này khi sử dụng định tuyến luồng.",
+        "label": "Sources",
+        "tooltip": "Danh sách các địa chỉ IP nguồn của các kết nối đến khớp với Route này khi sử dụng định tuyến luồng.",
         "ip": {
           "placeholder": "Nhập một IP nguồn"
         },
@@ -206,8 +206,8 @@
         }
       },
       "destinations": {
-        "label": "Điểm đến",
-        "tooltip": "Danh sách các địa chỉ IP điểm đến của các kết nối đến khớp với Tuyến này khi sử dụng định tuyến luồng.",
+        "label": "Destinations",
+        "tooltip": "Danh sách các địa chỉ IP điểm đến của các kết nối đến khớp với Route này khi sử dụng định tuyến luồng.",
         "ip": {
           "placeholder": "Nhập một IP điểm đến"
         },
@@ -216,20 +216,20 @@
         }
       },
       "response_buffering": {
-        "label": "Đệm phản hồi",
+        "label": "Response buffering",
         "tooltip": "Bật hoặc tắt việc đệm nội dung phản hồi. Với HTTP 1.1, có thể tắt tính năng này đối với các dịch vụ gửi dữ liệu bằng mã hóa truyền chuyển mảnh."
       },
       "request_buffering": {
-        "label": "Đệm yêu cầu",
+        "label": "Request buffering",
         "tooltip": "Bật hoặc tắt việc đệm nội dung yêu cầu. Với HTTP 1.1, có thể tắt tính năng này đối với các dịch vụ nhận dữ liệu bằng mã hóa truyền chuyển mảnh."
       },
       "expression": {
-        "label": "Biểu thức",
-        "tooltip": "Biểu thức của tuyến."
+        "label": "Expression",
+        "tooltip": "Biểu thức của Route."
       },
       "priority": {
-        "label": "Ưu tiên",
-        "tooltip": "Một số được dùng để chọn tuyến nào xử lý yêu cầu nhất định khi nhiều tuyến trùng khớp cùng lúc bằng biểu thức."
+        "label": "Priority",
+        "tooltip": "Một số được dùng để chọn Route nào xử lý yêu cầu nhất định khi nhiều Route trùng khớp cùng lúc bằng biểu thức."
       }
     },
     "flavors": {
@@ -243,8 +243,8 @@
       "singleRule": "{routingRules}",
       "multipleRules": "{routingRules} hoặc {lastRoutingRule}",
       "cannotChangeFlavor": {
-        "create": "Định dạng của tuyến không thể thay đổi sau khi đã tạo.",
-        "edit": "Tuyến này đã được cấu hình theo định dạng {format}, không thể thay đổi sau khi tạo. Bạn có thể chuyển sang tab {format} để chỉnh sửa hoặc tạo một tuyến mới với định dạng khác."
+        "create": "Định dạng của Route không thể thay đổi sau khi đã tạo.",
+        "edit": "Route này đã được cấu hình theo định dạng {format}, không thể thay đổi sau khi tạo. Bạn có thể chuyển sang tab {format} để chỉnh sửa hoặc tạo một Route mới với định dạng khác."
       }
     },
     "expressions_editor": {

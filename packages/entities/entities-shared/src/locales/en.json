@@ -47,13 +47,13 @@
     },
     "commonFields": {
       "id_label": "ID",
-      "name_label": "Tên",
-      "enabled_label": "Đã kích hoạt",
-      "enabled_tooltip": "Đã kích hoạt là FTW",
-      "updated_at_label": "Cập nhật lần cuối",
-      "created_at_label": "Ngày tạo",
-      "tags_label": "Thẻ",
-      "link": "Liên kết"
+      "name_label": "Name",
+      "enabled_label": "Enabled",
+      "enabled_tooltip": "Enabled is FTW",
+      "updated_at_label": "Last Updated",
+      "created_at_label": "Created",
+      "tags_label": "Tags",
+      "link": "Link"
     },
     "statusBadge": {
       "enabledLabel": "Đã kích hoạt",

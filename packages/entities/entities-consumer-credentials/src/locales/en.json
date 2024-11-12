@@ -27,44 +27,44 @@
       },
       "table_headers": {
         "acls": {
-          "group": "Nhóm",
-          "created_at": "Tạo lúc",
-          "tags": "Thẻ"
+          "group": "Group",
+          "created_at": "Created At",
+          "tags": "Tags"
         },
         "basic-auth": {
-          "password": "Thông tin xác thực",
-          "username": "Tên người dùng",
-          "created_at": "Tạo lúc",
-          "tags": "Thẻ"
+          "password": "Credential",
+          "username": "Username",
+          "created_at": "Created at",
+          "tags": "Tags"
         },
         "key-auth": {
-          "key": "Khóa",
-          "created_at": "Tạo lúc",
-          "tags": "Thẻ"
+          "key": "Key",
+          "created_at": "Created at",
+          "tags": "Tags"
         },
         "key-auth-enc": {
-          "key": "Khóa",
-          "created_at": "Tạo lúc",
-          "tags": "Thẻ"
+          "key": "Key",
+          "created_at": "Created at",
+          "tags": "Tags"
         },
         "oauth2": {
-          "name": "Tên",
-          "client_id": "ID khách hàng",
-          "client_secret": "Khóa bí mật khách hàng",
-          "created_at": "Tạo lúc",
-          "tags": "Thẻ"
+          "name": "Name",
+          "client_id": "Client ID",
+          "client_secret": "Client secret",
+          "created_at": "Created at",
+          "tags": "Tags"
         },
         "hmac-auth": {
-          "username": "Tên người dùng",
-          "secret": "Khóa bí mật",
-          "created_at": "Tạo lúc",
-          "tags": "Thẻ"
+          "username": "Username",
+          "secret": "Secret",
+          "created_at": "Created at",
+          "tags": "Tags"
         },
         "jwt": {
-          "key": "Khóa",
-          "algorithm": "Thuật toán",
-          "created_at": "Tạo lúc",
-          "tags": "Thẻ"
+          "key": "Key",
+          "algorithm": "Algorithm",
+          "created_at": "Created at",
+          "tags": "Tags"
         }
       },
       "empty_state": {

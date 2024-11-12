@@ -52,15 +52,15 @@
       },
       "load_balancing": {
         "title": "Cân bằng tải",
-        "help": "Kiểm tra tình trạng hoạt động chủ động sẽ thực hiện kiểm tra các mục tiêu để đảm bảo chúng đang hoạt động bình thường. Hiện tại chỉ hỗ trợ các mục tiêu HTTP/HTTPS."
+        "help": "Kiểm tra tình trạng hoạt động chủ động sẽ thực hiện kiểm tra các Target để đảm bảo chúng đang hoạt động bình thường. Hiện tại chỉ hỗ trợ các Target HTTP/HTTPS."
       },
       "health_check": {
         "title": "Kiểm tra tình trạng hoạt động & Ngắt mạch",
-        "help": "Kiểm tra tình trạng hoạt động chủ động sẽ thực hiện kiểm tra các mục tiêu để đảm bảo chúng đang hoạt động bình thường. Hiện tại chỉ hỗ trợ các mục tiêu HTTP/HTTPS."
+        "help": "Kiểm tra tình trạng hoạt động chủ động sẽ thực hiện kiểm tra các Target để đảm bảo chúng đang hoạt động bình thường. Hiện tại chỉ hỗ trợ các Target HTTP/HTTPS."
       },
       "active_health_check": {
         "title": "Kiểm tra tình trạng hoạt động chủ động",
-        "help": "Kiểm tra tình trạng hoạt động chủ động sẽ thực hiện kiểm tra các mục tiêu để đảm bảo chúng đang hoạt động bình thường. Hiện tại chỉ hỗ trợ các mục tiêu HTTP/HTTPS."
+        "help": "Kiểm tra tình trạng hoạt động chủ động sẽ thực hiện kiểm tra các Target để đảm bảo chúng đang hoạt động bình thường. Hiện tại chỉ hỗ trợ các Target HTTP/HTTPS."
       },
       "passive_health_check": {
         "title": "Kiểm tra tình trạng hoạt động thụ động",
@@ -76,14 +76,14 @@
         "latency_label": "Độ trễ"
       },
       "hash_labels": {
-        "none": "Không có",
+        "none": "None",
         "consumer": "Consumer",
         "ip": "IP",
         "header": "Header",
         "cookie": "Cookie",
-        "path": "Đường dẫn",
-        "query_argument": "Tham số truy vấn",
-        "uri_capture": "Bắt URI"
+        "path": "Path",
+        "query_argument": "Query Argument",
+        "uri_capture": "URI Capture"
       },
       "hash_tooltips": {
         "hash_on_header": {
@@ -154,44 +154,44 @@
         "grsps": "gRPCs"
       },
       "healthy": {
-        "label": "Hoạt động tốt",
-        "help": "Các ngưỡng đếm để xác định xem các mục tiêu có hoạt động tốt hay không."
+       "label": "Healthy",
+        "help": "Các ngưỡng đếm để xác định xem các Target có hoạt động tốt hay không."
       },
       "unhealthy": {
-        "label": "Không hoạt động tốt",
-        "help": "Các ngưỡng đếm để xác định xem các mục tiêu có không hoạt động tốt hay không."
+        "label": "Unhealthy",
+        "help": "Các ngưỡng đếm để xác định xem các Target có không hoạt động tốt hay không."
       },
       "passive_healthy": {
-        "label": "Hoạt động tốt",
-        "help": "Các ngưỡng đếm để xác định xem các mục tiêu có hoạt động tốt hay không."
+        "label": "Healthy",
+        "help": "Các ngưỡng đếm để xác định xem các Target có hoạt động tốt hay không."
       },
       "passive_unhealthy": {
-        "label": "Không hoạt động tốt",
-        "help": "Các ngưỡng đếm để xác định xem các mục tiêu có không hoạt động tốt hay không."
+        "label": "Unhealthy",
+        "help": "Các ngưỡng đếm để xác định xem các Target có không hoạt động tốt hay không."
       },
       "fields": {
         "name": {
-          "label": "Tên",
+          "label": "Name",
           "placeholder": "Nhập hoặc chọn một máy chủ",
           "tooltip": "Đây là tên máy chủ, phải bằng với {host} của một dịch vụ.",
           "host": "máy chủ"
         },
         "host_header": {
-          "label": "Tiêu đề Máy chủ"
+          "label": "Host Header"
         },
         "client_certificate": {
-          "label": "Certificate Khách hàng",
+          "label": "Client Certificate",
           "placeholder": "Chọn hoặc nhập ID Certificate",
           "tooltip": "Nếu được thiết lập, Certificate sẽ được sử dụng làm Certificate khách hàng trong khi bắt tay TLS với máy chủ phía trên."
         },
         "tags": {
-          "label": "Thẻ",
+          "label": "Tags",
           "placeholder": "Nhập danh sách các thẻ cách nhau bởi dấu phẩy",
           "help": "Ví dụ: thẻ1, thẻ2, thẻ3",
           "tooltip": "Một tập hợp tùy chọn các chuỗi liên kết với Upstream để nhóm và lọc."
         },
         "algorithm": {
-          "label": "Thuật toán",
+          "label": "Algorithm",
           "tooltip": "Thuật toán cân bằng tải nào sẽ được sử dụng."
         },
         "slots": {
@@ -199,112 +199,111 @@
           "help": "Chấp nhận một số nguyên trong khoảng từ 10 đến 65536"
         },
         "hash_on": {
-          "label": "Băm trên",
+          "label": "Hash on",
           "help": "Sử dụng gì làm đầu vào băm.",
           "tooltip": "Sử dụng {result} dẫn đến một sơ đồ vòng tròn cân nặng không có băm."
         },
         "hash_fallback": {
-          "label": "Băm Dự phòng",
+          "label": "Hash Fallback",
           "help": "Sử dụng gì làm đầu vào băm nếu {hash_on} chính không trả về một băm",
           "tooltip": "Sử dụng gì làm đầu vào băm nếu {hash_on} chính không trả về một băm (ví dụ: tiêu đề bị thiếu hoặc không xác định được Consumer). Không khả dụng nếu {hash_on} được đặt thành {cookie}.",
           "hash_on": "băm trên",
           "cookie": "cookie"
         },
         "active_health_checks": {
-          "label": "Kiểm tra Sức khỏe Chủ động",
-          "help": "Chủ động kiểm tra sức khỏe các mục tiêu."
+          "label": "Active Health Checks",
+          "help": "Chủ động kiểm tra sức khỏe các Target."
         },
         "passive_health_checks": {
-          "label": "Kiểm tra Sức khỏe Thụ động / Ngắt mạch",
+         "label": "Passive Health Checks / Circuit Breakers",
           "help": "Kiểm tra được thực hiện dựa trên các yêu cầu được chuyển tiếp bởi API Gateway (HTTP/HTTPS/TCP), mà không phát sinh thêm lưu lượng."
         },
         "healthchecks_threshold": {
-          "label": "Ngưỡng Kiểm tra Sức khỏe"
+          "label": "Healthchecks Threshold"
         },
         "header": {
-          "label": "Tiêu đề"
+          "label": "Header"
         },
         "headers": {
-          "label": "Tiêu đề",
+         "label": "Headers",
           "tooltip_active": "Giá trị tiêu đề có thể được phân tách bởi dấu phẩy (giá trị1, giá trị2, giá trị3)."
         },
         "cookie": {
           "label": "Cookie"
         },
         "cookie_path": {
-          "label": "Đường dẫn Cookie"
+          "label": "Cookie Path"
         },
         "query_argument": {
-          "label": "Tham số Truy vấn"
+          "label": "Query Argument"
         },
         "uri_capture": {
-          "label": "Bắt URI"
+         "label": "URI Capture"
         },
         "active_healthcheck_type": {
-          "label": "Loại Kiểm tra Sức khỏe Chủ động"
+          "label": "Active Health Check Type"
         },
         "http_path": {
-          "label": "Đường dẫn HTTP"
+          "label": "HTTP Path"
         },
         "timeout": {
-          "label": "Thời gian Chờ"
+          "label": "Timeout"
         },
         "concurrency": {
-          "label": "Đồng thời"
+          "label": "Concurrency"
         },
         "https_sni": {
           "label": "HTTPS SNI"
         },
         "verify_ssl": {
-          "label": "Xác minh Certificate SSL khi thực hiện kiểm tra sức khỏe chủ động sử dụng HTTPS"
-        },
+          "label": "Verify the SSL certificate when performing active health checks using HTTPS"        },
         "interval": {
-          "label": "Khoảng thời gian",
-          "help": "Giá trị bằng không cho biết rằng các thử nghiệm chủ động cho các mục tiêu hoạt động tốt đã bị vô hiệu hóa."
+          "label": "Interval",
+          "help": "Giá trị bằng không cho biết rằng các thử nghiệm chủ động cho các Target hoạt động tốt đã bị vô hiệu hóa."
         },
         "successes": {
-          "label": "Thành công"
+          "label": "Successes"
         },
         "http_statuses": {
-          "label": "Trạng thái HTTP"
+         "label": "HTTP Statuses"
         },
         "http_failures": {
-          "label": "Thất bại HTTP"
+          "label": "HTTP Failures"
         },
         "tcp_failures": {
-          "label": "Thất bại TCP"
+          "label": "TCP Failures"
         },
         "timeouts": {
-          "label": "Thời gian Chờ"
+          "label": "Timeouts"
         },
         "passive_health_check_type": {
-          "label": "Loại Kiểm tra Sức khỏe Thụ động"
+          "label": "Passive Health Check Type"
         }
       }
     },
     "labels": {
-      "created_at": "Thời gian Tạo"
+      "created_at": "Created at"
     }
   },
   "targets": {
     "list": {
       "table_headers": {
         "id": "ID",
-        "target_address": "Địa chỉ Mục tiêu",
-        "weight": "Trọng số",
-        "tags": "Thẻ"
+        "target_address": "Target Address",
+        "weight": "Weight",
+        "tags": "Tags"
       },
       "empty_state": {
-        "title": "Cấu hình một Mục tiêu Mới",
-        "description": "Một mục tiêu là một địa chỉ IP/tên máy chủ với một cổng xác định một thể hiện của một dịch vụ backend."
+        "title": "Cấu hình Target Mới",
+        "description": "Target là một địa chỉ IP/tên máy chủ với một cổng xác định một thể hiện của một dịch vụ backend."
       },
       "toolbar_actions": {
-        "new_target": "Mục tiêu Mới"
+        "new_target": "Target Mới"
       }
     },
-    "title": "Các Mục tiêu",
+    "title": "Các Target",
     "actions": {
-      "create": "Mục tiêu Mới",
+      "create": "Tạo mới Target",
       "copy_id": "Sao chép ID",
       "copy_json": "Sao chép JSON",
       "edit": "Chỉnh sửa",
@@ -313,12 +312,12 @@
       "mark_unhealthy": "Đánh dấu không hoạt động tốt"
     },
     "delete": {
-      "title": "Xóa một Mục tiêu",
-      "description": "Hành động này không thể đảo ngược, vì vậy hãy đảm bảo kiểm tra việc sử dụng mục tiêu trước khi xóa."
+      "title": "Xóa Target",
+      "description": "Hành động này không thể đảo ngược, vì vậy hãy đảm bảo kiểm tra việc sử dụng Target trước khi xóa."
     },
     "errors": {
-      "general": "Không thể truy xuất các mục tiêu",
-      "delete": "Mục tiêu không thể bị xóa vào thời điểm này.",
+      "general": "Không thể truy xuất các Target",
+      "delete": "Target không thể bị xóa vào thời điểm này.",
       "copy": "Sao chép vào clipboard không thành công",
       "weight": "Giá trị phải nằm trong khoảng từ 0 đến 65535"
     },
@@ -328,10 +327,10 @@
     },
     "form": {
       "create": {
-        "title": "Mục tiêu Mới"
+        "title": "Target Mới"
       },
       "edit": {
-        "title": "Chỉnh sửa Mục tiêu"
+        "title": "Chỉnh sửa Target"
       },
       "buttons": {
         "save": "Lưu",
@@ -339,16 +338,16 @@
       },
       "fields": {
         "target": {
-          "label": "Địa chỉ Mục tiêu",
+          "label": "Target Address",
           "placeholder": "Nhập IP/tên máy chủ và cổng",
-          "tooltip": "Địa chỉ mục tiêu (IP hoặc tên máy chủ) và cổng. Nếu bỏ qua, cổng mặc định là 8000."
+          "tooltip": "Địa chỉ Target (IP hoặc tên máy chủ) và cổng. Nếu bỏ qua, cổng mặc định là 8000."
         },
         "weight": {
-          "label": "Trọng số",
-          "tooltip": "Trọng số của mục tiêu này liên quan đến các mục tiêu khác trong upstream. Giá trị phải nằm trong khoảng từ 0 đến 65535, mặc định là 100."
+          "label": "Weight",
+          "tooltip": "Trọng số của Target này liên quan đến các Target khác trong upstream. Giá trị phải nằm trong khoảng từ 0 đến 65535, mặc định là 100."
         },
         "tags": {
-          "label": "Thẻ",
+          "label": "Tags",
           "placeholder": "Nhập danh sách các thẻ cách nhau bởi dấu phẩy",
           "help": "Ví dụ: thẻ1, thẻ2, thẻ3"
         }
