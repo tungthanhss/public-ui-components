@@ -9,6 +9,15 @@ export default function useAxios() {
    * @returns {AxiosInstance} The axios instance
    */
   const getAxiosInstance = (options: AxiosRequestConfig = {}) => {
+
+    const token = localStorage.getItem('authToken')
+    console.log('Token:', token) // Debug token
+    if (token) {
+      options.headers = options.headers || {}
+      options.headers.Authorization = `Bearer ${token}`
+    }
+    console.log('Request Headers:', options.headers) // Debug headers
+
     try {
       const injectedInstance = inject<((options?: AxiosRequestConfig) => AxiosInstance) | undefined>('get-axios-instance', undefined)
       // If the injected instance exists, return the called function
