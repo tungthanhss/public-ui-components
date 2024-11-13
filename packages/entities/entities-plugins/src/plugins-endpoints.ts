@@ -17,7 +17,7 @@ export default {
       availablePlugins: `${konnectBaseApiUrl}/v1/available-plugins`,
     },
     kongManager: {
-      availablePlugins: `${KMBaseApiUrl}/kong`,
+      availablePlugins: `${KMBaseApiUrl}`,
       availablePluginsForOss: '/',
     },
   },
